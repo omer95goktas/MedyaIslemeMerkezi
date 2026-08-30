@@ -82,7 +82,7 @@ interface ApiService {
     // 8. Belge Dönüştürücü
     @Streaming
     @Multipart
-    @POST("api/document-convert")
+    @POST("api/convert-document")
     suspend fun documentConvert(
         @Part file: MultipartBody.Part,
         @Part("format") format: RequestBody

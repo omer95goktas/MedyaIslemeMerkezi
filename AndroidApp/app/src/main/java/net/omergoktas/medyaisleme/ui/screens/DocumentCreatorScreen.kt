@@ -74,7 +74,7 @@ fun DocumentCreatorScreen(
     var textValue by remember {
         mutableStateOf(
             TextFieldValue(
-                text = "<h1>Yeni Belge Başlığı</h1>\n<p>Buraya belgenizin detaylarını, notlarını veya makalenizi yazabilirsiniz.</p>\n<ul>\n  <li>Madde 1</li>\n  <li>Madde 2</li>\n</ul>"
+                text = "Yeni Belge Başlığı\n\nBuraya belgenizin detaylarını, notlarını veya makalenizi yazabilirsiniz."
             )
         )
     }
@@ -199,55 +199,37 @@ fun DocumentCreatorScreen(
 
                 Spacer(modifier = Modifier.height(8.dp))
 
-                // Rich Editor Toolbar
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clip(RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp))
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
-                        .border(
-                            1.dp,
-                            MaterialTheme.colorScheme.outline,
-                            RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp)
-                        )
-                        .padding(horizontal = 6.dp, vertical = 4.dp)
-                        .horizontalScroll(toolbarScrollState),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(4.dp)
-                ) {
-                    // Bold
-                    ToolbarButton(label = "B", desc = "Kalın metin ekle") {
-                        insertTag("<b>", "</b>")
+                                // Formatting Dropdown
+                var selectedFormatTag by remember { mutableStateOf("") }
+                AccessibleDropdown(
+                    label = "Hızlı Biçimlendirme (HTML Etiketi Ekle):",
+                    options = listOf(
+                        DropdownOption("", "Seçiniz..."),
+                        DropdownOption("b", "Kalın Metin Ekle"),
+                        DropdownOption("i", "İtalik Metin Ekle"),
+                        DropdownOption("u", "Altı Çizili Metin Ekle"),
+                        DropdownOption("h1", "Büyük Başlık Ekle"),
+                        DropdownOption("h2", "Alt Başlık Ekle"),
+                        DropdownOption("ul", "Madde İmli Liste Ekle"),
+                        DropdownOption("ol", "Numaralı Liste Ekle"),
+                        DropdownOption("p", "Paragraf Ekle")
+                    ),
+                    selectedValue = selectedFormatTag,
+                    onValueSelected = { tag -> 
+                        selectedFormatTag = tag
+                        when (tag) {
+                            "b" -> insertTag("<b>", "</b>")
+                            "i" -> insertTag("<i>", "</i>")
+                            "u" -> insertTag("<u>", "</u>")
+                            "h1" -> insertTag("<h1>", "</h1>")
+                            "h2" -> insertTag("<h2>", "</h2>")
+                            "ul" -> insertTag("<ul>\n  <li>", "</li>\n</ul>")
+                            "ol" -> insertTag("<ol>\n  <li>", "</li>\n</ol>")
+                            "p" -> insertTag("<p>", "</p>")
+                        }
+                        selectedFormatTag = "" // reset after insert
                     }
-                    // Italic
-                    ToolbarButton(label = "I", desc = "İtalik metin ekle") {
-                        insertTag("<i>", "</i>")
-                    }
-                    // Underline
-                    ToolbarButton(label = "U", desc = "Altı çizili metin ekle") {
-                        insertTag("<u>", "</u>")
-                    }
-                    // H1
-                    ToolbarButton(label = "H1", desc = "Büyük başlık ekle") {
-                        insertTag("<h1>", "</h1>")
-                    }
-                    // H2
-                    ToolbarButton(label = "H2", desc = "Alt başlık ekle") {
-                        insertTag("<h2>", "</h2>")
-                    }
-                    // Bullet List
-                    ToolbarButton(label = "• Liste", desc = "Madde imli liste ekle") {
-                        insertTag("<ul>\n  <li>", "</li>\n</ul>")
-                    }
-                    // Numbered List
-                    ToolbarButton(label = "1. Liste", desc = "Numaralandırılmış liste ekle") {
-                        insertTag("<ol>\n  <li>", "</li>\n</ol>")
-                    }
-                    // Paragraph
-                    ToolbarButton(label = "P", desc = "Paragraf ekle") {
-                        insertTag("<p>", "</p>")
-                    }
-                }
+                )
 
                 // Editor TextArea
                 OutlinedTextField(
@@ -287,7 +269,7 @@ fun DocumentCreatorScreen(
                         .height(52.dp)
                         .accessibleTouchTarget()
                         .semantics {
-                            contentDescription = "Belgeyi oluştur ve indir"
+                            contentDescription = "Belge oluştur"
                             role = Role.Button
                         },
                     colors = ButtonDefaults.buttonColors(
@@ -297,7 +279,7 @@ fun DocumentCreatorScreen(
                     shape = RoundedCornerShape(8.dp)
                 ) {
                     Text(
-                        text = "Belgeyi Oluştur ve İndir",
+                        text = "Belge Oluştur",
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold
                     )
@@ -313,23 +295,3 @@ fun DocumentCreatorScreen(
     }
 }
 
-@Composable
-private fun ToolbarButton(
-    label: String,
-    desc: String,
-    onClick: () -> Unit
-) {
-    OutlinedButton(
-        onClick = onClick,
-        modifier = Modifier
-            .accessibleTouchTarget()
-            .semantics {
-                contentDescription = desc
-                role = Role.Button
-            },
-        shape = RoundedCornerShape(4.dp),
-        colors = ButtonDefaults.outlinedButtonColors(containerColor = MaterialTheme.colorScheme.surface)
-    ) {
-        Text(text = label, fontWeight = FontWeight.Bold, fontSize = 13.sp)
-    }
-}

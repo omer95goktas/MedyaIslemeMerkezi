@@ -58,7 +58,7 @@
     <string name="btn_select_second_file">2. Dosyayı Seç</string>
     <string name="btn_select_image">Kapak Resmi Seç</string>
     <string name="btn_select_audio">Ses Dosyası Seç</string>
-    <string name="btn_start_processing">İşlemi Başlat ve İndir</string>
+    <string name="btn_start_processing">Dönüştürme İşlemini Başlat</string>
     <string name="btn_new_operation">Yeni İşlem Yap</string>
     <string name="btn_retry">Tekrar Dene</string>
     <string name="btn_clear">Seçimi Temizle</string>

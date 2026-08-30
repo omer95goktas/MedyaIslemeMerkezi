@@ -449,7 +449,7 @@ fun MediaToolsScreen(
                         .height(52.dp)
                         .accessibleTouchTarget()
                         .semantics {
-                            contentDescription = "${selectedTool.title} işlemini başlat ve indir"
+                            contentDescription = "${selectedTool.title} dönüştürme işlemini başlat"
                             role = Role.Button
                         },
                     colors = ButtonDefaults.buttonColors(

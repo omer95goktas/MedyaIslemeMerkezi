@@ -52,6 +52,6 @@ class ProgressRequestBody(
     }
 
     companion object {
-        private const val DEFAULT_BUFFER_SIZE = 8192
+        private const val DEFAULT_BUFFER_SIZE = 1048576
     }
 }
