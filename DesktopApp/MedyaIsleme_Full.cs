@@ -333,7 +333,8 @@ namespace MedyaIslemeMerkezi
             
             try
             {
-                using (HttpClient client = new HttpClient())
+                using (var handler = new HttpClientHandler { UseProxy = false, Proxy = null })
+                using (HttpClient client = new HttpClient(handler))
                 {
                     client.Timeout = TimeSpan.FromMinutes(20); // Long timeout for big conversions
                     using (MultipartFormDataContent content = new MultipartFormDataContent())
