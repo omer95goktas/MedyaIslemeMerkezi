@@ -1189,7 +1189,7 @@ async def convert_document(
             with open(in_path, 'rb') as docx_file:
                 res = mammoth.convert_to_html(docx_file)
                 html_str = "<html><head><meta charset='utf-8'><style>body{font-family:sans-serif;}</style></head><body>" + res.value + "</body></html>"
-                weasyprint.HTML(string=html_str).write_pdf(out_path)
+                weasyprint.HTML(string=html_str).write_pdf(out_path, pdf_variant='pdf/ua-1')
             
             if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
                 success = True
@@ -1203,7 +1203,8 @@ async def convert_document(
             success = True
 
     if not success:
-        res = subprocess.run(["libreoffice", "--headless", "--convert-to", target_ext, in_path, "--outdir", TEMP_DIR], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        lo_fmt = "pdf:writer_pdf_Export:{"UseTaggedPDF":{"type":"boolean","value":"true"}}" if target_ext == "pdf" else target_ext
+        res = subprocess.run(["libreoffice", "--headless", "--convert-to", lo_fmt, in_path, "--outdir", TEMP_DIR], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         lo_out = os.path.join(TEMP_DIR, f"{task_id}.{target_ext}")
         if (os.path.exists(lo_out) and os.path.getsize(lo_out) > 0):
             if lo_out != out_path:
