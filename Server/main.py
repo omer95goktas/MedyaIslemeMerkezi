@@ -1180,6 +1180,22 @@ async def convert_document(
         except Exception as e:
             pass
 
+    
+    # 2.6 MAMMOTH + WEASYPRINT ILE DOCX -> PDF (Accessible Fallback)
+    if not success and src_ext == 'docx' and target_ext == 'pdf':
+        try:
+            import mammoth
+            import weasyprint
+            with open(in_path, 'rb') as docx_file:
+                res = mammoth.convert_to_html(docx_file)
+                html_str = "<html><head><meta charset='utf-8'><style>body{font-family:sans-serif;}</style></head><body>" + res.value + "</body></html>"
+                weasyprint.HTML(string=html_str).write_pdf(out_path)
+            
+            if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+                success = True
+        except Exception as e:
+            pass
+
     # 3. GENEL DÖNÜŞÜM HATTI (Pandoc -> LibreOffice -> Calibre)
     if not success:
         res = subprocess.run(["pandoc", in_path, "-o", out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
