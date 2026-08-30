@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="theme-color" content="#0284c7">
+  <title>Medya ve Belge İşleme Merkezi - Ömer Göktaş</title>
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #1e293b;
+      --panel-bg: #0f172a;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-hover: #0284c7;
+      --border: #334155;
+      --focus-ring: #f59e0b;
+      --success: #10b981;
+      --error: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 860px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .slogan-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      background: rgba(15, 23, 42, 0.95);
+      border: 2px solid #334155;
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .siren-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .siren-red { background-color: #ef4444; animation: flash-red 0.6s infinite alternate; }
+    .siren-blue { background-color: #3b82f6; animation: flash-blue 0.6s infinite alternate; }
+    .slogan-text {
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      animation: police-text-strobe 1.2s infinite alternate;
+      text-align: center;
+    }
+    @keyframes flash-red {
+      0% { opacity: 0.2; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 16px #ef4444, 0 0 25px #ef4444; }
+    }
+    @keyframes flash-blue {
+      0% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 16px #3b82f6, 0 0 25px #3b82f6; }
+      100% { opacity: 0.2; transform: scale(0.9); }
+    }
+    @keyframes police-text-strobe {
+      0% { color: #ff3b3b; text-shadow: 0 0 8px rgba(255, 59, 59, 0.6); }
+      50% { color: #ffffff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+      100% { color: #3b82f6; text-shadow: 0 0 8px rgba(59, 130, 246, 0.6); }
+    }
+
+    .tool-select-wrapper {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .tool-select-label { font-size: 0.95rem; font-weight: 700; color: var(--primary); }
+    .tool-select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: var(--panel-bg);
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      display: none;
+    }
+    .panel.active { display: block; }
+    
+    .hero-box {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .hero-box h2 { color: var(--primary); font-size: 1.6rem; margin-bottom: 0.6rem; }
+    .hero-box p { color: var(--text-muted); font-size: 1.02rem; }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .feature-card {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      cursor: pointer;
+      text-align: left;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .feature-card:hover, .feature-card:focus {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      outline: 2px solid var(--focus-ring);
+    }
+    .feature-card h3 { font-size: 1.15rem; color: var(--primary); margin-bottom: 0.4rem; }
+    .feature-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+
+    .form-group { margin-bottom: 1.35rem; }
+    label { display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .hint { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem; }
+    .size-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 0.3rem;
+    }
+    input[type="file"], input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+    optgroup { background: #1e293b; color: var(--primary); font-weight: 700; }
+    option { background: #0b1120; color: #fff; }
+
+    .gif-options-box {
+      display: none;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1.5px solid var(--primary);
+      border-radius: 8px;
+      padding: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    .gif-options-box.active { display: block !important; }
+    .gif-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 600px) { .gif-grid { grid-template-columns: 1fr; } }
+    .gif-options-box input[type="number"], .gif-options-box select {
+      font-size: 16px !important;
+    }
+
+    .editor-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      padding: 0.6rem;
+      border-radius: 8px 8px 0 0;
+    }
+    .editor-btn {
+      background: #1e293b;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.45rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .editor-btn:hover { background: #334155; color: var(--primary); }
+    #rich-editor {
+      min-height: 250px;
+      max-height: 500px;
+      overflow-y: auto;
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 0 0 8px 8px;
+      padding: 1rem;
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--primary);
+      color: #0b1120;
+      border: none;
+      padding: 0.95rem;
+      font-size: 1.1rem;
+      font-weight: 800;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover { background: var(--primary-hover); }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+    .btn-reset {
+      display: inline-block;
+      margin-top: 0.75rem;
+      background: #334155;
+      color: #fff;
+      border: 1px solid var(--primary);
+      padding: 0.6rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .status-area {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      display: none;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .status-area.loading { display: block; background: rgba(56, 189, 248, 0.15); color: var(--primary); border: 1px solid var(--primary); }
+    .status-area.success { display: block; background: rgba(16, 185, 129, 0.15); color: var(--success); border: 1px solid var(--success); }
+    .status-area.error { display: block; background: rgba(239, 68, 68, 0.15); color: var(--error); border: 1px solid var(--error); }
+
+    .progress-bar-container {
+      width: 100%;
+      background-color: var(--panel-bg);
+      border-radius: 6px;
+      margin-top: 0.75rem;
+      overflow: hidden;
+      display: none;
+      height: 12px;
+    }
+    .progress-bar { width: 0%; height: 100%; background-color: var(--primary); transition: width 0.2s; }
+
+    .privacy-notice {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px dashed #334155;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .privacy-notice a { color: var(--primary); text-decoration: underline; font-weight: 700; }
+
+    
+    .feedback-toggle-btn {
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: background 0.2s, border-color 0.2s;
+      text-align: left;
+    }
+    .feedback-toggle-btn:hover, .feedback-toggle-btn:focus {
+      background: #263548;
+      border-color: var(--primary);
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+    .feedback-toggle-btn .toggle-arrow { margin-left: auto; transition: transform 0.25s; font-style: normal; }
+    .feedback-toggle-btn[aria-expanded="true"] .toggle-arrow { transform: rotate(180deg); }
+    .feedback-form-wrapper { display: none; background: var(--card-bg); border: 1px solid var(--border); border-top: none; border-radius: 0 0 12px 12px; padding: 1.25rem 1.5rem 1.5rem; }
+    .feedback-form-wrapper.open { display: block; }
+    /* Feedback Modal (Accessible & Clean) */
+    .feedback-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(11, 17, 32, 0.85);
+      backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 1rem;
+    }
+    .feedback-modal-backdrop.open {
+      display: flex;
+    }
+    .feedback-modal {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      width: 100%;
+      max-width: 580px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+      animation: modalFadeIn 0.2s ease-out;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .feedback-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .feedback-modal-header h2 {
+      font-size: 1.2rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0;
+    }
+    .feedback-modal-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .feedback-modal-close:hover {
+      color: var(--text);
+      background: var(--panel-bg);
+    }
+    .feedback-modal-body {
+      padding: 1.5rem;
+    }
+    .feedback-modal-body p.modal-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+    .feedback-form .form-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .feedback-form .form-group {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 220px;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .feedback-form label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .feedback-form select,
+    .feedback-form textarea,
+    .feedback-form input[type="text"] {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 0.65rem 0.85rem;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border 0.2s;
+      font-family: inherit;
+    }
+    .feedback-form select:focus,
+    .feedback-form textarea:focus {
+      border-color: var(--primary);
+    }
+    .feedback-form textarea {
+      resize: vertical;
+      min-height: 95px;
+      width: 100%;
+    }
+    .char-counter {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: right;
+      margin-top: 0.25rem;
+    }
+    .char-counter.valid {
+      color: #10b981;
+    }
+    .feedback-modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .btn-modal-cancel {
+      background: var(--panel-bg);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-modal-cancel:hover {
+      background: var(--border);
+      color: var(--text);
+    }
+    .feedback-submit {
+      background: #7c3aed;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, opacity 0.2s;
+    }
+    .feedback-submit:hover:not(:disabled) {
+      background: #6d28d9;
+    }
+    .feedback-submit:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .feedback-result {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .feedback-result.success { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid #10b981; }
+    .feedback-result.error { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid #ef4444; }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    footer a { color: var(--primary); text-decoration: none; font-weight: 700; }
+    footer a:hover { text-decoration: underline; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    input:focus, select:focus, button:focus, #rich-editor:focus, .feature-card:focus {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true" role="status"></div>
+  <div id="sr-announcer" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
+
+  <div class="container">
+    <main>
+      <div class="slogan-banner">
+        <span class="siren-dot siren-red"></span>
+        <span class="slogan-text">Paylaşılmayan bilgi, bilgi değildir.</span>
+        <span class="siren-dot siren-blue"></span>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 20px; margin-top: 10px;">
+        <a href="/static/MedyaIslemeMerkezi.exe" download class="btn" style="display: inline-block; background-color: #10b981; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; border: 2px solid #059669; font-size: 1.1rem;">
+          🪟 Windows Sürümünü İndirmek İçin Tıklayın
+        </a>
+      </div>
+
+
+      <div class="tool-select-wrapper">
+        <label for="main-tool-selector" class="tool-select-label">Kullanmak İstediğiniz Aracı Seçin:</label>
+        <select id="main-tool-selector" class="tool-select" onchange="switchTool(this.value)">
+          <option value="panel-home" selected>🏠 Platform Tanıtımı & Ana Sayfa</option>
+          
+          <optgroup label="🎬 Medya Araçları">
+            <option value="panel-v2a">Videodan Sese Dönüştür (MP3, WAV, M4A, FLAC)</option>
+            <option value="panel-a2a">Ses Formatı Değiştir (MP3, WAV, AAC, OGG)</option>
+            <option value="panel-v2v">Video Formatı Değiştir & GIF Yap (MP4, MKV, AVI, GIF)</option>
+            <option value="panel-a2v">Sesten Video Oluştur (Kapak Resmi + Ses -> MP4)</option>
+            <option value="panel-i2i">Resim Formatı Değiştir (JPG, PNG, WEBP, PDF, ICO)</option>
+            <option value="panel-vmerge">İki Videoyu Birleştir (MP4 - 2 GB)</option>
+            <option value="panel-amerge">İki Sesi Birleştir (MP3, M4A, WAV)</option>
+          </optgroup>
+
+          <optgroup label="📄 Belge & OCR İstasyonu">
+            <option value="panel-doc-convert">Belge Dönüştür (Word, PDF, Markdown, EPUB, TXT)</option>
+            <option value="panel-pdf-ocr">Taranmış PDF'i OCR ile Okunabilir Yap</option>
+            <option value="panel-img-ocr">Resimdeki Metinleri Oku (OCR -> TXT)</option>
+            <option value="panel-split-pdf">PDF Sayfalarını Böl (ZIP İndir)</option>
+            <option value="panel-merge-pdf">Birden Fazla PDF'i Birleştir</option>
+          </optgroup>
+
+          <optgroup label="✍️ Belge Oluşturucu">
+            <option value="panel-doc-create">Sıfırdan Zengin Belge Oluştur (Word, PDF, MD, EPUB)</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div id="panel-home" class="panel active">
+        <div class="hero-box">
+          <h2>Medya ve Belge İşleme Merkezine Hoş Geldiniz</h2>
+          <p>Yüksek performanslı sunucu motorlarıyla medya dosyalarınızı, ofis belgelerinizi ve OCR işlemlerinizi kayıpsız yönetin.</p>
+        </div>
+
+        <div class="feature-grid">
+          <button type="button" class="feature-card" onclick="selectFromHome('panel-v2a')">
+            <h3>🎬 1. Medya İşlemleri</h3>
+            <p>FFmpeg gücüyle videoları sese çevirin, formatları dönüştürün, kapak resmiyle video oluşturun veya dosyaları birleştirin.</p>
+          </button>
+
+          <button type="button" class="feature-card" onclick="selectFromHome('panel-doc-convert')">
+            <h3>📄 2. Belge & OCR İstasyonu</h3>
+            <p>Word, PDF, Markdown, EPUB dönüşümleri yapın; Tesseract OCR ile taranmış belgeleri ve resimleri okunabilir metne aktarın.</p>
+          </button>
+
+          <button type="button" class="feature-card" onclick="selectFromHome('panel-doc-create')">
+            <h3>✍️ 3. Belge Oluşturucu</h3>
+            <p>Zengin metin editörüyle içeriklerinizi yazın; başlıklar, listeler ekleyin ve Word, PDF, Markdown veya EPUB olarak indirin.</p>
+          </button>
+        </div>
+      </div>
+
+      <div id="panel-v2a" class="panel">
+        <h2>🎬 Videodan Sese Dönüştür</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Yüklediğiniz videonun sesini yüksek kalitede ayıklar.</p>
+        <form id="form-v2a">
+          <div class="form-group">
+            <label for="v2a-file">Video Dosyası Seçin:</label>
+            <input type="file" id="v2a-file" accept="video/*, .mp4, .mkv, .avi, .mov, .webm, .flv, .wmv, .m4v, .ts, .3gp, video/mp4, video/x-matroska, video/quicktime, video/x-msvideo, video/webm" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <div class="form-group">
+            <label for="v2a-format">Çıkış Ses Formatı:</label>
+            <select id="v2a-format">
+                <option value="mp3">MP3</option>
+                <option value="wav">WAV</option>
+                <option value="aac">AAC</option>
+                <option value="m4a">M4A</option>
+                <option value="m4r">M4R (iPhone Zil Sesi)</option>
+                <option value="flac">FLAC</option>
+                <option value="alac">ALAC (Apple Lossless)</option>
+                <option value="aiff">AIFF</option>
+                <option value="opus">OPUS</option>
+                <option value="ogg">OGG</option>
+                <option value="ac3">AC3 (Dolby Digital)</option>
+                <option value="wma">WMA</option>
+                <option value="mp2">MP2</option>
+              </select>
+          </div>
+          <button type="submit" class="btn-submit">Sese Dönüştür ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-a2a" class="panel">
+        <h2>🎵 Ses Formatı Değiştir</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Ses kayıtlarınızı istediğiniz formata dönüştürün.</p>
+        <form id="form-a2a">
+          <div class="form-group">
+            <label for="a2a-file">Ses Dosyası Seçin:</label>
+            <input type="file" id="a2a-file" accept=".mp3,.wav,.m4a,.aac,.flac,.ogg,.opus,.m4r,.wma,.aiff,audio/*" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <div class="form-group">
+            <label for="a2a-format">Dönüştürülecek Format:</label>
+            <select id="a2a-format">
+                <option value="mp3">MP3</option>
+                <option value="wav">WAV</option>
+                <option value="aac">AAC</option>
+                <option value="m4a">M4A</option>
+                <option value="m4r">M4R (iPhone Zil Sesi)</option>
+                <option value="flac">FLAC</option>
+                <option value="alac">ALAC (Apple Lossless)</option>
+                <option value="aiff">AIFF</option>
+                <option value="opus">OPUS</option>
+                <option value="ogg">OGG</option>
+                <option value="ac3">AC3 (Dolby Digital)</option>
+                <option value="wma">WMA</option>
+                <option value="mp2">MP2</option>
+              </select>
+          </div>
+          <button type="submit" class="btn-submit">Ses Formatını Değiştir ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-v2v" class="panel">
+        <h2>📹 Video Formatı Değiştir & GIF Yap</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Videolarınızı dönüştürün veya belirlediğiniz saniye aralığında yüksek kaliteli hareketli GIF yapın.</p>
+        <form id="form-v2v">
+          <div class="form-group">
+            <label for="v2v-file">Video Dosyası Seçin:</label>
+            <input type="file" id="v2v-file" accept="video/*, .mp4, .mkv, .avi, .mov, .webm, .flv, .wmv, .m4v, .ts, .3gp, video/mp4, video/x-matroska, video/quicktime, video/x-msvideo, video/webm" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <div class="form-group">
+            <label for="v2v-format">Dönüştürülecek Video Formatı:</label>
+            <select id="v2v-format" onchange="toggleGifOptions(this.value)">
+              <option value="mp4" selected>MP4 (Evrensel Format)</option>
+              <option value="gif">GIF Animasyon (Gelişmiş Çözünürlük ve Kare Hızı)</option>
+              <option value="mkv">MKV Formatı</option>
+              <option value="webm">WEBM Formatı</option>
+              <option value="avi">AVI Formatı</option>
+            </select>
+          </div>
+
+          <div id="gif-settings" class="gif-options-box" aria-live="polite">
+            <h3 style="color:var(--primary); font-size:1.05rem; margin-bottom:0.75rem;">⚙️ Profesyonel GIF Ayarları</h3>
+            
+            <div class="gif-grid">
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label for="gif-start">Başlangıç Saniyesi:</label>
+                <input type="number" id="gif-start" value="0" min="0" step="0.5">
+                <div class="hint">Videonun kaçıncı saniyesinden başlasın? (Örn: 0 veya 15)</div>
+              </div>
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label for="gif-duration">GIF Süresi (Saniye):</label>
+                <input type="number" id="gif-duration" value="5" min="1" max="25" step="0.5">
+                <div class="hint">Maksimum 25 saniye.</div>
+              </div>
+            </div>
+
+            <div class="gif-grid">
+              <div class="form-group" style="margin-bottom:0.5rem;">
+                <label for="gif-width">GIF Çözünürlüğü / Boyut:</label>
+                <select id="gif-width">
+                  <option value="480" selected>480p (Önerilen - Sosyal Medya ve Web İçin Dengeli)</option>
+                  <option value="640">640p (Geniş Ekran - Yüksek Kalite)</option>
+                  <option value="720">720p (Ultra HD - Maksimum Netlik)</option>
+                  <option value="320">320p (Düşük Boyut - Hızlı Yükleme)</option>
+                  <option value="240">240p (Mini Boyut - Forum / Avatar)</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom:0.5rem;">
+                <label for="gif-fps">Kare Hızı (Akıcılık / FPS):</label>
+                <select id="gif-fps">
+                  <option value="15" selected>15 FPS (Önerilen - Akıcı ve Optimize Boyut)</option>
+                  <option value="24">24 FPS (Sinematik - Çok Akıcı)</option>
+                  <option value="30">30 FPS (Ultra Akıcı - En Yüksek Kalite)</option>
+                  <option value="10">10 FPS (Ekonomik - Düşük Boyut)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">Videoyu İşle ve İndir</button>
+        </form>
+      </div>
+
+            <div id="panel-a2v" class="panel">
+        <h2>🖼️ Sesten Video Oluşturucu</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Ses kaydınıza kapak görseli ekleyerek ekranı tam kaplayan yüksek kaliteli MP4 video üretin.</p>
+        <form id="form-a2v">
+          <div class="form-group">
+            <label for="a2v-audio">1. Ses Dosyası Seçin:</label>
+            <input type="file" id="a2v-audio" accept=".mp3,.wav,.m4a,.aac,.flac,.ogg,.opus,.m4r,.wma,.aiff,audio/*" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="a2v-image">2. Kapak Resmi Seçin:</label>
+            <input type="file" id="a2v-image" accept="image/*, .jpg, .jpeg, .png, .webp, .bmp, .gif, .tiff, .svg, .ico, image/jpeg, image/png, image/webp" required>
+            <div class="hint">Yüklediğiniz resim seçtiğiniz çözünürlüğe tam ekran olarak uyarlanacaktır.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="a2v-resolution">3. Video Çözünürlüğü & En-Boy Oranı:</label>
+            <select id="a2v-resolution">
+              <option value="1080p_horizontal" selected>⭐ 1080p Full HD Yatay (1920x1080 - Varsayılan / YouTube / PC)</option>
+              <option value="720p_horizontal">📺 720p HD Yatay (1280x720 - Standart Web / Hızlı İşleme)</option>
+              <option value="480p_horizontal">📱 480p SD Yatay (854x480 - Küçük Dosya Boyutu)</option>
+              <option value="1440p_horizontal">💎 2K QHD Yatay (2560x1440 - Yüksek Kalite)</option>
+              <option value="4k_horizontal">👑 4K Ultra HD Yatay (3840x2160 - Maksimum Kalite)</option>
+              
+              <option value="1080p_vertical">📲 1080p Full HD Dikey (1080x1920 - Reels / Shorts / TikTok / Hikaye)</option>
+              <option value="720p_vertical">📱 720p HD Dikey (720x1280 - Hızlı Dikey)</option>
+              <option value="480p_vertical">📦 480p SD Dikey (480x854 - Düşük Boyut Dikey)</option>
+              <option value="1440p_vertical">✨ 2K QHD Dikey (1440x2560 - Net Dikey Video)</option>
+              <option value="4k_vertical">🌟 4K Ultra HD Dikey (2160x3840 - Ultra Dikey)</option>
+            </select>
+            <div class="hint" style="color:var(--primary); font-weight:600; margin-top:0.4rem;">
+              ℹ️ Hiçbir ayar değiştirilmezse video otomatik olarak 1080p Full HD (1920x1080) kalitesinde üretilir.
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">🎬 Videoyu Oluştur ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-i2i" class="panel">
+        <h2>🌅 Resim Formatı Değiştir</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Görsellerinizi JPG, PNG, WEBP, ICO veya PDF formatına dönüştürün.</p>
+        <form id="form-i2i">
+          <div class="form-group">
+            <label for="i2i-file">Resim Dosyası Seçin:</label>
+            <input type="file" id="i2i-file" accept="image/*, .jpg, .jpeg, .png, .webp, .bmp, .gif, .tiff, .svg, .ico, image/jpeg, image/png, image/webp" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <div class="form-group">
+            <label for="i2i-format">Dönüştürülecek Resim Formatı:</label>
+            <select id="i2i-format">
+              <option value="jpg" selected>JPG / JPEG</option>
+              <option value="png">PNG</option>
+              <option value="webp">WEBP</option>
+              <option value="pdf">PDF Belgesi</option>
+              <option value="ico">ICO (Favicon)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">Resmi Dönüştür ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-vmerge" class="panel">
+        <h2>🎞️ İki Videoyu Birleştir</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">İki ayrı videoyu peş peşe ekleyerek tek bir MP4 videosu yapar.</p>
+        <form id="form-vmerge">
+          <div class="form-group">
+            <label for="vmerge-file1">1. Video Dosyası:</label>
+            <input type="file" id="vmerge-file1" accept="video/*, .mp4, .mkv, .avi, .mov, .webm, .flv, .wmv, .m4v, .ts, .3gp, video/mp4, video/x-matroska, video/quicktime, video/x-msvideo, video/webm" required>
+          </div>
+          <div class="form-group">
+            <label for="vmerge-file2">2. Video Dosyası:</label>
+            <input type="file" id="vmerge-file2" accept="video/*, .mp4, .mkv, .avi, .mov, .webm, .flv, .wmv, .m4v, .ts, .3gp, video/mp4, video/x-matroska, video/quicktime, video/x-msvideo, video/webm" required>
+            <div class="size-badge">Maksimum toplam boyut: 2 GB</div>
+          </div>
+          <button type="submit" class="btn-submit">Videoları Birleştir (MP4)</button>
+        </form>
+      </div>
+
+      <div id="panel-amerge" class="panel">
+        <h2>🎧 İki Sesi Birleştir</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">İki ses kaydını uç uca ekleyerek tek bir ses dosyası oluşturur.</p>
+        <form id="form-amerge">
+          <div class="form-group">
+            <label for="amerge-file1">1. Ses Dosyası:</label>
+            <input type="file" id="amerge-file1" accept=".mp3,.wav,.m4a,.aac,.flac,.ogg,.opus,.m4r,.wma,.aiff,audio/*" required>
+          </div>
+          <div class="form-group">
+            <label for="amerge-file2">2. Ses Dosyası:</label>
+            <input type="file" id="amerge-file2" accept=".mp3,.wav,.m4a,.aac,.flac,.ogg,.opus,.m4r,.wma,.aiff,audio/*" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <button type="submit" class="btn-submit">Sesleri Birleştir ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-doc-convert" class="panel">
+        <h2>📄 Belge Dönüştürücü</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Word, PDF, Markdown, EPUB, HTML ve metin dosyalarını birbirine çevirin.</p>
+        <form id="form-doc-convert">
+          <div class="form-group">
+            <label for="doc-file">Belge Dosyası Seçin:</label>
+            <input type="file" id="doc-file" accept=".pdf,.docx,.doc,.odt,.rtf,.txt,.html,.epub,.xlsx,.csv,.md" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <div class="form-group">
+            <label for="doc-format">Hedef Format:</label>
+            <select id="doc-format" aria-label="Çıkış Belge Formatı Seçin">
+              <option value="pdf" selected>PDF Belgesi (.pdf)</option>
+              <option value="docx">Microsoft Word Belgesi (.docx)</option>
+              <option value="md">Markdown Belgesi (.md)</option>
+              <option value="epub">E-Kitap Formatı (.epub)</option>
+              <option value="txt">Düz Metin (.txt)</option>
+              <option value="html">Web Sayfası (.html)</option>
+              <option value="odt">OpenDocument Metni (.odt)</option>
+              <option value="rtf">Zengin Metin Biçimi (.rtf)</option>
+              <option value="csv">CSV Tablo Belgesi (.csv)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">Belgeyi Dönüştür ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-pdf-ocr" class="panel">
+        <h2>🔍 Taranmış PDF OCR</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Resim olarak taranmış PDF'leri arama ve kopyalama yapılabilir hale getirir.</p>
+        <form id="form-pdf-ocr">
+          <div class="form-group">
+            <label for="pdf-ocr-file">Taranmış PDF Dosyası:</label>
+            <input type="file" id="pdf-ocr-file" accept=".pdf, application/pdf" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <button type="submit" class="btn-submit">PDF'i OCR ile Okunabilir Yap</button>
+        </form>
+      </div>
+
+      <div id="panel-img-ocr" class="panel">
+        <h2>📷 Resimden Yazı Okuma (OCR)</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Fotoğraf veya taranmış resimlerdeki yazıları okuyup TXT olarak verir.</p>
+        <form id="form-img-ocr">
+          <div class="form-group">
+            <label for="img-ocr-file">Metin İçeren Resim Seçin:</label>
+            <input type="file" id="img-ocr-file" accept="image/*, .jpg, .jpeg, .png, .webp, .bmp, .gif, .tiff, .svg, .ico, image/jpeg, image/png, image/webp" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <button type="submit" class="btn-submit">Resimdeki Metni Oku ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-split-pdf" class="panel">
+        <h2>✂️ PDF Sayfalarını Böl</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Çok sayfalı PDF belgelerini her sayfası ayrı PDF olacak şekilde ZIP içinde verir.</p>
+        <form id="form-split-pdf">
+          <div class="form-group">
+            <label for="split-pdf-file">Bölünecek PDF Belgesi:</label>
+            <input type="file" id="split-pdf-file" accept=".pdf, application/pdf" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <button type="submit" class="btn-submit">Tüm Sayfaları Böl (ZIP İndir)</button>
+        </form>
+      </div>
+
+      <div id="panel-merge-pdf" class="panel">
+        <h2>📑 Birden Fazla PDF'i Birleştir</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">İki ayrı PDF belgesini tek bir PDF dosyasında birleştirir.</p>
+        <form id="form-merge-pdf">
+          <div class="form-group">
+            <label for="merge-pdf1">1. PDF Belgesi:</label>
+            <input type="file" id="merge-pdf1" accept=".pdf, application/pdf" required>
+          </div>
+          <div class="form-group">
+            <label for="merge-pdf2">2. PDF Belgesi:</label>
+            <input type="file" id="merge-pdf2" accept=".pdf, application/pdf" required>
+            <div class="size-badge">Maksimum dosya boyutu: 1 GB</div>
+          </div>
+          <button type="submit" class="btn-submit">PDF'leri Birleştir ve İndir</button>
+        </form>
+      </div>
+
+      <div id="panel-doc-create" class="panel">
+        <h2>✍️ Sıfırdan Belge Oluşturucu</h2>
+        <p class="hint" style="margin-bottom:1.2rem;">Metninizi zengin editörde yazın; Word, PDF, Markdown veya EPUB olarak kaydedin.</p>
+        <form id="form-doc-create">
+          <div class="form-group">
+            <label for="create-doc-name">Belge Adı (İsteğe Bağlı):</label>
+            <input type="text" id="create-doc-name" placeholder="Örn: ders_notlari veya makalem">
+          </div>
+          <div class="form-group">
+            <label for="create-doc-format">Kaydedilecek Dosya Türü:</label>
+            <select id="create-doc-format">
+              <option value="docx" selected>Microsoft Word Belgesi (.docx)</option>
+              <option value="pdf">PDF Belgesi (.pdf)</option>
+              <option value="md">Markdown Belgesi (.md)</option>
+              <option value="epub">E-Kitap Formatı (.epub)</option>
+              <option value="txt">Düz Metin (.txt)</option>
+              <option value="html">Web Sayfası / HTML (.html)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="editor-label">Belge İçeriği:</label>
+            <div class="editor-toolbar" role="toolbar" aria-label="Metin Biçimlendirme Araçları">
+              <button type="button" class="editor-btn" onclick="execCmd('bold')" title="Kalın"><b>B</b></button>
+              <button type="button" class="editor-btn" onclick="execCmd('italic')" title="İtalik"><i>I</i></button>
+              <button type="button" class="editor-btn" onclick="execCmd('underline')" title="Altı Çizili"><u>U</u></button>
+              <button type="button" class="editor-btn" onclick="execCmd('formatBlock', '<h1>')" title="Büyük Başlık">H1</button>
+              <button type="button" class="editor-btn" onclick="execCmd('formatBlock', '<h2>')" title="Alt Başlık">H2</button>
+              <button type="button" class="editor-btn" onclick="execCmd('insertUnorderedList')" title="Madde İmleri">• Liste</button>
+              <button type="button" class="editor-btn" onclick="execCmd('insertOrderedList')" title="Numaralandırma">1. Liste</button>
+              <button type="button" class="editor-btn" onclick="execCmd('justifyLeft')" title="Sola Hizala">Sola</button>
+              <button type="button" class="editor-btn" onclick="execCmd('justifyCenter')" title="Ortala">Ortala</button>
+            </div>
+            <div id="rich-editor" contenteditable="true" role="textbox" aria-multiline="true" aria-labelledby="editor-label"></div>
+          </div>
+          <button type="submit" class="btn-submit">Belgeyi Oluştur ve İndir</button>
+        </form>
+      </div>
+
+      <div id="status-container">
+        <div id="status" class="status-area"></div>
+        <div class="progress-bar-container" id="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="privacy-notice">
+        🔒 <strong>Gizlilik ve Güvenlik:</strong> Yüklediğiniz ve dönüştürdüğünüz tüm dosyalar sunucuda saklanmaz; işlem bittiği anda sunucudan kalıcı olarak silinir. Detaylar için <a href="/gizlilik-politikasi">Gizlilik Politikası</a> sayfamızı inceleyebilirsiniz.
+      </div>
+    </main>
+
+    <!-- Modal Geri Bildirim Formu (Sadece Hata Durumunda Açılır) -->
+    <div class="feedback-modal-backdrop" id="feedbackModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="fb-modal-title" onclick="handleBackdropClick(event)">
+      <div class="feedback-modal" role="document">
+        <div class="feedback-modal-header">
+          <h2 id="fb-modal-title">🚔 Hatayı Bildir & Geri Bildirim</h2>
+          <button type="button" class="feedback-modal-close" onclick="closeFeedbackModal()" aria-label="Kapat">&times;</button>
+        </div>
+        <div class="feedback-modal-body">
+          <p class="modal-desc">
+            İşlem sırasında bir hata oluştu. Sorunun hızlıca çözülebilmesi için hata detayları otomatik olarak dolduruldu.
+          </p>
+          <form class="feedback-form" id="feedbackForm" onsubmit="submitFeedback(event)">
+            <!-- Honeypot anti-bot field -->
+            <input type="text" name="website_url" id="fb-website-url" style="display:none !important;" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fb-tool">Kullanılan Araç:</label>
+                <select id="fb-tool" name="tool_name" required aria-required="true" onchange="validateFeedbackForm()">
+                  <option value="Videodan Sese">Videodan Sese</option>
+                  <option value="Ses Formatı Değiştir">Ses Formatı Değiştir</option>
+                  <option value="Video Formatı / GIF">Video Formatı / GIF</option>
+                  <option value="Sesten Video Oluştur">Sesten Video Oluştur</option>
+                  <option value="Resim Formatı Değiştir">Resim Formatı Değiştir</option>
+                  <option value="Video Birleştir">Video Birleştir</option>
+                  <option value="Ses Birleştir">Ses Birleştir</option>
+                  <option value="Belge Dönüştür">Belge Dönüştür</option>
+                  <option value="PDF OCR">PDF OCR</option>
+                  <option value="Resimden Yazı Oku">Resimden Yazı Oku</option>
+                  <option value="PDF Böl / Birleştir">PDF Böl / Birleştir</option>
+                  <option value="Belge Oluşturucu">Belge Oluşturucu</option>
+                  <option value="Diğer">Diğer</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="fb-error-type">Karşılaşılan Hata Türü:</label>
+                <select id="fb-error-type" name="error_type" required aria-required="true">
+                  <option value="Sunucu işlem hatası (500)">Sunucu işlem hatası (500)</option>
+                  <option value="Dosya işlenemedi">Dosya işlenemedi</option>
+                  <option value="Dosya yüklenirken hata">Dosya yüklenirken hata</option>
+                  <option value="Dosya boyutu aşıldı">Dosya boyutu aşıldı</option>
+                  <option value="İndirme hatası">İndirme hatası</option>
+                  <option value="Bağlantı hatası">Bağlantı hatası</option>
+                  <option value="Diğer">Diğer</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fb-source-format">Yüklenen Dosya Formatı (Kaynak):</label>
+                <select id="fb-source-format" name="source_format" required aria-required="true" onchange="validateFeedbackForm()">
+                  <option value="">Seçiniz...</option>
+                  <option value="MP4">MP4 Video</option>
+                  <option value="MKV">MKV Video</option>
+                  <option value="AVI">AVI Video</option>
+                  <option value="MOV">MOV Video</option>
+                  <option value="WEBM">WEBM Video</option>
+                  <option value="MP3">MP3 Ses</option>
+                  <option value="WAV">WAV Ses</option>
+                  <option value="M4A">M4A Ses</option>
+                  <option value="AAC">AAC Ses</option>
+                  <option value="FLAC">FLAC Ses</option>
+                  <option value="OGG">OGG Ses</option>
+                  <option value="OPUS">OPUS Ses</option>
+                  <option value="WMA">WMA Ses</option>
+                  <option value="PDF">PDF Belgesi</option>
+                  <option value="DOCX">DOCX Word Belgesi</option>
+                  <option value="DOC">DOC Word Belgesi</option>
+                  <option value="TXT">TXT Düz Metin</option>
+                  <option value="EPUB">EPUB E-Kitap</option>
+                  <option value="HTML">HTML Web Sayfası</option>
+                  <option value="ODT">ODT Açık Belge</option>
+                  <option value="RTF">RTF Zengin Metin</option>
+                  <option value="CSV">CSV Tablo</option>
+                  <option value="JPG">JPG / JPEG Resim</option>
+                  <option value="PNG">PNG Resim</option>
+                  <option value="WEBP">WEBP Resim</option>
+                  <option value="BMP">BMP Resim</option>
+                  <option value="GIF">GIF Animasyon</option>
+                  <option value="ICO">ICO Favicon</option>
+                  <option value="TIFF">TIFF Görsel</option>
+                  <option value="SVG">SVG Vektör</option>
+                  <option value="Diğer">Diğer Format</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="fb-target-format">Dönüştürülmek İstenen Format (Hedef):</label>
+                <select id="fb-target-format" name="target_format" required aria-required="true" onchange="validateFeedbackForm()">
+                  <option value="">Seçiniz...</option>
+                  <option value="MP3">MP3 Ses</option>
+                  <option value="AAC">AAC Ses</option>
+                  <option value="WAV">WAV Ses</option>
+                  <option value="FLAC">FLAC Ses</option>
+                  <option value="OGG">OGG Ses</option>
+                  <option value="M4A">M4A Ses</option>
+                  <option value="OPUS">OPUS Ses</option>
+                  <option value="WMA">WMA Ses</option>
+                  <option value="MP4">MP4 Video</option>
+                  <option value="GIF">GIF Animasyon</option>
+                  <option value="MKV">MKV Video</option>
+                  <option value="WEBM">WEBM Video</option>
+                  <option value="AVI">AVI Video</option>
+                  <option value="JPG">JPG / JPEG Resim</option>
+                  <option value="PNG">PNG Resim</option>
+                  <option value="WEBP">WEBP Resim</option>
+                  <option value="ICO">ICO Favicon</option>
+                  <option value="PDF">PDF Belgesi</option>
+                  <option value="DOCX">DOCX Word Belgesi</option>
+                  <option value="MD">Markdown Belgesi</option>
+                  <option value="EPUB">EPUB E-Kitap</option>
+                  <option value="TXT">TXT Düz Metin</option>
+                  <option value="HTML">HTML Web Sayfası</option>
+                  <option value="ODT">ODT Açık Belge</option>
+                  <option value="RTF">RTF Zengin Metin</option>
+                  <option value="CSV">CSV Tablo</option>
+                  <option value="OCR_TXT">OCR Metin (TXT)</option>
+                  <option value="OCR_PDF">Aranabilir PDF</option>
+                  <option value="ZIP_PDF">ZIP (Bölünmüş PDF)</option>
+                  <option value="MERGE_PDF">Birleştirilmiş PDF</option>
+                  <option value="MERGE_MEDIA">Birleştirilmiş Medya</option>
+                  <option value="Diğer">Diğer Format</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom:0.5rem;">
+              <label for="fb-desc">Hata Açıklaması (En az 15 karakter):</label>
+              <textarea id="fb-desc" name="description" minlength="15" maxlength="500" required aria-required="true"
+                        placeholder="Karşılaştığınız hatayı kısaca açıklayın (örnek: Dosya %80'de dondu ve 500 hatası verdi)..."
+                        oninput="validateFeedbackForm()"></textarea>
+              <div class="char-counter" id="fb-char-counter">Karakter: 0 / 15 (Minimum 15 karakter gereklidir)</div>
+            </div>
+
+            <div class="feedback-result" id="fb-result" role="alert" aria-live="assertive"></div>
+
+            <div class="feedback-modal-footer">
+              <button type="button" class="btn-modal-cancel" onclick="closeFeedbackModal()">Vazgeç</button>
+              <button type="submit" class="feedback-submit" id="fb-btn" disabled>📤 Bildirimi Gönder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Bu platform <a href="https://omergoktas.net" target="_blank">omergoktas.net</a> tarafından geliştirilmiştir.</p>
+      <p>İletişim & Destek: <a href="mailto:mail@omergoktas.net">mail@omergoktas.net</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function downloadBlob(blob, filename) {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+
+      a.click();
+
+      setTimeout(() => {
+        if (a.parentNode) {
+          document.body.removeChild(a);
+        }
+        window.URL.revokeObjectURL(url);
+      }, 1500);
+    }
+    
+    const panels = Array.from(document.querySelectorAll('.panel'));
+    const statusDiv = document.getElementById('status');
+    const progressContainer = document.getElementById('progress-container');
+    const progressBar = document.getElementById('progress-bar');
+    const mainToolSelector = document.getElementById('main-tool-selector');
+    const srAnnouncer = document.getElementById('sr-announcer');
+
+    function announceToScreenReader(message) {
+      if (srAnnouncer) {
+        srAnnouncer.textContent = '';
+        setTimeout(() => { srAnnouncer.textContent = message; }, 60);
+      }
+    }
+
+    function switchTool(panelId) {
+      panels.forEach(p => p.classList.remove('active'));
+      const activePanel = document.getElementById(panelId);
+      if (activePanel) {
+        activePanel.classList.add('active');
+        mainToolSelector.value = panelId;
+        const selectedText = mainToolSelector.options[mainToolSelector.selectedIndex].text;
+        announceToScreenReader(selectedText + ' açıldı.');
+      }
+      statusDiv.className = 'status-area';
+      statusDiv.innerHTML = '';
+      progressContainer.style.display = 'none';
+      progressBar.style.width = '0%';
+    }
+
+    function selectFromHome(panelId) {
+      switchTool(panelId);
+    }
+
+    const v2vSelect = document.getElementById("v2v-format");
+    if (v2vSelect) {
+      ["change", "input"].forEach(evt => {
+        v2vSelect.addEventListener(evt, () => toggleGifOptions(v2vSelect.value));
+      });
+    }
+
+    function toggleGifOptions(val) {
+      const box = document.getElementById('gif-settings');
+      if (val === 'gif') {
+        box.classList.add('active');
+        announceToScreenReader('Gelişmiş GIF ayarları paneli açıldı: Başlangıç saniyesi, süre, çözünürlük ve kare hızı belirleyebilirsiniz.');
+      } else {
+        box.classList.remove('active');
+      }
+    }
+
+    function execCmd(command, value = null) {
+      document.execCommand(command, false, value);
+      const editor = document.getElementById('rich-editor');
+      if (editor) editor.focus();
+    }
+
+    function resetCurrentForm() {
+      const activePanel = document.querySelector('.panel.active');
+      if (activePanel) {
+        const form = activePanel.querySelector('form');
+        if (form) form.reset();
+        const editor = activePanel.querySelector('#rich-editor');
+        if (editor) editor.innerHTML = '';
+        const gifBox = activePanel.querySelector('#gif-settings');
+        if (gifBox) gifBox.classList.remove('active');
+      }
+      statusDiv.className = 'status-area';
+      statusDiv.innerHTML = '';
+      progressContainer.style.display = 'none';
+      progressBar.style.width = '0%';
+      announceToScreenReader('Form temizlendi.');
+    }
+
+    function handleUpload(url, formData, btn, toolName) {
+      if (!toolName) toolName = "Diğer";
+      const isMergeVideo = url.includes("merge-videos");
+      const maxAllowed = isMergeVideo ? 2147483648 : 1073741824;
+      let totalBytes = 0;
+      let detectedSourceFormat = "";
+      let detectedTargetFormat = "";
+
+      for (let pair of formData.entries()) {
+        if (pair[1] instanceof File) {
+          totalBytes += pair[1].size;
+          if (!detectedSourceFormat && pair[1].name) {
+            detectedSourceFormat = pair[1].name.split('.').pop().toUpperCase();
+          }
+        }
+        if (pair[0] === 'format' || pair[0] === 'resolution') {
+          detectedTargetFormat = String(pair[1]).toUpperCase();
+        }
+      }
+
+      if (!detectedTargetFormat && toolName.includes("OCR")) detectedTargetFormat = "TXT";
+      if (!detectedTargetFormat && toolName.includes("Böl")) detectedTargetFormat = "ZIP";
+      if (!detectedTargetFormat && toolName.includes("Birleştir")) detectedTargetFormat = "Birleştirilmiş";
+
+      if (totalBytes > maxAllowed) {
+        const limitText = isMergeVideo ? "2 GB" : "1 GB";
+        statusDiv.className = "status-area error";
+        statusDiv.innerHTML = `<div>Hata: Seçtiğiniz dosya(lar) ${limitText} sınırını aşıyor!</div><div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.5rem;"><button type="button" class="btn-reset" onclick="resetCurrentForm()">🔄 Tekrar Dene</button><button type="button" class="btn-reset" style="background:#7c3aed;" onclick="openFeedbackWithError('${toolName}','Dosya boyutu aşıldı','${detectedSourceFormat}','${detectedTargetFormat}')">🚔 Hatayı Bildir</button></div>`;
+        announceToScreenReader(`Hata: Seçtiğiniz dosyalar ${limitText} sınırını aşıyor. Hatayı bildirmek için Hatayı Bildir butonuna basın.`);
+        return;
+      }
+
+      btn.disabled = true;
+      statusDiv.className = 'status-area loading';
+      statusDiv.textContent = 'İşlem başlatılıyor, dosyanız hazırlanıyor...';
+      announceToScreenReader('İşlem başlatılıyor, dosyanız hazırlanıyor...');
+      progressContainer.style.display = 'block';
+      progressBar.style.width = '0%';
+
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', url, true);
+      xhr.responseType = 'blob';
+
+      let lastSpokenPercent = -1;
+
+      xhr.upload.onprogress = (e) => {
+        if (e.lengthComputable) {
+          const percent = Math.round((e.loaded / e.total) * 100);
+          progressBar.style.width = percent + '%';
+          
+          if (percent < 100) {
+            const currentStep = Math.floor(percent / 20) * 20;
+            if (currentStep > lastSpokenPercent && currentStep > 0) {
+              lastSpokenPercent = currentStep;
+              const msg = 'Yükleniyor: %' + lastSpokenPercent;
+              statusDiv.textContent = msg;
+              announceToScreenReader(msg);
+            }
+          }
+        }
+      };
+
+      xhr.upload.onload = () => {
+        const processingMsg = 'Yükleme tamamlandı, sunucu dosyayı dönüştürüyor, lütfen bekleyin...';
+        statusDiv.textContent = processingMsg;
+        announceToScreenReader(processingMsg);
+        progressBar.style.width = '100%';
+      };
+
+      xhr.onload = async () => {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          let filename = 'omer_goktas_net_' + Date.now();
+          const disposition = xhr.getResponseHeader('Content-Disposition');
+          if (disposition && disposition.includes('filename=')) {
+            const parts = disposition.split('filename=');
+            if (parts.length > 1) {
+              filename = parts[1].split(';')[0].replace(/["']/g, '').trim();
+            }
+          }
+
+          const blob = xhr.response;
+          downloadBlob(blob, filename);
+
+          statusDiv.className = 'status-area success';
+          statusDiv.innerHTML = `
+            <div>Tebrikler! İşlem başarıyla tamamlandı ve dosyanız indirildi.</div>
+            <button type="button" class="btn-reset" id="btn-new-convert" onclick="resetCurrentForm()">Yeni İşlem Yap</button>
+          `;
+          announceToScreenReader('Tebrikler! İşlem başarıyla tamamlandı ve dosyanız indirildi.');
+          
+          setTimeout(() => {
+            const newBtn = document.getElementById('btn-new-convert');
+            if (newBtn) newBtn.focus();
+          }, 100);
+        } else {
+          let errMsg = 'Dosya işlenirken bir sorun oluştu.';
+          try {
+            const text = await xhr.response.text();
+            const errObj = JSON.parse(text);
+            if (errObj && errObj.message) errMsg = errObj.message;
+          } catch(e) {}
+          statusDiv.className = 'status-area error';
+          const errTypeStr = xhr.status >= 500 ? 'Sunucu işlem hatası (500)' : 'Dosya işlenemedi';
+          statusDiv.innerHTML = `
+            <div>Hata: ${errMsg}</div>
+            <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.5rem;">
+              <button type="button" class="btn-reset" onclick="resetCurrentForm()">🔄 Tekrar Dene</button>
+              <button type="button" class="btn-reset" style="background:#7c3aed;" onclick="openFeedbackWithError('${toolName}','${errTypeStr}','${detectedSourceFormat}','${detectedTargetFormat}')">🚔 Hatayı Bildir</button>
+            </div>
+          `;
+          announceToScreenReader('Hata: ' + errMsg + '. Hatayı bildirmek için Hatayı Bildir butonuna basın.');
+        }
+        btn.disabled = false;
+        setTimeout(() => { progressContainer.style.display = 'none'; }, 3000);
+      };
+
+      xhr.onerror = () => {
+        statusDiv.className = 'status-area error';
+        statusDiv.innerHTML = `
+          <div>Bağlantı hatası: Sunucuya ulaşılamadı.</div>
+          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.5rem;">
+            <button type="button" class="btn-reset" onclick="resetCurrentForm()">🔄 Tekrar Dene</button>
+            <button type="button" class="btn-reset" style="background:#7c3aed;" onclick="openFeedbackWithError('${toolName}','Bağlantı hatası','${detectedSourceFormat}','${detectedTargetFormat}')">🚔 Hatayı Bildir</button>
+          </div>
+        `;
+        announceToScreenReader('Bağlantı hatası. Hatayı bildirmek için Hatayı Bildir butonuna basın.');
+        btn.disabled = false;
+        progressContainer.style.display = 'none';
+      };
+
+      xhr.send(formData);
+    }
+
+    document.getElementById('form-v2a').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('video', document.getElementById('v2a-file').files[0]);
+      fd.append('format', document.getElementById('v2a-format').value);
+      handleUpload('/api/video-to-audio', fd, e.target.querySelector('button'), 'Videodan Sese');
+    });
+
+    document.getElementById('form-a2a').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('audio', document.getElementById('a2a-file').files[0]);
+      fd.append('format', document.getElementById('a2a-format').value);
+      handleUpload('/api/audio-to-audio', fd, e.target.querySelector('button'), 'Ses Formatı Değiştir');
+    });
+
+    document.getElementById('form-v2v').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const format = document.getElementById('v2v-format').value;
+      const fd = new FormData();
+      fd.append('video', document.getElementById('v2v-file').files[0]);
+      fd.append('format', format);
+      if (format === 'gif') {
+        fd.append('gif_start', document.getElementById('gif-start').value || '0');
+        fd.append('gif_duration', document.getElementById('gif-duration').value || '5');
+        fd.append('gif_width', document.getElementById('gif-width').value || '480');
+        fd.append('gif_fps', document.getElementById('gif-fps').value || '15');
+      }
+      handleUpload('/api/video-to-video', fd, e.target.querySelector('button'), 'Video Formatı / GIF');
+    });
+
+    document.getElementById('form-a2v').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('audio', document.getElementById('a2v-audio').files[0]);
+      fd.append('image', document.getElementById('a2v-image').files[0]);
+      fd.append('resolution', document.getElementById('a2v-resolution').value);
+      handleUpload('/api/audio-to-video', fd, e.target.querySelector('button'), 'Sesten Video Oluştur');
+    });
+
+    document.getElementById('form-i2i').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('image', document.getElementById('i2i-file').files[0]);
+      fd.append('format', document.getElementById('i2i-format').value);
+      handleUpload('/api/image-to-image', fd, e.target.querySelector('button'), 'Resim Formatı Değiştir');
+    });
+
+    document.getElementById('form-vmerge').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('video1', document.getElementById('vmerge-file1').files[0]);
+      fd.append('video2', document.getElementById('vmerge-file2').files[0]);
+      handleUpload('/api/merge-videos', fd, e.target.querySelector('button'), 'Video Birleştir');
+    });
+
+    document.getElementById('form-amerge').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('audio1', document.getElementById('amerge-file1').files[0]);
+      fd.append('audio2', document.getElementById('amerge-file2').files[0]);
+      handleUpload('/api/merge-audios', fd, e.target.querySelector('button'), 'Ses Birleştir');
+    });
+
+    document.getElementById('form-doc-convert').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('file', document.getElementById('doc-file').files[0]);
+      fd.append('format', document.getElementById('doc-format').value);
+      handleUpload('/api/convert-document', fd, e.target.querySelector('button'), 'Belge Dönüştür');
+    });
+
+    document.getElementById('form-pdf-ocr').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById('pdf-ocr-file');
+      if (!fileInput.files[0]) {
+        alert('Lütfen bir PDF dosyası seçin.');
+        return;
+      }
+
+      const fd = new FormData();
+      fd.append('pdf_file', fileInput.files[0]);
+
+      const submitBtn = e.target.querySelector('button');
+      if (submitBtn) submitBtn.disabled = true;
+      if (progressContainer) progressContainer.style.display = 'block';
+
+      let currentProgress = 10;
+      if (progressBar) progressBar.style.width = currentProgress + '%';
+      statusDiv.className = 'status-area loading';
+      statusDiv.textContent = 'Belge taranıyor ve OCR işlemi başlatılıyor...';
+
+      fetch('/api/pdf-ocr', {
+        method: 'POST',
+        body: fd
+      })
+      .then(async (res) => {
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}));
+          throw new Error(errData.detail || 'OCR işlemi sırasında bir hata oluştu.');
+        }
+
+        let filename = 'belge_metni.txt';
+        const disposition = res.headers.get('Content-Disposition');
+        if (disposition && disposition.includes('filename=')) {
+          const parts = disposition.split('filename=');
+          if (parts.length > 1) {
+            filename = parts[1].split(';')[0].replace(/["']/g, '').trim();
+          }
+        }
+
+        const blob = await res.blob();
+        downloadBlob(blob, filename);
+
+        statusDiv.className = 'status-area success';
+        statusDiv.innerHTML = `
+          <div>Tebrikler! PDF metne dönüştürüldü ve dosyanız indirildi.</div>
+          <button type="button" class="btn-reset" onclick="resetCurrentForm()">Yeni İşlem Yap</button>
+        `;
+      })
+      .catch((err) => {
+        statusDiv.className = 'status-area error';
+        statusDiv.innerHTML = `
+          <div>Hata: ${err.message}</div>
+          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.5rem;">
+            <button type="button" class="btn-reset" onclick="resetCurrentForm()">🔄 Tekrar Dene</button>
+            <button type="button" class="btn-reset" style="background:#7c3aed;" onclick="openFeedbackWithError('PDF OCR','Sunucu işlem hatası (500)', 'PDF', 'TXT')">🚨 Hatayı Bildir</button>
+          </div>
+        `;
+        announceToScreenReader('Hata: ' + err.message + '. Hatayı bildirmek için Hatayı Bildir butonuna basın.');
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
+        setTimeout(() => {
+          if (progressContainer) progressContainer.style.display = 'none';
+          if (progressBar) progressBar.style.width = '0%';
+        }, 3000);
+      });
+    });
+
+    document.getElementById('form-img-ocr').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('image', document.getElementById('img-ocr-file').files[0]);
+      handleUpload('/api/image-to-text', fd, e.target.querySelector('button'), 'Resimden Yazı Oku');
+    });
+
+    document.getElementById('form-split-pdf').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('pdf_file', document.getElementById('split-pdf-file').files[0]);
+      handleUpload('/api/split-pdf', fd, e.target.querySelector('button'), 'PDF Böl / Birleştir');
+    });
+
+    document.getElementById('form-merge-pdf').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData();
+      fd.append('pdf1', document.getElementById('merge-pdf1').files[0]);
+      fd.append('pdf2', document.getElementById('merge-pdf2').files[0]);
+      handleUpload('/api/merge-pdfs', fd, e.target.querySelector('button'), 'PDF Böl / Birleştir');
+    });
+
+    document.getElementById('form-doc-create').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const editor = document.getElementById('rich-editor');
+      const htmlContent = editor.innerHTML.trim();
+      if (!htmlContent) {
+        alert('Lütfen belge için metin yazın.');
+        editor.focus();
+        return;
+      }
+      const fd = new FormData();
+      fd.append('doc_name', document.getElementById('create-doc-name').value);
+      fd.append('format', document.getElementById('create-doc-format').value);
+      fd.append('content_html', htmlContent);
+      handleUpload('/api/create-document', fd, e.target.querySelector('button'), 'Belge Oluşturucu');
+    });
+
+    let lastActiveElementBeforeModal = null;
+
+    function validateFeedbackForm() {
+      const desc = document.getElementById('fb-desc').value.trim();
+      const srcFmt = document.getElementById('fb-source-format').value;
+      const tgtFmt = document.getElementById('fb-target-format').value;
+      const btn = document.getElementById('fb-btn');
+      const counter = document.getElementById('fb-char-counter');
+
+      const len = desc.length;
+      if (len < 15) {
+        counter.textContent = `Karakter: ${len} / 15 (En az ${15 - len} karakter daha yazmalısınız)`;
+        counter.className = 'char-counter';
+      } else {
+        counter.textContent = `Karakter: ${len} / 500 (Uygun)`;
+        counter.className = 'char-counter valid';
+      }
+
+      if (len >= 15 && srcFmt && tgtFmt) {
+        btn.disabled = false;
+      } else {
+        btn.disabled = true;
+      }
+    }
+
+    function openFeedbackWithError(toolName, errorType, sourceFormat, targetFormat) {
+      lastActiveElementBeforeModal = document.activeElement;
+      
+      const toolSel = document.getElementById('fb-tool');
+      if (toolSel && toolName) {
+        let matched = false;
+        for (let opt of toolSel.options) {
+          if (opt.value.toLowerCase().includes(toolName.toLowerCase()) || toolName.toLowerCase().includes(opt.value.toLowerCase())) {
+            toolSel.value = opt.value;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) toolSel.value = "Diğer";
+      }
+
+      const errSel = document.getElementById('fb-error-type');
+      if (errSel && errorType) {
+        for (let opt of errSel.options) {
+          if (opt.value === errorType) { errSel.value = errorType; break; }
+        }
+      }
+
+      let toolSrcFormats = [];
+      let toolTgtFormats = [];
+      let tl = (toolName || "").toLowerCase();
+      
+      if (tl.includes("video") && tl.includes("ses")) {
+          toolSrcFormats = ["MP4", "MKV", "AVI", "MOV", "WEBM"];
+          toolTgtFormats = ["MP3", "WAV", "AAC", "M4A", "FLAC"];
+      } else if (tl.includes("ses format")) {
+          toolSrcFormats = ["MP3", "WAV", "AAC", "M4A", "FLAC", "OGG"];
+          toolTgtFormats = ["MP3", "WAV", "AAC", "M4A", "FLAC", "OGG"];
+      } else if (tl.includes("video format") || tl.includes("birleştir")) {
+          toolSrcFormats = ["MP4", "MKV", "AVI", "MOV", "WEBM"];
+          toolTgtFormats = ["MP4", "GIF", "MKV", "WEBM", "AVI"];
+      } else if (tl.includes("sesten video")) {
+          toolSrcFormats = ["JPG", "PNG", "MP3", "WAV"];
+          toolTgtFormats = ["MP4"];
+      } else if (tl.includes("resim")) {
+          toolSrcFormats = ["JPG", "PNG", "WEBP", "BMP"];
+          toolTgtFormats = ["JPG", "PNG", "WEBP", "PDF", "ICO"];
+      } else if (tl.includes("ocr")) {
+          toolSrcFormats = ["PDF", "JPG", "PNG", "WEBP"];
+          toolTgtFormats = ["TXT"];
+      } else if (tl.includes("belge") || tl.includes("pdf")) {
+          toolSrcFormats = ["PDF", "DOCX", "EPUB", "TXT", "HTML", "MD", "CSV"];
+          toolTgtFormats = ["PDF", "DOCX", "EPUB", "TXT", "HTML", "MD", "CSV"];
+      } else {
+          toolSrcFormats = ["MP4", "MP3", "JPG", "PDF", "DOCX"];
+          toolTgtFormats = ["MP4", "MP3", "JPG", "PDF", "DOCX"];
+      }
+
+      function populateSelect(selId, formats, detected) {
+          const sel = document.getElementById(selId);
+          if (!sel) return;
+          sel.innerHTML = '<option value="">Seçiniz...</option>';
+          let cleanDet = (detected || "").replace('.', '').toUpperCase();
+          let hasDetected = false;
+          
+          formats.forEach(f => {
+              let isSel = (f === cleanDet);
+              if (isSel) hasDetected = true;
+              sel.innerHTML += `<option value="${f}" ${isSel ? 'selected' : ''}>${f}</option>`;
+          });
+          
+          if (cleanDet && !hasDetected) {
+              sel.innerHTML += `<option value="${cleanDet}" selected>${cleanDet}</option>`;
+          }
+          sel.innerHTML += '<option value="Diğer">Diğer / Farklı</option>';
+      }
+
+      populateSelect('fb-source-format', toolSrcFormats, sourceFormat);
+      populateSelect('fb-target-format', toolTgtFormats, targetFormat);
+
+      const modal = document.getElementById('feedbackModalBackdrop');
+      if (modal) {
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      validateFeedbackForm();
+      announceToScreenReader('Hata bildirim penceresi açıldı. Lütfen en az 15 karakter açıklama girip gönderin.');
+      
+      setTimeout(() => {
+        const descInput = document.getElementById('fb-desc');
+        if (descInput) descInput.focus();
+      }, 150);
+    }
+
+    function closeFeedbackModal() {
+      const modal = document.getElementById('feedbackModalBackdrop');
+      if (modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      const result = document.getElementById('fb-result');
+      if (result) result.style.display = 'none';
+
+      if (lastActiveElementBeforeModal) {
+        lastActiveElementBeforeModal.focus();
+      }
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'feedbackModalBackdrop') {
+        closeFeedbackModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('feedbackModalBackdrop');
+        if (modal && modal.classList.contains('open')) {
+          closeFeedbackModal();
+        }
+      }
+    });
+
+    async function submitFeedback(e) {
+      e.preventDefault();
+      const btn = document.getElementById("fb-btn");
+      const result = document.getElementById("fb-result");
+      
+      const desc = document.getElementById('fb-desc').value.trim();
+      if (desc.length < 15) {
+        result.className = "feedback-result error";
+        result.textContent = "❌ Lütfen en az 15 karakter açıklama yazın.";
+        result.style.display = "block";
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Gönderiliyor...";
+      result.style.display = "none";
+      
+      const fd = new FormData(document.getElementById("feedbackForm"));
+      fd.append("android_version", "Web");
+      fd.append("app_version", "Web v1.0");
+      
+      try {
+        const res = await fetch("/api/feedback", { method: "POST", body: fd });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          result.className = "feedback-result success";
+          result.textContent = "✅ Teşekkürler! Hata bildiriminiz başarıyla iletildi.";
+          document.getElementById("feedbackForm").reset();
+          validateFeedbackForm();
+          setTimeout(() => {
+            closeFeedbackModal();
+          }, 2500);
+        } else {
+          result.className = "feedback-result error";
+          result.textContent = "❌ " + (data.detail || "Gönderilemedi. Lütfen tekrar deneyin.");
+        }
+      } catch (err) {
+        result.className = "feedback-result error";
+        result.textContent = "❌ Bağlantı hatası. Lütfen tekrar deneyin.";
+      }
+      result.style.display = "block";
+      btn.disabled = false;
+      btn.textContent = "📤 Bildirimi Gönder";
+    }
+
+    
+
+    function a11ySpeak(message) {
+      const announcer = document.getElementById('a11y-announcer');
+      if (announcer) {
+        announcer.textContent = '';
+        setTimeout(() => { announcer.textContent = message; }, 50);
+      }
+    }
+
+    document.querySelectorAll('form:not(#feedbackForm)').forEach(form => {
+      form.addEventListener('submit', function() {
+        a11ySpeak('Dosyanız sunucuya yükleniyor ve dönüştürme işlemi başlatılıyor, lütfen bekleyin...');
+      });
+    });
+  </script>
+</body>
+</html>
