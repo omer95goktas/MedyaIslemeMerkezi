@@ -88,19 +88,6 @@ fun MediaToolsScreen(
 
     val context = LocalContext.current
     val activity = context as? Activity
-    val scannerLauncher = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.StartIntentSenderForResult()
-    ) { result ->
-        if (result.resultCode == Activity.RESULT_OK) {
-            val scanResult = GmsDocumentScanningResult.fromActivityResultIntent(result.data)
-            scanResult?.pdf?.let { pdf ->
-                // Simulate success in ViewModel
-                
-                
-                viewModel.setDirectSuccess(pdf.uri, "application/pdf")
-            }
-        }
-    }
 
     val mediaTools = ToolType.entries.filter { it.category == toolCategory }
     val scrollState = rememberScrollState()
@@ -467,21 +454,7 @@ fun MediaToolsScreen(
                 // Submit Button
                 Button(
                     onClick = {
-                        if (selectedTool == ToolType.DOCUMENT_SCANNER) {
-                            val options = GmsDocumentScannerOptions.Builder()
-                                .setGalleryImportAllowed(true)
-                                .setPageLimit(25)
-                                .setResultFormats(RESULT_FORMAT_PDF)
-                                .setScannerMode(SCANNER_MODE_FULL)
-                                .build()
-                            GmsDocumentScanning.getClient(options)
-                                .getStartScanIntent(activity!!)
-                                .addOnSuccessListener { intentSender ->
-                                    scannerLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
-                                }
-                        } else {
-                            viewModel.startProcessing()
-                        }
+                        viewModel.startProcessing()
                     },
                     enabled = !isProcessing,
                     modifier = Modifier
@@ -499,7 +472,7 @@ fun MediaToolsScreen(
                     shape = RoundedCornerShape(8.dp)
                 ) {
                     Text(
-                        text = if (selectedTool == ToolType.DOCUMENT_SCANNER) "Taray�c�y� Ba�lat" else stringResource(R.string.btn_start_processing),
+                        text = stringResource(R.string.btn_start_processing),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold
                     )
