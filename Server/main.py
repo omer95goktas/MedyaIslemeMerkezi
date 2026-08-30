@@ -1138,12 +1138,16 @@ async def convert_document(
                 success = True
         elif target_ext == "docx":
             try:
-                from pdf2docx import Converter
-                cv = Converter(in_path)
-                cv.convert(out_path)
-                cv.close()
-                if (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
-                    success = True
+                # Erisilebilirlik icin: PDF -> TXT -> DOCX (Linear metin akisi saglar, ekran okuyucular icin kusursuzdur)
+                import subprocess
+                txt_temp = os.path.join(TEMP_DIR, f"{task_id}_temp.txt")
+                subprocess.run(["pdftotext", in_path, txt_temp], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                if os.path.exists(txt_temp):
+                    res = subprocess.run(["pandoc", txt_temp, "-o", out_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    if res.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+                        success = True
+                    import os
+                    if os.path.exists(txt_temp): os.remove(txt_temp)
             except Exception:
                 pass
         elif target_ext in ["md", "odt", "html", "rtf", "epub"]:
@@ -1198,7 +1202,7 @@ async def convert_document(
 
     # 3. GENEL DÖNÜŞÜM HATTI (Pandoc -> LibreOffice -> Calibre)
     if not success:
-        res = subprocess.run(["pandoc", in_path, "-o", out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        res = subprocess.run(["pandoc", in_path, "-o", out_path, "--to", "epub3"] if target_ext == "epub" else ["pandoc", in_path, "-o", out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if res.returncode == 0 and (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
             success = True
 
