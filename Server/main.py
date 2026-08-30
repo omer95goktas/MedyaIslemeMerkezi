@@ -1166,8 +1166,8 @@ async def convert_document(
                 success = True
 
     
-    # 2.5 MAMMOTH ILE DOCX -> MD / HTML
-    if not success and src_ext == 'docx' and target_ext in ['md', 'html']:
+    # 2.5 MAMMOTH ILE DOCX -> MD / HTML / EPUB
+    if not success and src_ext == 'docx' and target_ext in ['md', 'html', 'epub']:
         try:
             import mammoth
             with open(in_path, 'rb') as docx_file:
@@ -1176,8 +1176,15 @@ async def convert_document(
                 else:
                     res = mammoth.convert_to_html(docx_file)
                 
-                with open(out_path, 'w', encoding='utf-8') as f:
-                    f.write(res.value)
+                if target_ext == 'epub':
+                    html_path = os.path.join(TEMP_DIR, f"{task_id}.html")
+                    with open(html_path, 'w', encoding='utf-8') as f:
+                        f.write("<html><head><meta charset='utf-8'></head><body>" + res.value + "</body></html>")
+                    import subprocess
+                    subprocess.run(["pandoc", html_path, "-o", out_path, "--to", "epub3"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                else:
+                    with open(out_path, 'w', encoding='utf-8') as f:
+                        f.write(res.value)
             
             if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
                 success = True
