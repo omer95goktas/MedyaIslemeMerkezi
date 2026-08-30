@@ -337,7 +337,7 @@ namespace MedyaIslemeMerkezi
                 using (HttpClient client = new HttpClient(handler))
                 {
                     client.Timeout = TimeSpan.FromMinutes(20);
-                      client.DefaultRequestHeaders.TransferEncodingChunked = true; // Long timeout for big conversions
+                       // Long timeout for big conversions
                     using (MultipartFormDataContent content = new MultipartFormDataContent())
                     {
                         foreach (var input in tool.FileInputs)
@@ -348,7 +348,7 @@ namespace MedyaIslemeMerkezi
                             }
                             var path = selectedFiles[input.Key];
                             var fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, 1048576, true);
-                            var sc = new StreamContent(fs);
+                            var sc = new StreamContent(fs, 1048576);
                             sc.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
                             if (tool.Endpoint == "/api/ocr-auto" && input.Key == "document") {
                                 // Skip adding it with the wrong key, the OCR block below will handle it
@@ -373,13 +373,13 @@ namespace MedyaIslemeMerkezi
                             if (docPath.EndsWith(".pdf")) {
                                 url = "https://medya.omergoktas.net/api/pdf-ocr";
                                 var fs2 = new FileStream(selectedFiles["document"], FileMode.Open, FileAccess.Read, FileShare.Read, 1048576, true);
-                                var sc2 = new StreamContent(fs2);
+                                var sc2 = new StreamContent(fs2, 1048576);
                                 sc2.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
                                 content.Add(sc2, "pdf_file", Path.GetFileName(selectedFiles["document"]));
                             } else {
                                 url = "https://medya.omergoktas.net/api/image-to-text";
                                 var fs2 = new FileStream(selectedFiles["document"], FileMode.Open, FileAccess.Read, FileShare.Read, 1048576, true);
-                                var sc2 = new StreamContent(fs2);
+                                var sc2 = new StreamContent(fs2, 1048576);
                                 sc2.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
                                 content.Add(sc2, "file", Path.GetFileName(selectedFiles["document"]));
                             }
@@ -438,6 +438,9 @@ namespace MedyaIslemeMerkezi
         static void Main()
         {
             System.Net.ServicePointManager.SecurityProtocol = (System.Net.SecurityProtocolType)3072;
+            System.Net.ServicePointManager.Expect100Continue = false;
+            System.Net.ServicePointManager.DefaultConnectionLimit = 50;
+            System.Net.ServicePointManager.UseNagleAlgorithm = false;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
