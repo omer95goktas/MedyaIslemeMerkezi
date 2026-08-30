@@ -49,11 +49,6 @@ import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.ui.platform.LocalContext
 
-
-
-
-
-
 import net.omergoktas.medyaisleme.R
 
 import net.omergoktas.medyaisleme.data.model.ToolCategory
@@ -93,6 +88,19 @@ fun MediaToolsScreen(
 
     val context = LocalContext.current
     val activity = context as? Activity
+    val scannerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartIntentSenderForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val scanResult = GmsDocumentScanningResult.fromActivityResultIntent(result.data)
+            scanResult?.pdf?.let { pdf ->
+                // Simulate success in ViewModel
+                
+                
+                viewModel.setDirectSuccess(pdf.uri, "application/pdf")
+            }
+        }
+    }
 
     val mediaTools = ToolType.entries.filter { it.category == toolCategory }
     val scrollState = rememberScrollState()
@@ -132,7 +140,7 @@ fun MediaToolsScreen(
         }
 
         AccessibleDropdown(
-            label = "ğŸ¬ Kullanmak Ä°stediÄŸiniz Medya AracÄ±nÄ± SeÃ§in:",
+            label = "🎬 Kullanmak İstediğiniz Medya Aracını Seçin:",
             options = toolOptions,
             selectedValue = selectedTool.id,
             onValueSelected = { toolId ->
@@ -172,7 +180,7 @@ fun MediaToolsScreen(
                 when (selectedTool) {
                     ToolType.VIDEO_TO_AUDIO -> {
                         FilePickerField(
-                            label = "Video DosyasÄ± SeÃ§in:",
+                            label = "Video Dosyası Seçin:",
                             mimeType = "video/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -182,21 +190,21 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         AccessibleDropdown(
-                            label = "Ã‡Ä±kÄ±ÅŸ Ses FormatÄ±:",
+                            label = "Çıkış Ses Formatı:",
                             options = listOf(
-                                DropdownOption("mp3", "MP3", "En popÃ¼ler ve evrensel ses formatÄ± (320 kbps)"),
-                                DropdownOption("wav", "WAV", "KayÄ±psÄ±z stÃ¼dyo ve ham ses kalitesi"),
-                                DropdownOption("aac", "AAC", "YÃ¼ksek verimli geliÅŸmiÅŸ ses kodlama"),
-                                DropdownOption("m4a", "M4A", "Apple ve modern cihazlar iÃ§in optimize"),
-                                DropdownOption("m4r", "M4R (iPhone Zil Sesi)", "Apple iPhone Ã¶zel zil sesi formatÄ±"),
-                                DropdownOption("flac", "FLAC", "KayÄ±psÄ±z sÄ±kÄ±ÅŸtÄ±rÄ±lmÄ±ÅŸ yÃ¼ksek kalite"),
-                                DropdownOption("alac", "ALAC", "Apple Lossless kayÄ±psÄ±z ses formatÄ±"),
-                                DropdownOption("aiff", "AIFF", "Apple stÃ¼dyo ve kayÄ±psÄ±z ham ses"),
-                                DropdownOption("opus", "OPUS", "YÃ¼ksek kaliteli ve dÃ¼ÅŸÃ¼k gecikmeli"),
-                                DropdownOption("ogg", "OGG", "AÃ§Ä±k kaynak Vorbis ses formatÄ±"),
-                                DropdownOption("ac3", "AC3 (Dolby Digital)", "Ã‡ok kanallÄ± sinema ses formatÄ±"),
-                                DropdownOption("wma", "WMA", "Windows Media Audio formatÄ±"),
-                                DropdownOption("mp2", "MP2", "MPEG Audio Layer II yayÄ±n formatÄ±")
+                                DropdownOption("mp3", "MP3", "En popüler ve evrensel ses formatı (320 kbps)"),
+                                DropdownOption("wav", "WAV", "Kayıpsız stüdyo ve ham ses kalitesi"),
+                                DropdownOption("aac", "AAC", "Yüksek verimli gelişmiş ses kodlama"),
+                                DropdownOption("m4a", "M4A", "Apple ve modern cihazlar için optimize"),
+                                DropdownOption("m4r", "M4R (iPhone Zil Sesi)", "Apple iPhone özel zil sesi formatı"),
+                                DropdownOption("flac", "FLAC", "Kayıpsız sıkıştırılmış yüksek kalite"),
+                                DropdownOption("alac", "ALAC", "Apple Lossless kayıpsız ses formatı"),
+                                DropdownOption("aiff", "AIFF", "Apple stüdyo ve kayıpsız ham ses"),
+                                DropdownOption("opus", "OPUS", "Yüksek kaliteli ve düşük gecikmeli"),
+                                DropdownOption("ogg", "OGG", "Açık kaynak Vorbis ses formatı"),
+                                DropdownOption("ac3", "AC3 (Dolby Digital)", "Çok kanallı sinema ses formatı"),
+                                DropdownOption("wma", "WMA", "Windows Media Audio formatı"),
+                                DropdownOption("mp2", "MP2", "MPEG Audio Layer II yayın formatı")
                             ),
                             selectedValue = v2aFormat,
                             onValueSelected = { viewModel.v2aFormat.value = it }
@@ -205,7 +213,7 @@ fun MediaToolsScreen(
 
                     ToolType.AUDIO_TO_AUDIO -> {
                         FilePickerField(
-                            label = "Ses DosyasÄ± SeÃ§in:",
+                            label = "Ses Dosyası Seçin:",
                             mimeType = "audio/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -215,21 +223,21 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         AccessibleDropdown(
-                            label = "DÃ¶nÃ¼ÅŸtÃ¼rÃ¼lecek Format:",
+                            label = "Dönüştürülecek Format:",
                             options = listOf(
-                                DropdownOption("mp3", "MP3", "En popÃ¼ler ve evrensel ses formatÄ± (320 kbps)"),
-                                DropdownOption("wav", "WAV", "KayÄ±psÄ±z stÃ¼dyo ve ham ses kalitesi"),
-                                DropdownOption("aac", "AAC", "YÃ¼ksek verimli geliÅŸmiÅŸ ses kodlama"),
-                                DropdownOption("m4a", "M4A", "Apple ve modern cihazlar iÃ§in optimize"),
-                                DropdownOption("m4r", "M4R (iPhone Zil Sesi)", "Apple iPhone Ã¶zel zil sesi formatÄ±"),
-                                DropdownOption("flac", "FLAC", "KayÄ±psÄ±z sÄ±kÄ±ÅŸtÄ±rÄ±lmÄ±ÅŸ yÃ¼ksek kalite"),
-                                DropdownOption("alac", "ALAC", "Apple Lossless kayÄ±psÄ±z ses formatÄ±"),
-                                DropdownOption("aiff", "AIFF", "Apple stÃ¼dyo ve kayÄ±psÄ±z ham ses"),
-                                DropdownOption("opus", "OPUS", "YÃ¼ksek kaliteli ve dÃ¼ÅŸÃ¼k gecikmeli"),
-                                DropdownOption("ogg", "OGG", "AÃ§Ä±k kaynak Vorbis ses formatÄ±"),
-                                DropdownOption("ac3", "AC3 (Dolby Digital)", "Ã‡ok kanallÄ± sinema ses formatÄ±"),
-                                DropdownOption("wma", "WMA", "Windows Media Audio formatÄ±"),
-                                DropdownOption("mp2", "MP2", "MPEG Audio Layer II yayÄ±n formatÄ±")
+                                DropdownOption("mp3", "MP3", "En popüler ve evrensel ses formatı (320 kbps)"),
+                                DropdownOption("wav", "WAV", "Kayıpsız stüdyo ve ham ses kalitesi"),
+                                DropdownOption("aac", "AAC", "Yüksek verimli gelişmiş ses kodlama"),
+                                DropdownOption("m4a", "M4A", "Apple ve modern cihazlar için optimize"),
+                                DropdownOption("m4r", "M4R (iPhone Zil Sesi)", "Apple iPhone özel zil sesi formatı"),
+                                DropdownOption("flac", "FLAC", "Kayıpsız sıkıştırılmış yüksek kalite"),
+                                DropdownOption("alac", "ALAC", "Apple Lossless kayıpsız ses formatı"),
+                                DropdownOption("aiff", "AIFF", "Apple stüdyo ve kayıpsız ham ses"),
+                                DropdownOption("opus", "OPUS", "Yüksek kaliteli ve düşük gecikmeli"),
+                                DropdownOption("ogg", "OGG", "Açık kaynak Vorbis ses formatı"),
+                                DropdownOption("ac3", "AC3 (Dolby Digital)", "Çok kanallı sinema ses formatı"),
+                                DropdownOption("wma", "WMA", "Windows Media Audio formatı"),
+                                DropdownOption("mp2", "MP2", "MPEG Audio Layer II yayın formatı")
                             ),
                             selectedValue = a2aFormat,
                             onValueSelected = { viewModel.a2aFormat.value = it }
@@ -238,7 +246,7 @@ fun MediaToolsScreen(
 
                     ToolType.VIDEO_TO_VIDEO -> {
                         FilePickerField(
-                            label = "Video DosyasÄ± SeÃ§in:",
+                            label = "Video Dosyası Seçin:",
                             mimeType = "video/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -248,13 +256,13 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         AccessibleDropdown(
-                            label = "DÃ¶nÃ¼ÅŸtÃ¼rÃ¼lecek Video FormatÄ±:",
+                            label = "Dönüştürülecek Video Formatı:",
                             options = listOf(
                                 DropdownOption("mp4", "MP4 (Evrensel Format)"),
-                                DropdownOption("gif", "GIF Animasyon (GeliÅŸmiÅŸ Ã‡Ã¶zÃ¼nÃ¼rlÃ¼k ve FPS)"),
-                                DropdownOption("mkv", "MKV FormatÄ±"),
-                                DropdownOption("webm", "WEBM FormatÄ±"),
-                                DropdownOption("avi", "AVI FormatÄ±")
+                                DropdownOption("gif", "GIF Animasyon (Gelişmiş Çözünürlük ve FPS)"),
+                                DropdownOption("mkv", "MKV Formatı"),
+                                DropdownOption("webm", "WEBM Formatı"),
+                                DropdownOption("avi", "AVI Formatı")
                             ),
                             selectedValue = v2vFormat,
                             onValueSelected = { viewModel.v2vFormat.value = it }
@@ -272,7 +280,7 @@ fun MediaToolsScreen(
                                     .padding(14.dp)
                             ) {
                                 Text(
-                                    text = "âš™ï¸ Profesyonel GIF AyarlarÄ±",
+                                    text = "⚙️ Profesyonel GIF Ayarları",
                                     style = MaterialTheme.typography.titleMedium,
                                     color = MaterialTheme.colorScheme.primary,
                                     fontWeight = FontWeight.Bold
@@ -287,7 +295,7 @@ fun MediaToolsScreen(
                                     OutlinedTextField(
                                         value = gifStart,
                                         onValueChange = { viewModel.gifStart.value = it },
-                                        label = { Text("BaÅŸlangÄ±Ã§ Saniyesi") },
+                                        label = { Text("Başlangıç Saniyesi") },
                                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                                         modifier = Modifier.weight(1f),
                                         singleLine = true,
@@ -297,7 +305,7 @@ fun MediaToolsScreen(
                                     OutlinedTextField(
                                         value = gifDuration,
                                         onValueChange = { viewModel.gifDuration.value = it },
-                                        label = { Text("SÃ¼re (Sn - Max 25)") },
+                                        label = { Text("Süre (Sn - Max 25)") },
                                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                                         modifier = Modifier.weight(1f),
                                         singleLine = true,
@@ -308,12 +316,12 @@ fun MediaToolsScreen(
                                 Spacer(modifier = Modifier.height(12.dp))
 
                                 AccessibleDropdown(
-                                    label = "GIF Ã‡Ã¶zÃ¼nÃ¼rlÃ¼ÄŸÃ¼ / Boyut:",
+                                    label = "GIF Çözünürlüğü / Boyut:",
                                     options = listOf(
-                                        DropdownOption("480", "480p (Ã–nerilen - Dengeli)"),
-                                        DropdownOption("640", "640p (GeniÅŸ Ekran - YÃ¼ksek Kalite)"),
+                                        DropdownOption("480", "480p (Önerilen - Dengeli)"),
+                                        DropdownOption("640", "640p (Geniş Ekran - Yüksek Kalite)"),
                                         DropdownOption("720", "720p (Ultra HD - Maksimum Netlik)"),
-                                        DropdownOption("320", "320p (DÃ¼ÅŸÃ¼k Boyut - HÄ±zlÄ±)"),
+                                        DropdownOption("320", "320p (Düşük Boyut - Hızlı)"),
                                         DropdownOption("240", "240p (Mini Boyut - Forum / Avatar)")
                                     ),
                                     selectedValue = gifWidth,
@@ -323,12 +331,12 @@ fun MediaToolsScreen(
                                 Spacer(modifier = Modifier.height(12.dp))
 
                                 AccessibleDropdown(
-                                    label = "Kare HÄ±zÄ± (FPS / AkÄ±cÄ±lÄ±k):",
+                                    label = "Kare Hızı (FPS / Akıcılık):",
                                     options = listOf(
-                                        DropdownOption("15", "15 FPS (Ã–nerilen - AkÄ±cÄ± & Optimize)"),
-                                        DropdownOption("24", "24 FPS (Sinematik - Ã‡ok AkÄ±cÄ±)"),
-                                        DropdownOption("30", "30 FPS (Ultra AkÄ±cÄ±)"),
-                                        DropdownOption("10", "10 FPS (Ekonomik - DÃ¼ÅŸÃ¼k Boyut)")
+                                        DropdownOption("15", "15 FPS (Önerilen - Akıcı & Optimize)"),
+                                        DropdownOption("24", "24 FPS (Sinematik - Çok Akıcı)"),
+                                        DropdownOption("30", "30 FPS (Ultra Akıcı)"),
+                                        DropdownOption("10", "10 FPS (Ekonomik - Düşük Boyut)")
                                     ),
                                     selectedValue = gifFps,
                                     onValueSelected = { viewModel.gifFps.value = it }
@@ -339,7 +347,7 @@ fun MediaToolsScreen(
 
                     ToolType.AUDIO_TO_VIDEO -> {
                         FilePickerField(
-                            label = "Ses DosyasÄ± SeÃ§in:",
+                            label = "Ses Dosyası Seçin:",
                             mimeType = "audio/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -349,28 +357,28 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         FilePickerField(
-                            label = "Kapak Resmi SeÃ§in:",
+                            label = "Kapak Resmi Seçin:",
                             mimeType = "image/*",
                             selectedUri = imageUri,
                             onUriSelected = { viewModel.imageUri.value = it },
-                            maxSizeLabel = "JPG / PNG / WEBP GÃ¶rsel"
+                            maxSizeLabel = "JPG / PNG / WEBP Görsel"
                         )
 
                         Spacer(modifier = Modifier.height(16.dp))
 
                         AccessibleDropdown(
-                            label = "3. Video Ã‡Ã¶zÃ¼nÃ¼rlÃ¼ÄŸÃ¼ & En-Boy OranÄ±:",
+                            label = "3. Video Çözünürlüğü & En-Boy Oranı:",
                             options = listOf(
-                                DropdownOption("1080p_horizontal", "â­ 1080p Full HD Yatay (1920x1080 - VarsayÄ±lan / YouTube / PC)"),
-                                DropdownOption("720p_horizontal", "ğŸ“º 720p HD Yatay (1280x720 - Standart Web / HÄ±zlÄ± Ä°ÅŸleme)"),
-                                DropdownOption("480p_horizontal", "ğŸ“± 480p SD Yatay (854x480 - KÃ¼Ã§Ã¼k Dosya Boyutu)"),
-                                DropdownOption("1440p_horizontal", "ğŸ’ 2K QHD Yatay (2560x1440 - YÃ¼ksek Kalite)"),
-                                DropdownOption("4k_horizontal", "ğŸ‘‘ 4K Ultra HD Yatay (3840x2160 - Maksimum Kalite)"),
-                                DropdownOption("1080p_vertical", "ğŸ“² 1080p Full HD Dikey (1080x1920 - Reels / Shorts / TikTok / Hikaye)"),
-                                DropdownOption("720p_vertical", "ğŸ“± 720p HD Dikey (720x1280 - HÄ±zlÄ± Dikey)"),
-                                DropdownOption("480p_vertical", "ğŸ“¦ 480p SD Dikey (480x854 - DÃ¼ÅŸÃ¼k Boyut Dikey)"),
-                                DropdownOption("1440p_vertical", "âœ¨ 2K QHD Dikey (1440x2560 - Net Dikey Video)"),
-                                DropdownOption("4k_vertical", "ğŸŒŸ 4K Ultra HD Dikey (2160x3840 - Ultra Dikey)")
+                                DropdownOption("1080p_horizontal", "⭐ 1080p Full HD Yatay (1920x1080 - Varsayılan / YouTube / PC)"),
+                                DropdownOption("720p_horizontal", "📺 720p HD Yatay (1280x720 - Standart Web / Hızlı İşleme)"),
+                                DropdownOption("480p_horizontal", "📱 480p SD Yatay (854x480 - Küçük Dosya Boyutu)"),
+                                DropdownOption("1440p_horizontal", "💎 2K QHD Yatay (2560x1440 - Yüksek Kalite)"),
+                                DropdownOption("4k_horizontal", "👑 4K Ultra HD Yatay (3840x2160 - Maksimum Kalite)"),
+                                DropdownOption("1080p_vertical", "📲 1080p Full HD Dikey (1080x1920 - Reels / Shorts / TikTok / Hikaye)"),
+                                DropdownOption("720p_vertical", "📱 720p HD Dikey (720x1280 - Hızlı Dikey)"),
+                                DropdownOption("480p_vertical", "📦 480p SD Dikey (480x854 - Düşük Boyut Dikey)"),
+                                DropdownOption("1440p_vertical", "✨ 2K QHD Dikey (1440x2560 - Net Dikey Video)"),
+                                DropdownOption("4k_vertical", "🌟 4K Ultra HD Dikey (2160x3840 - Ultra Dikey)")
                             ),
                             selectedValue = a2vResolution,
                             onValueSelected = { viewModel.a2vResolution.value = it }
@@ -379,7 +387,7 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(8.dp))
 
                         Text(
-                            text = "â„¹ï¸ HiÃ§bir ayar deÄŸiÅŸtirilmezse video otomatik olarak 1080p Full HD (1920x1080) kalitesinde Ã¼retilir. YÃ¼klediÄŸiniz gÃ¶rsel seÃ§tiÄŸiniz formata tam ekran olarak uyarlanacaktÄ±r.",
+                            text = "ℹ️ Hiçbir ayar değiştirilmezse video otomatik olarak 1080p Full HD (1920x1080) kalitesinde üretilir. Yüklediğiniz görsel seçtiğiniz formata tam ekran olarak uyarlanacaktır.",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.primary,
                             fontWeight = FontWeight.SemiBold
@@ -388,7 +396,7 @@ fun MediaToolsScreen(
 
                     ToolType.IMAGE_TO_IMAGE -> {
                         FilePickerField(
-                            label = "Resim DosyasÄ± SeÃ§in:",
+                            label = "Resim Dosyası Seçin:",
                             mimeType = "image/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -398,11 +406,11 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         AccessibleDropdown(
-                            label = "DÃ¶nÃ¼ÅŸtÃ¼rÃ¼lecek Resim FormatÄ±:",
+                            label = "Dönüştürülecek Resim Formatı:",
                             options = listOf(
                                 DropdownOption("jpg", "JPG / JPEG"),
-                                DropdownOption("png", "PNG (Åeffaf / KayÄ±psÄ±z)"),
-                                DropdownOption("webp", "WEBP (Modern Web StandardÄ±)"),
+                                DropdownOption("png", "PNG (Şeffaf / Kayıpsız)"),
+                                DropdownOption("webp", "WEBP (Modern Web Standardı)"),
                                 DropdownOption("pdf", "PDF Belgesi"),
                                 DropdownOption("ico", "ICO (Favicon)")
                             ),
@@ -413,7 +421,7 @@ fun MediaToolsScreen(
 
                     ToolType.MERGE_VIDEOS -> {
                         FilePickerField(
-                            label = "1. Video DosyasÄ±:",
+                            label = "1. Video Dosyası:",
                             mimeType = "video/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -423,7 +431,7 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         FilePickerField(
-                            label = "2. Video DosyasÄ±:",
+                            label = "2. Video Dosyası:",
                             mimeType = "video/*",
                             selectedUri = file2Uri,
                             onUriSelected = { viewModel.file2Uri.value = it },
@@ -433,7 +441,7 @@ fun MediaToolsScreen(
 
                     ToolType.MERGE_AUDIOS -> {
                         FilePickerField(
-                            label = "1. Ses DosyasÄ±:",
+                            label = "1. Ses Dosyası:",
                             mimeType = "audio/*",
                             selectedUri = file1Uri,
                             onUriSelected = { viewModel.file1Uri.value = it },
@@ -443,7 +451,7 @@ fun MediaToolsScreen(
                         Spacer(modifier = Modifier.height(16.dp))
 
                         FilePickerField(
-                            label = "2. Ses DosyasÄ±:",
+                            label = "2. Ses Dosyası:",
                             mimeType = "audio/*",
                             selectedUri = file2Uri,
                             onUriSelected = { viewModel.file2Uri.value = it },
@@ -459,9 +467,21 @@ fun MediaToolsScreen(
                 // Submit Button
                 Button(
                     onClick = {
-                        
+                        if (selectedTool == ToolType.DOCUMENT_SCANNER) {
+                            val options = GmsDocumentScannerOptions.Builder()
+                                .setGalleryImportAllowed(true)
+                                .setPageLimit(25)
+                                .setResultFormats(RESULT_FORMAT_PDF)
+                                .setScannerMode(SCANNER_MODE_FULL)
+                                .build()
+                            GmsDocumentScanning.getClient(options)
+                                .getStartScanIntent(activity!!)
+                                .addOnSuccessListener { intentSender ->
+                                    scannerLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
+                                }
+                        } else {
                             viewModel.startProcessing()
-                        
+                        }
                     },
                     enabled = !isProcessing,
                     modifier = Modifier
@@ -469,7 +489,7 @@ fun MediaToolsScreen(
                         .height(52.dp)
                         .accessibleTouchTarget()
                         .semantics {
-                            contentDescription = "${selectedTool.title} dÃ¶nÃ¼ÅŸtÃ¼rme iÅŸlemini baÅŸlat"
+                            contentDescription = "${selectedTool.title} dönüştürme işlemini başlat"
                             role = Role.Button
                         },
                     colors = ButtonDefaults.buttonColors(
@@ -479,7 +499,7 @@ fun MediaToolsScreen(
                     shape = RoundedCornerShape(8.dp)
                 ) {
                     Text(
-                        text = stringResource(R.string.btn_start_processing),
+                        text = if (selectedTool == ToolType.DOCUMENT_SCANNER) "Taray�c�y� Ba�lat" else stringResource(R.string.btn_start_processing),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold
                     )
@@ -502,7 +522,7 @@ fun MediaToolsScreen(
                                 ToolType.MERGE_AUDIOS -> "MP3"
                                 else -> "MP3"
                             }
-                            callback(selectedTool.title, "Dosya iÅŸlenemedi", srcFmt.ifBlank { "MP4" }, tgtFmt)
+                            callback(selectedTool.title, "Dosya işlenemedi", srcFmt.ifBlank { "MP4" }, tgtFmt)
                         }
                     }
                 )
@@ -510,4 +530,3 @@ fun MediaToolsScreen(
         }
     }
 }
-

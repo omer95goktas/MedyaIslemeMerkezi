@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Medya ve Belge İşleme</string>
+    <string name="app_name">Medya Belge İşleme Merkezi</string>
     <string name="slogan_text">PAYLAŞILMAYAN BİLGİ, BİLGİ DEĞİLDİR.</string>
     <string name="hero_title">Medya ve Belge İşleme Merkezine Hoş Geldiniz</string>
     <string name="hero_subtitle">Yüksek performanslı sunucu motorlarıyla medya dosyalarınızı, ofis belgelerinizi ve OCR işlemlerinizi kayıpsız yönetin.</string>
