@@ -1139,7 +1139,7 @@ async def convert_document(
         elif target_ext == "docx":
             try:
                 # Erisilebilirlik icin: PDF -> TXT -> DOCX (Linear metin akisi saglar, ekran okuyucular icin kusursuzdur)
-                import subprocess
+
                 txt_temp = os.path.join(TEMP_DIR, f"{task_id}_temp.txt")
                 subprocess.run(["pdftotext", in_path, txt_temp], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                 if os.path.exists(txt_temp):
