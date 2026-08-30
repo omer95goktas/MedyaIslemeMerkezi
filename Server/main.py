@@ -76,7 +76,7 @@ def convert_any_to_epub(in_path, out_path, title="Belge"):
         if in_path.lower().endswith(".pdf"):
             try:
                 import fitz
-import mammoth
+                import mammoth
                 doc = fitz.open(in_path)
                 for page in doc:
                     text += page.get_text() + chr(10) + chr(10)
