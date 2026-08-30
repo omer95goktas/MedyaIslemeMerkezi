@@ -1,91 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Medya ve Belge İşleme</string>
-    <string name="slogan_text">PAYLAŞILMAYAN BİLGİ, BİLGİ DEĞİLDİR.</string>
-    <string name="hero_title">Medya ve Belge İşleme Merkezine Hoş Geldiniz</string>
-    <string name="hero_subtitle">Yüksek performanslı sunucu motorlarıyla medya dosyalarınızı, ofis belgelerinizi ve OCR işlemlerinizi kayıpsız yönetin.</string>
+    <string name="app_name">Medya ve Belge Ä°ÅŸleme</string>
+    <string name="slogan_text">PAYLAÅILMAYAN BÄ°LGÄ°, BÄ°LGÄ° DEÄÄ°LDÄ°R.</string>
+    <string name="hero_title">Medya ve Belge Ä°ÅŸleme Merkezine HoÅŸ Geldiniz</string>
+    <string name="hero_subtitle">YÃ¼ksek performanslÄ± sunucu motorlarÄ±yla medya dosyalarÄ±nÄ±zÄ±, ofis belgelerinizi ve OCR iÅŸlemlerinizi kayÄ±psÄ±z yÃ¶netin.</string>
 
     <!-- Navigation & Sections -->
-    <string name="nav_home">🏠 Platform Tanıtımı &amp; Ana Sayfa</string>
-    <string name="nav_media_tools">🎬 Medya İşlemleri</string>
-    <string name="nav_doc_ocr">📄 Belge &amp; OCR İstasyonu</string>
-    <string name="nav_doc_create">✍️ Belge Oluşturucu</string>
-    <string name="nav_privacy">🔒 Gizlilik Politikası</string>
-    <string name="nav_settings">⚙️ Ayarlar &amp; Tema</string>
+    <string name="nav_home">ğŸ  Platform TanÄ±tÄ±mÄ± &amp; Ana Sayfa</string>
+    <string name="nav_media_tools">ğŸ¬ Medya Ä°ÅŸlemleri</string>
+    <string name="nav_doc_ocr">ğŸ“„ Belge &amp; OCR Ä°stasyonu</string>
+    <string name="nav_doc_create">âœï¸ Belge OluÅŸturucu</string>
+    <string name="nav_privacy">ğŸ”’ Gizlilik PolitikasÄ±</string>
+    <string name="nav_settings">âš™ï¸ Ayarlar &amp; Tema</string>
 
     <!-- Tools -->
-    <string name="tool_v2a">Videodan Sese Dönüştür</string>
-    <string name="tool_v2a_desc">Yüklediğiniz videonun sesini yüksek kalitede ayıklar (MP3, WAV, M4A, FLAC).</string>
+    <string name="tool_v2a">Videodan Sese DÃ¶nÃ¼ÅŸtÃ¼r</string>
+    <string name="tool_v2a_desc">YÃ¼klediÄŸiniz videonun sesini yÃ¼ksek kalitede ayÄ±klar (MP3, WAV, M4A, FLAC).</string>
 
-    <string name="tool_a2a">Ses Formatı Değiştir</string>
-    <string name="tool_a2a_desc">Ses kayıtlarınızı istediğiniz formata dönüştürün (MP3, WAV, AAC, OGG, FLAC).</string>
+    <string name="tool_a2a">Ses FormatÄ± DeÄŸiÅŸtir</string>
+    <string name="tool_a2a_desc">Ses kayÄ±tlarÄ±nÄ±zÄ± istediÄŸiniz formata dÃ¶nÃ¼ÅŸtÃ¼rÃ¼n (MP3, WAV, AAC, OGG, FLAC).</string>
 
-    <string name="tool_v2v">Video Formatı Değiştir &amp; GIF Yap</string>
-    <string name="tool_v2v_desc">Videolarınızı dönüştürün veya belirlediğiniz saniye aralığında yüksek kaliteli hareketli GIF yapın.</string>
+    <string name="tool_v2v">Video FormatÄ± DeÄŸiÅŸtir &amp; GIF Yap</string>
+    <string name="tool_v2v_desc">VideolarÄ±nÄ±zÄ± dÃ¶nÃ¼ÅŸtÃ¼rÃ¼n veya belirlediÄŸiniz saniye aralÄ±ÄŸÄ±nda yÃ¼ksek kaliteli hareketli GIF yapÄ±n.</string>
 
-    <string name="tool_a2v">Sesten Video Oluştur</string>
-    <string name="tool_a2v_desc">Ses kaydınıza bir kapak görseli ekleyerek sosyal medya uyumlu MP4 video üretin.</string>
+    <string name="tool_a2v">Sesten Video OluÅŸtur</string>
+    <string name="tool_a2v_desc">Ses kaydÄ±nÄ±za bir kapak gÃ¶rseli ekleyerek sosyal medya uyumlu MP4 video Ã¼retin.</string>
 
-    <string name="tool_i2i">Resim Formatı Değiştir</string>
-    <string name="tool_i2i_desc">Görsellerinizi JPG, PNG, WEBP, ICO veya PDF formatına dönüştürün.</string>
+    <string name="tool_i2i">Resim FormatÄ± DeÄŸiÅŸtir</string>
+    <string name="tool_i2i_desc">GÃ¶rsellerinizi JPG, PNG, WEBP, ICO veya PDF formatÄ±na dÃ¶nÃ¼ÅŸtÃ¼rÃ¼n.</string>
 
-    <string name="tool_vmerge">İki Videoyu Birleştir</string>
-    <string name="tool_vmerge_desc">İki ayrı videoyu peş peşe ekleyerek tek bir MP4 videosu yapar (Maksimum 2 GB).</string>
+    <string name="tool_vmerge">Ä°ki Videoyu BirleÅŸtir</string>
+    <string name="tool_vmerge_desc">Ä°ki ayrÄ± videoyu peÅŸ peÅŸe ekleyerek tek bir MP4 videosu yapar (Maksimum 2 GB).</string>
 
-    <string name="tool_amerge">İki Sesi Birleştir</string>
-    <string name="tool_amerge_desc">İki ses kaydını uç uca ekleyerek tek bir ses dosyası oluşturur.</string>
+    <string name="tool_amerge">Ä°ki Sesi BirleÅŸtir</string>
+    <string name="tool_amerge_desc">Ä°ki ses kaydÄ±nÄ± uÃ§ uca ekleyerek tek bir ses dosyasÄ± oluÅŸturur.</string>
 
-    <string name="tool_doc_convert">Belge Dönüştürücü</string>
-    <string name="tool_doc_convert_desc">Word, PDF, Markdown, EPUB, HTML, ODT, RTF, CSV ve metin dosyalarını birbirine çevirin.</string>
+    <string name="tool_doc_convert">Belge DÃ¶nÃ¼ÅŸtÃ¼rÃ¼cÃ¼</string>
+    <string name="tool_doc_convert_desc">Word, PDF, Markdown, EPUB, HTML, ODT, RTF, CSV ve metin dosyalarÄ±nÄ± birbirine Ã§evirin.</string>
 
-    <string name="tool_pdf_ocr">Taranmış PDF OCR</string>
-    <string name="tool_pdf_ocr_desc">Resim olarak taranmış PDF\'leri arama ve kopyalama yapılabilir hale getirir.</string>
+    <string name="tool_pdf_ocr">TaranmÄ±ÅŸ PDF OCR</string>
+    <string name="tool_pdf_ocr_desc">Resim olarak taranmÄ±ÅŸ PDF\'leri arama ve kopyalama yapÄ±labilir hale getirir.</string>
 
-    <string name="tool_img_ocr">Resimden Yazı Okuma (OCR)</string>
-    <string name="tool_img_ocr_desc">Fotoğraf veya taranmış resimlerdeki yazıları okuyup TXT olarak verir.</string>
+    <string name="tool_img_ocr">Resimden YazÄ± Okuma (OCR)</string>
+    <string name="tool_img_ocr_desc">FotoÄŸraf veya taranmÄ±ÅŸ resimlerdeki yazÄ±larÄ± okuyup TXT olarak verir.</string>
 
-    <string name="tool_split_pdf">PDF Sayfalarını Böl</string>
-    <string name="tool_split_pdf_desc">Çok sayfalı PDF belgelerini her sayfası ayrı PDF olacak şekilde ZIP içinde verir.</string>
+    <string name="tool_split_pdf">PDF SayfalarÄ±nÄ± BÃ¶l</string>
+    <string name="tool_split_pdf_desc">Ã‡ok sayfalÄ± PDF belgelerini her sayfasÄ± ayrÄ± PDF olacak ÅŸekilde ZIP iÃ§inde verir.</string>
 
-    <string name="tool_merge_pdf">Birden Fazla PDF\'i Birleştir</string>
-    <string name="tool_merge_pdf_desc">İki ayrı PDF belgesini tek bir PDF dosyasında birleştirir.</string>
+    <string name="tool_merge_pdf">Birden Fazla PDF\'i BirleÅŸtir</string>
+    <string name="tool_merge_pdf_desc">Ä°ki ayrÄ± PDF belgesini tek bir PDF dosyasÄ±nda birleÅŸtirir.</string>
 
-    <string name="tool_doc_create">Sıfırdan Zengin Belge Oluştur</string>
-    <string name="tool_doc_create_desc">Metninizi zengin editörde yazın; Word, PDF, Markdown veya EPUB olarak kaydedin.</string>
+    <string name="tool_doc_create">SÄ±fÄ±rdan Zengin Belge OluÅŸtur</string>
+    <string name="tool_doc_create_desc">Metninizi zengin editÃ¶rde yazÄ±n; Word, PDF, Markdown veya EPUB olarak kaydedin.</string>
 
     <!-- Buttons & Actions -->
-    <string name="btn_select_file">Dosya Seç</string>
-    <string name="btn_select_second_file">2. Dosyayı Seç</string>
-    <string name="btn_select_image">Kapak Resmi Seç</string>
-    <string name="btn_select_audio">Ses Dosyası Seç</string>
-    <string name="btn_start_processing">Dönüştürme İşlemini Başlat</string>
-    <string name="btn_new_operation">Yeni İşlem Yap</string>
+    <string name="btn_select_file">Dosya SeÃ§</string>
+    <string name="btn_select_second_file">2. DosyayÄ± SeÃ§</string>
+    <string name="btn_select_image">Kapak Resmi SeÃ§</string>
+    <string name="btn_select_audio">Ses DosyasÄ± SeÃ§</string>
+    <string name="btn_start_processing">DÃ¶nÃ¼ÅŸtÃ¼rme Ä°ÅŸlemini BaÅŸlat</string>
+    <string name="btn_new_operation">Yeni Ä°ÅŸlem Yap</string>
     <string name="btn_retry">Tekrar Dene</string>
-    <string name="btn_clear">Seçimi Temizle</string>
-    <string name="btn_open_file">İndirilen Dosyayı Aç</string>
+    <string name="btn_clear">SeÃ§imi Temizle</string>
+    <string name="btn_open_file">Ä°ndirilen DosyayÄ± AÃ§</string>
 
     <!-- Status & Messages -->
-    <string name="status_idle">Dosya seçip işlemi başlatın.</string>
-    <string name="status_uploading">Yükleniyor: %%%d</string>
-    <string name="status_server_processing">Yükleme tamamlandı, sunucu dosyayı dönüştürüyor, lütfen bekleyin…</string>
-    <string name="status_downloading">Dönüştürülen dosya cihaza indiriliyor…</string>
-    <string name="status_success">Tebrikler! İşlem başarıyla tamamlandı ve dosyanız İndirilenler klasörüne kaydedildi.</string>
-    <string name="status_error_file_size">Hata: Seçtiğiniz dosya(lar) belirlenen sınırı aşıyor!</string>
-    <string name="status_error_connection">Bağlantı hatası: Sunucuya ulaşılamadı veya zaman aşımı oluştu.</string>
-    <string name="status_error_generic">Dosya işlenirken bir sorun oluştu.</string>
+    <string name="status_idle">Dosya seÃ§ip iÅŸlemi baÅŸlatÄ±n.</string>
+    <string name="status_uploading">YÃ¼kleniyor: %%%d</string>
+    <string name="status_server_processing">YÃ¼kleme tamamlandÄ±, sunucu dosyayÄ± dÃ¶nÃ¼ÅŸtÃ¼rÃ¼yor, lÃ¼tfen bekleyinâ€¦</string>
+    <string name="status_downloading">DÃ¶nÃ¼ÅŸtÃ¼rÃ¼len dosya cihaza indiriliyorâ€¦</string>
+    <string name="status_success">Tebrikler! Ä°ÅŸlem baÅŸarÄ±yla tamamlandÄ± ve dosyanÄ±z Ä°ndirilenler klasÃ¶rÃ¼ne kaydedildi.</string>
+    <string name="status_error_file_size">Hata: SeÃ§tiÄŸiniz dosya(lar) belirlenen sÄ±nÄ±rÄ± aÅŸÄ±yor!</string>
+    <string name="status_error_connection">BaÄŸlantÄ± hatasÄ±: Sunucuya ulaÅŸÄ±lamadÄ± veya zaman aÅŸÄ±mÄ± oluÅŸtu.</string>
+    <string name="status_error_generic">Dosya iÅŸlenirken bir sorun oluÅŸtu.</string>
 
     <!-- Accessibility Labels & Descriptions -->
-    <string name="a11y_open_drawer">Gezinme çekmecesini aç</string>
-    <string name="a11y_close_drawer">Gezinme çekmecesini kapat</string>
-    <string name="a11y_slogan_banner">Paylaşılmayan bilgi, bilgi değildir.</string>
-    <string name="a11y_file_selected">Seçilen dosya: %1$s, boyut: %2$s</string>
-    <string name="a11y_no_file_selected">Henüz dosya seçilmedi</string>
-    <string name="a11y_format_selector">Çıkış formatı seçici</string>
-    <string name="a11y_progress_announcement">Yükleme durumu: yüzde %d</string>
-    <string name="a11y_success_announcement">İşlem başarıyla tamamlandı. Dosya İndirilenler klasörüne kaydedildi.</string>
-    <string name="a11y_error_announcement">İşlem sırasında hata oluştu: %s</string>
+    <string name="a11y_open_drawer">Gezinme Ã§ekmecesini aÃ§</string>
+    <string name="a11y_close_drawer">Gezinme Ã§ekmecesini kapat</string>
+    <string name="a11y_slogan_banner">PaylaÅŸÄ±lmayan bilgi, bilgi deÄŸildir.</string>
+    <string name="a11y_file_selected">SeÃ§ilen dosya: %1$s, boyut: %2$s</string>
+    <string name="a11y_no_file_selected">HenÃ¼z dosya seÃ§ilmedi</string>
+    <string name="a11y_format_selector">Ã‡Ä±kÄ±ÅŸ formatÄ± seÃ§ici</string>
+    <string name="a11y_progress_announcement">YÃ¼kleme durumu: yÃ¼zde %d</string>
+    <string name="a11y_success_announcement">Ä°ÅŸlem baÅŸarÄ±yla tamamlandÄ±. Dosya Ä°ndirilenler klasÃ¶rÃ¼ne kaydedildi.</string>
+    <string name="a11y_error_announcement">Ä°ÅŸlem sÄ±rasÄ±nda hata oluÅŸtu: %s</string>
 
     <!-- Notification Channel -->
-    <string name="channel_name">Medya İndirme Bildirimleri</string>
-    <string name="channel_description">Dönüştürülen ve oluşturulan dosyaların indirilme durumunu gösterir.</string>
+    <string name="channel_name">Medya Ä°ndirme Bildirimleri</string>
+    <string name="channel_description">DÃ¶nÃ¼ÅŸtÃ¼rÃ¼len ve oluÅŸturulan dosyalarÄ±n indirilme durumunu gÃ¶sterir.</string>
 </resources>

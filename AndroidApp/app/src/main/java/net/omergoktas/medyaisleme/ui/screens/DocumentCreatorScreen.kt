@@ -204,28 +204,50 @@ fun DocumentCreatorScreen(
                 AccessibleDropdown(
                     label = "Hızlı Biçimlendirme (HTML Etiketi Ekle):",
                     options = listOf(
-                        DropdownOption("", "Seçiniz..."),
-                        DropdownOption("b", "Kalın Metin Ekle"),
-                        DropdownOption("i", "İtalik Metin Ekle"),
-                        DropdownOption("u", "Altı Çizili Metin Ekle"),
-                        DropdownOption("h1", "Büyük Başlık Ekle"),
-                        DropdownOption("h2", "Alt Başlık Ekle"),
-                        DropdownOption("ul", "Madde İmli Liste Ekle"),
-                        DropdownOption("ol", "Numaralı Liste Ekle"),
-                        DropdownOption("p", "Paragraf Ekle")
+                                                DropdownOption("", "Seçiniz..."),
+                        DropdownOption("b", "Kalın Metin (Bold)"),
+                        DropdownOption("i", "İtalik Metin (Italic)"),
+                        DropdownOption("u", "Altı Çizili (Underline)"),
+                        DropdownOption("strike", "Üstü Çizili (Strikethrough)"),
+                        DropdownOption("h1", "Ana Başlık (H1)"),
+                        DropdownOption("h2", "Alt Başlık (H2)"),
+                        DropdownOption("h3", "Küçük Başlık (H3)"),
+                        DropdownOption("h4", "Daha Küçük Başlık (H4)"),
+                        DropdownOption("p", "Paragraf Ekle"),
+                        DropdownOption("br", "Satır Atla (BR)"),
+                        DropdownOption("hr", "Yatay Çizgi (HR)"),
+                        DropdownOption("ul", "Madde İmli Liste (UL)"),
+                        DropdownOption("ol", "Numaralı Liste (OL)"),
+                        DropdownOption("blockquote", "Alıntı Kutusu (Blockquote)"),
+                        DropdownOption("code", "Satır İçi Kod (Code)"),
+                        DropdownOption("pre", "Kod Bloğu (Pre)"),
+                        DropdownOption("a", "Bağlantı/Link (A)"),
+                        DropdownOption("img", "Resim Ekle (IMG)"),
+                        DropdownOption("table", "Basit Tablo (Table)")
                     ),
                     selectedValue = selectedFormatTag,
                     onValueSelected = { tag -> 
                         selectedFormatTag = tag
                         when (tag) {
-                            "b" -> insertTag("<b>", "</b>")
+                                                        "b" -> insertTag("<b>", "</b>")
                             "i" -> insertTag("<i>", "</i>")
                             "u" -> insertTag("<u>", "</u>")
+                            "strike" -> insertTag("<del>", "</del>")
                             "h1" -> insertTag("<h1>", "</h1>")
                             "h2" -> insertTag("<h2>", "</h2>")
+                            "h3" -> insertTag("<h3>", "</h3>")
+                            "h4" -> insertTag("<h4>", "</h4>")
+                            "p" -> insertTag("<p>", "</p>")
+                            "br" -> insertTag("<br/>\n", "")
+                            "hr" -> insertTag("<hr/>\n", "")
                             "ul" -> insertTag("<ul>\n  <li>", "</li>\n</ul>")
                             "ol" -> insertTag("<ol>\n  <li>", "</li>\n</ol>")
-                            "p" -> insertTag("<p>", "</p>")
+                            "blockquote" -> insertTag("<blockquote>\n  ", "\n</blockquote>")
+                            "code" -> insertTag("<code>", "</code>")
+                            "pre" -> insertTag("<pre>\n  ", "\n</pre>")
+                            "a" -> insertTag("<a href=\"URL_BURAYA\">", "</a>")
+                            "img" -> insertTag("<img src=\"RESIM_LINKI_BURAYA\" alt=\"Açıklama\"/>\n", "")
+                            "table" -> insertTag("<table border=\"1\">\n  <tr>\n    <th>Başlık 1</th>\n    <th>Başlık 2</th>\n  </tr>\n  <tr>\n    <td>Veri 1</td>\n    <td>Veri 2</td>\n  </tr>\n</table>\n", "")
                         }
                         selectedFormatTag = "" // reset after insert
                     }
