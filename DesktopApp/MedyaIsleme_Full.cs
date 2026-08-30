@@ -345,7 +345,7 @@ namespace MedyaIslemeMerkezi
                                 throw new Exception("Lütfen tüm dosyaları seçin: " + input.Label);
                             }
                             var path = selectedFiles[input.Key];
-                            var fs = new FileStream(path, FileMode.Open, FileAccess.Read);
+                            var fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, 1048576, true);
                             var sc = new StreamContent(fs);
                             sc.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
                             if (tool.Endpoint == "/api/ocr-auto" && input.Key == "document") {
@@ -370,13 +370,13 @@ namespace MedyaIslemeMerkezi
                             var docPath = selectedFiles["document"].ToLower();
                             if (docPath.EndsWith(".pdf")) {
                                 url = "https://medya.omergoktas.net/api/pdf-ocr";
-                                var fs2 = new FileStream(selectedFiles["document"], FileMode.Open, FileAccess.Read);
+                                var fs2 = new FileStream(selectedFiles["document"], FileMode.Open, FileAccess.Read, FileShare.Read, 1048576, true);
                                 var sc2 = new StreamContent(fs2);
                                 sc2.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
                                 content.Add(sc2, "pdf_file", Path.GetFileName(selectedFiles["document"]));
                             } else {
                                 url = "https://medya.omergoktas.net/api/image-to-text";
-                                var fs2 = new FileStream(selectedFiles["document"], FileMode.Open, FileAccess.Read);
+                                var fs2 = new FileStream(selectedFiles["document"], FileMode.Open, FileAccess.Read, FileShare.Read, 1048576, true);
                                 var sc2 = new StreamContent(fs2);
                                 sc2.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
                                 content.Add(sc2, "file", Path.GetFileName(selectedFiles["document"]));
