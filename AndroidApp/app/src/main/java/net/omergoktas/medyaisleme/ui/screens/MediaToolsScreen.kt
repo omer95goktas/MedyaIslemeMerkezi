@@ -1,5 +1,7 @@
 package net.omergoktas.medyaisleme.ui.screens
 
+import net.omergoktas.medyaisleme.data.model.ProcessingState
+
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -41,8 +43,19 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import android.app.Activity
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.IntentSenderRequest
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.ui.platform.LocalContext
+import com.google.mlkit.vision.documentscanner.GmsDocumentScannerOptions
+import com.google.mlkit.vision.documentscanner.GmsDocumentScannerOptions.RESULT_FORMAT_PDF
+import com.google.mlkit.vision.documentscanner.GmsDocumentScannerOptions.SCANNER_MODE_FULL
+import com.google.mlkit.vision.documentscanner.GmsDocumentScanning
+import com.google.mlkit.vision.documentscanner.GmsDocumentScanningResult
+
 import net.omergoktas.medyaisleme.R
-import net.omergoktas.medyaisleme.data.model.ProcessingState
+
 import net.omergoktas.medyaisleme.data.model.ToolCategory
 import net.omergoktas.medyaisleme.data.model.ToolType
 import net.omergoktas.medyaisleme.ui.accessibility.accessibleTouchTarget
@@ -77,6 +90,22 @@ fun MediaToolsScreen(
     val gifFps by viewModel.gifFps.collectAsState()
     val a2vResolution by viewModel.a2vResolution.collectAsState()
     val i2iFormat by viewModel.i2iFormat.collectAsState()
+
+    val context = LocalContext.current
+    val activity = context as? Activity
+    val scannerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartIntentSenderForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val scanResult = GmsDocumentScanningResult.fromActivityResultIntent(result.data)
+            scanResult?.pdf?.let { pdf ->
+                // Simulate success in ViewModel
+                
+                
+                viewModel.setDirectSuccess(pdf.uri, "application/pdf")
+            }
+        }
+    }
 
     val mediaTools = ToolType.entries.filter { it.category == toolCategory }
     val scrollState = rememberScrollState()
@@ -442,7 +471,23 @@ fun MediaToolsScreen(
 
                 // Submit Button
                 Button(
-                    onClick = { viewModel.startProcessing() },
+                    onClick = {
+                        if (selectedTool == ToolType.DOCUMENT_SCANNER) {
+                            val options = GmsDocumentScannerOptions.Builder()
+                                .setGalleryImportAllowed(true)
+                                .setPageLimit(25)
+                                .setResultFormats(RESULT_FORMAT_PDF)
+                                .setScannerMode(SCANNER_MODE_FULL)
+                                .build()
+                            GmsDocumentScanning.getClient(options)
+                                .getStartScanIntent(activity!!)
+                                .addOnSuccessListener { intentSender ->
+                                    scannerLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
+                                }
+                        } else {
+                            viewModel.startProcessing()
+                        }
+                    },
                     enabled = !isProcessing,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -459,7 +504,7 @@ fun MediaToolsScreen(
                     shape = RoundedCornerShape(8.dp)
                 ) {
                     Text(
-                        text = stringResource(R.string.btn_start_processing),
+                        text = if (selectedTool == ToolType.DOCUMENT_SCANNER) "Taray�c�y� Ba�lat" else stringResource(R.string.btn_start_processing),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold
                     )

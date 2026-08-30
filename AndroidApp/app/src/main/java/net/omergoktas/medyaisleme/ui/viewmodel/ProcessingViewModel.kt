@@ -56,6 +56,10 @@ class ProcessingViewModel(application: Application) : AndroidViewModel(applicati
         _processingState.value = ProcessingState.Idle
     }
 
+    fun setDirectSuccess(uri: Uri, mimeType: String) {
+        _processingState.value = ProcessingState.Success("Tarama_" + System.currentTimeMillis() + ".pdf", uri)
+    }
+
     fun startProcessing() {
         val tool = _selectedTool.value
         _processingState.value = ProcessingState.Uploading(0, 0, 0)
@@ -212,6 +216,9 @@ class ProcessingViewModel(application: Application) : AndroidViewModel(applicati
                     }
                 }
 
+                ToolType.DOCUMENT_SCANNER -> {
+                    return@launch
+                }
                 ToolType.DOCUMENT_CREATE -> {
                     val html = createDocHtml.value
                     if (html.isBlank()) {

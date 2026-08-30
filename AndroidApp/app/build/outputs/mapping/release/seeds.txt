@@ -1,0 +1,1364 @@
+androidx.core.content.FileProvider
+com.google.gson.internal.Excluder
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1
+com.google.gson.internal.bind.TypeAdapters$27
+kotlinx.coroutines.internal.StackTraceRecoveryKt
+com.google.gson.internal.bind.TypeAdapters$13
+com.google.gson.internal.bind.TypeAdapters$20
+com.google.gson.internal.bind.TypeAdapters$16
+androidx.compose.foundation.layout.LayoutWeightElement
+androidx.compose.foundation.text.modifiers.TextAnnotatedStringElement
+androidx.compose.ui.draw.PainterElement
+androidx.lifecycle.AndroidViewModel
+androidx.compose.ui.layout.OnSizeChangedModifier
+com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory$DummyTypeAdapterFactory
+com.google.gson.internal.bind.TypeAdapters$1
+androidx.compose.ui.focus.FocusPropertiesElement
+androidx.startup.InitializationProvider
+net.omergoktas.medyaisleme.data.api.ApiService
+com.google.gson.internal.bind.TypeAdapters$15
+com.google.gson.internal.sql.SqlTimestampTypeAdapter$1
+androidx.compose.foundation.gestures.ScrollableElement
+androidx.compose.animation.core.Transition$TransitionAnimationState
+androidx.compose.foundation.layout.IntrinsicWidthElement
+androidx.compose.ui.draw.DrawWithContentElement
+androidx.compose.foundation.BorderModifierNodeElement
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+androidx.lifecycle.ProcessLifecycleInitializer
+androidx.compose.ui.layout.OnGloballyPositionedElement
+androidx.lifecycle.ProcessLifecycleOwner$attach$1
+com.google.gson.internal.bind.TypeAdapters$4
+androidx.compose.foundation.gestures.DraggableElement
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt
+kotlin.coroutines.Continuation
+androidx.compose.foundation.text.modifiers.TextStringSimpleElement
+com.google.gson.Gson$FutureTypeAdapter
+androidx.core.graphics.drawable.IconCompat
+androidx.annotation.Keep
+com.google.gson.internal.bind.TypeAdapters$9
+androidx.compose.foundation.ScrollingLayoutElement
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData
+com.google.gson.internal.bind.TypeAdapters$6
+androidx.graphics.path.ConicConverter
+androidx.compose.foundation.layout.PaddingValuesElement
+com.google.gson.internal.bind.TypeAdapters$8
+androidx.compose.foundation.BackgroundElement
+androidx.compose.ui.input.rotary.RotaryInputElement
+com.google.gson.internal.bind.TypeAdapters$19
+androidx.compose.foundation.relocation.BringIntoViewRequesterElement
+androidx.compose.animation.core.AnimationState
+android.support.v4.app.RemoteActionCompatParcelizer
+androidx.compose.runtime.ParcelableSnapshotMutableIntState
+com.google.gson.internal.bind.TypeAdapters$10
+com.google.gson.reflect.TypeToken
+androidx.compose.ui.layout.LayoutElement
+androidx.compose.foundation.IndicationModifierElement
+kotlinx.coroutines.android.AndroidDispatcherFactory
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState
+androidx.compose.foundation.text.input.internal.LegacyAdaptingPlatformTextInputModifier
+androidx.compose.ui.draw.ShadowGraphicsLayerElement
+androidx.compose.foundation.layout.FillElement
+androidx.compose.material3.internal.Listener
+androidx.compose.runtime.SnapshotMutableStateImpl
+androidx.core.app.CoreComponentFactory
+androidx.lifecycle.ReportFragment$LifecycleCallbacks
+com.google.gson.internal.bind.DefaultDateTypeAdapter$1
+com.google.gson.internal.bind.TypeAdapters$3
+androidx.compose.runtime.SnapshotMutableFloatStateImpl
+okhttp3.internal.publicsuffix.PublicSuffixDatabase
+androidx.compose.foundation.MagnifierElement
+com.google.gson.internal.bind.TypeAdapters$17
+com.google.gson.internal.bind.TypeAdapters$29
+androidx.core.app.RemoteActionCompatParcelizer
+androidx.compose.runtime.ProduceStateScopeImpl
+androidx.compose.foundation.layout.WrapContentElement
+android.support.v4.graphics.drawable.IconCompatParcelizer
+androidx.compose.foundation.ClickableElement
+net.omergoktas.medyaisleme.MedyaIslemeApp
+androidx.compose.ui.input.key.KeyInputElement
+androidx.compose.ui.text.platform.ImmutableBool
+androidx.compose.ui.layout.LayoutIdElement
+androidx.compose.foundation.layout.UnspecifiedConstraintsElement
+androidx.compose.ui.text.font.AsyncFontListLoader
+androidx.compose.runtime.DerivedSnapshotState
+com.google.gson.internal.bind.TypeAdapters$5
+androidx.compose.ui.draw.DrawWithCacheElement
+androidx.compose.runtime.ParcelableSnapshotMutableLongState
+androidx.compose.runtime.SnapshotMutableIntStateImpl
+androidx.compose.ui.input.pointer.SuspendPointerInputElement
+androidx.compose.ui.graphics.BlockGraphicsLayerElement
+com.google.gson.internal.bind.TypeAdapters$21
+com.google.gson.Gson$3
+androidx.compose.foundation.layout.PaddingElement
+com.google.gson.internal.bind.TypeAdapters$14
+androidx.compose.material3.MinimumInteractiveModifier
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation
+androidx.compose.foundation.layout.SizeElement
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState
+com.google.gson.internal.bind.TypeAdapters$25
+com.google.gson.internal.bind.SerializationDelegatingTypeAdapter
+androidx.compose.ui.semantics.EmptySemanticsElement
+com.google.gson.internal.bind.TypeAdapters$7
+androidx.compose.runtime.SnapshotMutableLongStateImpl
+androidx.lifecycle.SavedStateHandlesVM
+androidx.compose.foundation.selection.SelectableElement
+androidx.graphics.path.PathIteratorPreApi34Impl
+androidx.versionedparcelable.ParcelImpl
+androidx.compose.ui.semantics.ClearAndSetSemanticsElement
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel
+androidx.compose.material3.DrawerState$offset$1
+androidx.lifecycle.ReportFragment
+androidx.compose.foundation.ScrollSemanticsElement
+androidx.profileinstaller.ProfileInstallerInitializer
+androidx.compose.ui.text.font.TypefaceResult$Async
+androidx.compose.ui.input.pointer.PointerHoverIconModifierElement
+androidx.core.graphics.drawable.IconCompatParcelizer
+androidx.core.app.RemoteActionCompat
+androidx.emoji2.text.EmojiCompatInitializer
+com.google.gson.internal.sql.SqlTimeTypeAdapter
+androidx.versionedparcelable.CustomVersionedParcelable
+androidx.compose.foundation.FocusableElement
+androidx.compose.foundation.text.handwriting.StylusHandwritingElementWithNegativePadding
+androidx.compose.ui.text.font.TypefaceResult$Immutable
+com.google.gson.internal.bind.TypeAdapters$24
+com.google.gson.internal.bind.TypeAdapters$28
+androidx.profileinstaller.ProfileInstallReceiver
+androidx.compose.runtime.ParcelableSnapshotMutableState
+com.google.gson.internal.bind.TypeAdapters$22
+androidx.compose.ui.focus.FocusRequesterElement
+androidx.compose.ui.focus.FocusOwnerImpl$modifier$2
+androidx.compose.ui.graphics.GraphicsLayerElement
+androidx.compose.animation.EnterExitTransitionElement
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback
+androidx.compose.foundation.layout.OffsetPxElement
+androidx.compose.ui.semantics.AppendedSemanticsElement
+com.google.gson.internal.bind.TypeAdapters$23
+retrofit2.Response
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel
+androidx.compose.foundation.text.modifiers.SelectableTextAnnotatedStringElement
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1
+com.google.gson.internal.bind.TypeAdapters$2
+com.google.gson.internal.sql.SqlTimeTypeAdapter$1
+com.google.gson.internal.bind.TypeAdapters$18
+com.google.gson.internal.bind.TypeAdapters$26
+com.google.gson.internal.bind.ArrayTypeAdapter$1
+com.google.gson.internal.sql.SqlDateTypeAdapter$1
+androidx.compose.ui.focus.FocusChangedElement
+androidx.compose.ui.draw.DrawBehindElement
+com.google.gson.internal.bind.TypeAdapters$11
+androidx.compose.ui.platform.DragAndDropModifierOnDragListener$modifier$1
+com.google.gson.internal.bind.TypeAdapters$12
+com.google.gson.internal.sql.SqlDateTypeAdapter
+net.omergoktas.medyaisleme.MainActivity
+androidx.compose.material3.internal.Listener: androidx.compose.material3.internal.Listener$touchExplorationListener$1 touchExplorationListener
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.StateFlow selectedTool
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: int $stable
+kotlinx.coroutines.CompletedExceptionally: int _handled$volatile
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow a2vResolution
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.runtime.MutableState value$delegate
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.FiniteAnimationSpec interruptionSpec
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow a2aFormat
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: int $stable
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _parentHandle$volatile
+kotlinx.coroutines.DispatchedCoroutine: int _decision$volatile
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+androidx.compose.runtime.snapshots.StateObjectImpl: int $stable
+kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.String label
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.TargetBasedAnimation animation
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow file2Uri
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: net.omergoktas.medyaisleme.data.repository.MediaProcessingRepository repository
+kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag$volatile
+androidx.compose.ui.text.font.TypefaceResult$Immutable: boolean cacheable
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow docFormat
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: androidx.compose.runtime.ParcelableSnapshotMutableFloatState$Companion Companion
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl$volatile
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long deqIdx$volatile
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: long playTimeNanosOffset
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: boolean isFinished
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: androidx.compose.runtime.SnapshotMutableFloatStateImpl$FloatStateStateRecord next
+kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state$volatile
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next$volatile
+androidx.compose.animation.core.AnimationState: androidx.compose.animation.core.TwoWayConverter typeConverter
+androidx.compose.animation.core.AnimationState: androidx.compose.runtime.MutableState value$delegate
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: int $stable
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: android.content.SharedPreferences prefs
+androidx.compose.ui.text.font.TypefaceResult$Immutable: java.lang.Object value
+androidx.compose.runtime.SnapshotMutableStateImpl: androidx.compose.runtime.SnapshotMutationPolicy policy
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur$volatile
+androidx.compose.ui.text.font.AsyncFontListLoader: androidx.compose.runtime.MutableState value$delegate
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow gifStart
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.SpringSpec defaultSpring
+androidx.compose.animation.core.Transition$TransitionAnimationState: boolean isSeeking
+androidx.compose.runtime.ProduceStateScopeImpl: androidx.compose.runtime.MutableState $$delegate_0
+androidx.lifecycle.AndroidViewModel: android.app.Application application
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow v2aFormat
+androidx.compose.runtime.SnapshotMutableIntStateImpl: int $stable
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object receiveSegment$volatile
+androidx.compose.ui.text.platform.ImmutableBool: boolean value
+androidx.compose.material3.internal.Listener: androidx.compose.material3.internal.Listener$switchAccessListener$1 switchAccessListener
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object bufferEndSegment$volatile
+kotlin.SafePublicationLazyImpl: java.lang.Object _value
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object tail$volatile
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: int _availablePermits$volatile
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableState value$delegate
+androidx.compose.ui.text.font.AsyncFontListLoader: androidx.compose.ui.text.font.TypefaceRequest typefaceRequest
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state$volatile
+kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size$volatile
+androidx.compose.animation.core.AnimationState: int $stable
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev$volatile
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.InfiniteTransition this$0
+androidx.compose.runtime.ParcelableSnapshotMutableState: int PolicyReferentialEquality
+androidx.compose.runtime.ParcelableSnapshotMutableState: int $stable
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: int $stable
+androidx.compose.ui.text.font.TypefaceResult$Immutable: int $stable
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow _selectedTool
+androidx.compose.runtime.ParcelableSnapshotMutableState: int PolicyStructuralEquality
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow createDocHtml
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation$volatile
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long enqIdx$volatile
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableState animationSpec$delegate
+kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus$volatile
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: int $stable
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: android.os.Parcelable$Creator CREATOR
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow gifFps
+androidx.compose.ui.text.font.AsyncFontListLoader: kotlin.jvm.functions.Function1 onCompletion
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+kotlinx.coroutines.channels.BufferedChannel: long receivers$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow i2iFormat
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: int $stable
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow createDocName
+androidx.compose.animation.core.AnimationState: long lastFrameTimeNanos
+androidx.compose.ui.text.font.AsyncFontListLoader: boolean cacheable
+androidx.compose.runtime.DerivedSnapshotState: kotlin.jvm.functions.Function0 calculation
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex$volatile
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object head$volatile
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment$volatile
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting$volatile
+androidx.compose.ui.text.font.TypefaceResult$Async: int $stable
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: kotlinx.coroutines.flow.MutableStateFlow _themeMode
+androidx.compose.animation.core.Transition$TransitionAnimationState: java.lang.String label
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.SnapshotMutationPolicy policy
+androidx.compose.runtime.snapshots.StateObjectImpl: androidx.compose.runtime.AtomicInt readerKind
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: android.os.Parcelable$Creator CREATOR
+androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.AnimationVector velocityVector
+androidx.compose.ui.text.font.AsyncFontListLoader: int $stable
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
+kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex$volatile
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.AnimationSpec animationSpec
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.SeekableTransitionState$SeekingAnimationState initialValueState
+androidx.compose.animation.core.AnimationState: long finishedTimeNanos
+androidx.compose.runtime.SnapshotMutableIntStateImpl: androidx.compose.runtime.SnapshotMutableIntStateImpl$IntStateStateRecord next
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: kotlin.jvm.functions.Function1 transitionSpec
+androidx.compose.runtime.SnapshotMutableStateImpl: int $stable
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+androidx.lifecycle.ViewModel: androidx.lifecycle.viewmodel.internal.ViewModelImpl impl
+androidx.compose.animation.core.Transition$TransitionAnimationState: boolean useOnlyInitialValue
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
+kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow gifDuration
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow createDocFormat
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableState targetValue$delegate
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.TwoWayConverter typeConverter
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: boolean startOnTheNextFrame
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated$volatile
+kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
+androidx.compose.runtime.ParcelableSnapshotMutableState: int PolicyNeverEquals
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow file1Uri
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed$volatile
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.Object targetValue
+androidx.compose.runtime.ParcelableSnapshotMutableState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+androidx.compose.material3.DrawerState$offset$1: androidx.compose.material3.DrawerState this$0
+androidx.compose.animation.core.AnimationState: androidx.compose.animation.core.AnimationVector velocityVector
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.Transition this$0
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.TwoWayConverter typeConverter
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow v2vFormat
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted$volatile
+kotlinx.coroutines.InvokeOnCancelling: int _invoked$volatile
+androidx.activity.result.IntentSenderRequest: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler$volatile
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableFloatState resetSnapValue$delegate
+androidx.compose.runtime.ProduceStateScopeImpl: kotlin.coroutines.CoroutineContext coroutineContext
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableLongState durationNanos$delegate
+androidx.compose.ui.text.font.AsyncFontListLoader: java.util.List fontList
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow gifWidth
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.TargetBasedAnimation initialValueAnimation
+kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle$volatile
+kotlin.coroutines.SafeContinuation: java.lang.Object result
+androidx.compose.runtime.ParcelableSnapshotMutableState: androidx.compose.runtime.ParcelableSnapshotMutableState$Companion Companion
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack$volatile
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer$volatile
+androidx.compose.material3.internal.Listener: androidx.compose.runtime.MutableState accessibilityEnabled$delegate
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow imageUri
+kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: androidx.concurrent.futures.AbstractResolvableFuture$Waiter next
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef$volatile
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: kotlin.jvm.functions.Function1 targetValueByState
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableState isFinished$delegate
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.Object initialValue
+androidx.compose.animation.core.AnimationState: boolean isRunning
+androidx.compose.ui.text.font.TypefaceResult$Async: androidx.compose.ui.text.font.AsyncFontListLoader current
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.StateFlow processingState
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow _processingState
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState$volatile
+androidx.lifecycle.SavedStateHandlesVM: java.util.Map handles
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.runtime.MutableState animation$delegate
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: androidx.compose.runtime.ParcelableSnapshotMutableLongState$Companion Companion
+androidx.compose.runtime.SnapshotMutableLongStateImpl: int $stable
+androidx.compose.ui.text.font.AsyncFontListLoader: androidx.compose.ui.text.font.PlatformFontLoader platformFontLoader
+kotlinx.coroutines.channels.BufferedChannel: long bufferEnd$volatile
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: kotlinx.coroutines.flow.StateFlow themeMode
+kotlinx.coroutines.CancelledContinuation: int _resumed$volatile
+androidx.compose.runtime.SnapshotMutableLongStateImpl: androidx.compose.runtime.SnapshotMutableLongStateImpl$LongStateStateRecord next
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: android.os.Parcelable$Creator CREATOR
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: androidx.compose.animation.core.Transition$DeferredAnimation this$0
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: androidx.compose.runtime.ParcelableSnapshotMutableIntState$Companion Companion
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: androidx.compose.animation.core.Transition$TransitionAnimationState animation
+kotlinx.coroutines.internal.Segment: int cleanedAndPointers$volatile
+androidx.compose.runtime.SnapshotMutableStateImpl: androidx.compose.runtime.SnapshotMutableStateImpl$StateStateRecord next
+kotlinx.coroutines.JobSupport: java.lang.Object _state$volatile
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.DerivedSnapshotState$ResultRecord first
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause$volatile
+androidx.compose.ui.text.font.AsyncFontListLoader: androidx.compose.ui.text.font.AsyncTypefaceCache asyncTypefaceCache
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.StateFlow getProcessingState()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.compose.ui.text.android.CanvasCompatS: void drawGlyphs(android.graphics.Canvas,int[],int,float[],int,int,android.graphics.fonts.Font,android.graphics.Paint)
+androidx.compose.runtime.DerivedState: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performRemoveSpaceGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.RemoveSpaceGesture,androidx.compose.ui.text.AnnotatedString,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+androidx.compose.runtime.DerivedSnapshotState: java.lang.Object getValue()
+okhttp3.TlsVersion: okhttp3.TlsVersion[] values()
+androidx.compose.runtime.SnapshotMutableStateImpl: kotlin.jvm.functions.Function1 component2()
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState[] values()
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+androidx.compose.ui.text.android.selection.Api34SegmentFinder: android.text.SegmentFinder toAndroidSegmentFinder$ui_text_release(androidx.compose.ui.text.android.selection.SegmentFinder)
+androidx.compose.material3.internal.Listener: void unregister(android.view.accessibility.AccessibilityManager)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult[] values()
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$ViewTranslationHelperMethods: void onVirtualViewTranslationResponses(androidx.compose.ui.contentcapture.AndroidContentCaptureManager,android.util.LongSparseArray)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: int getSpotShadowColor(android.view.RenderNode)
+androidx.graphics.path.PathIteratorPreApi34Impl: long createInternalPathIterator(android.graphics.Path,int,float)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void resetAnimation$animation_core_release()
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode[] values()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object mergeVideos(okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part,kotlin.coroutines.Continuation)
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: ThemeViewModel(android.app.Application)
+androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setContentDescription(android.view.ViewStructure,java.lang.CharSequence)
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+net.omergoktas.medyaisleme.data.model.ToolType: net.omergoktas.medyaisleme.data.model.ToolType[] values()
+androidx.lifecycle.ViewModel: void onCleared()
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl valueOf(java.lang.String)
+androidx.compose.ui.text.android.StaticLayoutFactoryImpl: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: void getDebuggerDisplayValue$annotations()
+androidx.compose.ui.platform.AbstractComposeView: boolean getHasComposition()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.DragAndDropManager getDragAndDropManager()
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.compose.material3.internal.Listener: java.lang.Boolean getValue()
+androidx.compose.animation.core.AnimationState: boolean isRunning()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performDeletionOnLegacyTextField-vJH6DeI(long,androidx.compose.ui.text.AnnotatedString,boolean,kotlin.jvm.functions.Function1)
+androidx.compose.runtime.MutableFloatState: float access$getValue$jd(androidx.compose.runtime.MutableFloatState)
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isToggle(android.view.autofill.AutofillValue)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper23: void destroyDisplayListData(android.view.RenderNode)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+com.google.gson.internal.bind.TypeAdapters$27: TypeAdapters$27()
+androidx.lifecycle.ReportFragment: ReportFragment()
+net.omergoktas.medyaisleme.data.model.ToolType: net.omergoktas.medyaisleme.data.model.ToolType valueOf(java.lang.String)
+com.google.gson.ReflectionAccessFilter$FilterResult: com.google.gson.ReflectionAccessFilter$FilterResult valueOf(java.lang.String)
+androidx.compose.ui.text.android.CanvasCompatR: boolean quickReject(android.graphics.Canvas,android.graphics.Path)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api23Impl: android.os.Bundle getExtras(android.view.ViewStructure)
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
+com.google.gson.internal.bind.TypeAdapters$13: TypeAdapters$13()
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus[] values()
+com.google.gson.internal.bind.TypeAdapters$28: TypeAdapters$28()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens[] values()
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
+com.google.gson.internal.bind.TypeAdapters$3: TypeAdapters$3()
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: kotlin.jvm.functions.Function1 getTargetValueByState()
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillHints(android.view.ViewStructure,java.lang.String[])
+androidx.compose.ui.platform.AndroidComposeView: void setFontFamilyResolver(androidx.compose.ui.text.font.FontFamily$Resolver)
+androidx.compose.ui.platform.AndroidViewConfigurationApi34: float getScaledHandwritingGestureLineMargin(android.view.ViewConfiguration)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isVisible(int)
+androidx.compose.foundation.Api31Impl: android.widget.EdgeEffect create(android.content.Context,android.util.AttributeSet)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getGifFps()
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineSpotShadowColor(android.view.View,int)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax valueOf(java.lang.String)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.StateFlow getSelectedTool()
+androidx.lifecycle.ViewModel: java.lang.AutoCloseable getCloseable(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.WindowInfo getWindowInfo()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object audioToVideo(okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+androidx.compose.runtime.FloatState: java.lang.Float getValue()
+kotlin.DeprecationLevel: kotlin.DeprecationLevel valueOf(java.lang.String)
+androidx.compose.runtime.MutableState: void setValue(java.lang.Object)
+androidx.compose.ui.graphics.AndroidGraphicsContext$UniqueDrawingIdApi29: long getUniqueDrawingId(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,kotlin.jvm.functions.Function1)
+androidx.compose.ui.platform.AndroidComposeView: void setShowLayoutBounds(boolean)
+androidx.compose.animation.core.AnimationState: long getFinishedTimeNanos()
+androidx.activity.EdgeToEdgeApi23: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getCreateDocFormat()
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newVirtualViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+okhttp3.internal.http2.ErrorCode: okhttp3.internal.http2.ErrorCode valueOf(java.lang.String)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.foundation.text.input.internal.CursorAnchorInfoApi33Helper: android.view.inputmethod.CursorAnchorInfo$Builder setEditorBoundsInfo(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.geometry.Rect)
+androidx.compose.ui.window.PopupLayout: int getDisplayHeight()
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.runtime.DerivedSnapshotState: java.lang.Object getDebuggerDisplayValue()
+androidx.compose.ui.platform.AndroidComposeView: void setConfigurationChangeObserver(kotlin.jvm.functions.Function1)
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: int describeContents()
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.DerivedSnapshotState$ResultRecord currentRecord(androidx.compose.runtime.DerivedSnapshotState$ResultRecord,androidx.compose.runtime.snapshots.Snapshot,boolean,kotlin.jvm.functions.Function0)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+androidx.compose.ui.platform.WrapperRenderNodeLayerHelperMethods: void onDescendantInvalidated(androidx.compose.ui.platform.AndroidComposeView)
+androidx.compose.runtime.MutableIntState: java.lang.Object component1()
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: void getLastMatrixRecalculationAnimationTime$ui_release$annotations()
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy valueOf(java.lang.String)
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection valueOf(java.lang.String)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setValue$animation_core_release(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: void setCoroutineContext(kotlin.coroutines.CoroutineContext)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
+androidx.compose.runtime.SnapshotMutableStateImpl: void getValue$annotations()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: ProcessingViewModel(android.app.Application)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsO: void focusable(android.view.View,int,boolean)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsN: void setPointerIcon(android.view.View,androidx.compose.ui.input.pointer.PointerIcon)
+kotlin.time.DurationUnit: kotlin.time.DurationUnit valueOf(java.lang.String)
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: java.lang.Object getValue()
+androidx.compose.ui.platform.AndroidComposeView: kotlin.jvm.functions.Function1 getConfigurationChangeObserver()
+androidx.compose.runtime.MutableIntState: void access$setValue$jd(androidx.compose.runtime.MutableIntState,int)
+androidx.compose.ui.platform.AndroidComposeView: long getLastMatrixRecalculationAnimationTime$ui_release()
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,android.graphics.Rect)
+androidx.compose.ui.text.font.TypefaceResult$Immutable: java.lang.Object getValue()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api29Impl: void addPageActions(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+androidx.compose.runtime.MutableIntState: void setIntValue(int)
+androidx.compose.ui.graphics.WrapperVerificationHelperMethods: void setBlendMode-GB0RdKg(android.graphics.Paint,int)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getHolderToLayoutNode()
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.DrawChildContainer getContainer()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewTextChanged(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,java.lang.CharSequence)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntSize getPopupContentSize-bOM6tXw()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api24Impl: void addSetProgressAction(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+androidx.compose.ui.window.Api33Impl: void maybeRegisterBackCallback(android.view.View,java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners get_viewTreeOwners()
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens[] values()
+net.omergoktas.medyaisleme.ui.components.NavDestination: net.omergoktas.medyaisleme.ui.components.NavDestination valueOf(java.lang.String)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand[] values()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.runtime.MutableLongState: java.lang.Object component1()
+androidx.compose.ui.platform.AbstractComposeView: void setParentCompositionContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.platform.AndroidComposeView: void set_viewTreeOwners(androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewAppeared(android.view.contentcapture.ContentCaptureSession,android.view.ViewStructure)
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection[] values()
+androidx.compose.material3.DrawerState$offset$1: java.lang.Object getValue()
+androidx.compose.ui.text.android.StaticLayoutFactory26: void setJustificationMode(android.text.StaticLayout$Builder,int)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: void getFontLoader$annotations()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: boolean isFinished$animation_core_release()
+com.google.gson.internal.bind.TypeAdapters$18: TypeAdapters$18()
+androidx.compose.ui.platform.ViewLayerContainer: void dispatchGetDisplayList()
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: void setSpotShadowColor(android.view.RenderNode,int)
+androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction[] values()
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass[] values()
+androidx.compose.material3.DrawerState$offset$1: java.lang.Float getValue()
+androidx.compose.ui.text.font.AsyncFontListLoader: java.lang.Object getValue()
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus[] values()
+com.google.gson.internal.bind.TypeAdapters$23: TypeAdapters$23()
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: void setValue(int)
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+okhttp3.logging.HttpLoggingInterceptor$Level: okhttp3.logging.HttpLoggingInterceptor$Level[] values()
+androidx.compose.ui.platform.RenderNodeApi29VerificationHelper: void setRenderEffect(android.graphics.RenderNode,androidx.compose.ui.graphics.RenderEffect)
+androidx.compose.ui.platform.AndroidComposeViewStartDragAndDropN: boolean startDragAndDrop(android.view.View,androidx.compose.ui.draganddrop.DragAndDropTransferData,androidx.compose.ui.draganddrop.ComposeDragShadowBuilder)
+androidx.compose.ui.text.font.TypefaceResult: boolean getCacheable()
+com.google.gson.internal.bind.TypeAdapters$26: TypeAdapters$26()
+androidx.compose.runtime.DerivedSnapshotState: java.lang.String toString()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.runtime.MutableIntState: void setValue(java.lang.Object)
+androidx.compose.ui.autofill.AutofillApi23Helper: void setId(android.view.ViewStructure,int,java.lang.String,java.lang.String,java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.SoftwareKeyboardController getSoftwareKeyboardController()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object imageToImage(okhttp3.MultipartBody$Part,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$ViewTranslationHelperMethods: void onCreateVirtualViewTranslationRequests(androidx.compose.ui.contentcapture.AndroidContentCaptureManager,long[],int[],java.util.function.Consumer)
+androidx.compose.runtime.MutableFloatState: java.lang.Float getValue()
+androidx.compose.runtime.MutableIntState: int getIntValue()
+androidx.compose.ui.platform.AndroidComposeViewForceDarkModeQ: void disallowForceDark(android.view.View)
+androidx.compose.runtime.IntState: java.lang.Object getValue()
+androidx.compose.runtime.snapshots.StateObjectImpl: boolean isReadIn-h_f27i8$runtime_release(int)
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult valueOf(java.lang.String)
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent[] values()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.compose.ui.platform.RenderNodeVerificationHelper24: void discardDisplayList(android.view.RenderNode)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: java.lang.Object getValue()
+androidx.compose.ui.text.font.AsyncFontListLoader: java.lang.Object load(kotlin.coroutines.Continuation)
+androidx.compose.ui.platform.ComposeView: java.lang.CharSequence getAccessibilityClassName()
+androidx.compose.ui.text.android.CanvasCompatS: void drawPatch(android.graphics.Canvas,android.graphics.NinePatch,android.graphics.RectF,android.graphics.Paint)
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor valueOf(java.lang.String)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void reset$animation_core_release()
+androidx.compose.ui.graphics.Api26Bitmap: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace$ui_graphics_release(android.graphics.Bitmap)
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void setViewTranslationCallback(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNode getRoot()
+androidx.compose.runtime.ProduceStateScopeImpl: kotlin.coroutines.CoroutineContext getCoroutineContext()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.layout.LayoutCoordinates getParentLayoutCoordinates()
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.compose.runtime.SnapshotMutableIntStateImpl: androidx.compose.runtime.snapshots.StateRecord getFirstStateRecord()
+androidx.compose.runtime.SnapshotMutableStateImpl: void prependStateRecord(androidx.compose.runtime.snapshots.StateRecord)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: void setIntValue(int)
+androidx.compose.ui.window.PopupLayout: void setPopupContentSize-fhxjrPA(androidx.compose.ui.unit.IntSize)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OwnerSnapshotObserver getSnapshotObserver()
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.compose.ui.text.android.StaticLayoutFactory33: void setLineBreakConfig(android.text.StaticLayout$Builder,int,int)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+com.google.gson.internal.bind.TypeAdapters$10: TypeAdapters$10()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.Density getDensity()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: java.lang.Float getValue()
+androidx.compose.ui.text.font.AsyncFontListLoader: void setValue(java.lang.Object)
+com.google.gson.internal.sql.SqlDateTypeAdapter$1: SqlDateTypeAdapter$1()
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: void writeToParcel(android.os.Parcel,int)
+androidx.activity.EdgeToEdgeApi28: void adjustLayoutInDisplayCutoutMode(android.view.Window)
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: void setValue(java.lang.Object)
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State[] values()
+androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType valueOf(java.lang.String)
+androidx.compose.runtime.snapshots.SnapshotMutableState: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: Transition$DeferredAnimation$DeferredAnimationData(androidx.compose.animation.core.Transition$DeferredAnimation,androidx.compose.animation.core.Transition$TransitionAnimationState,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.compose.animation.core.AnimationState: java.lang.String toString()
+androidx.compose.runtime.snapshots.SnapshotMutableState: kotlin.jvm.functions.Function1 component2()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.String getLabel()
+androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase valueOf(java.lang.String)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+com.google.gson.Gson$FutureTypeAdapter: Gson$FutureTypeAdapter()
+androidx.compose.ui.platform.AndroidComposeView: boolean getScrollCaptureInProgress$ui_release()
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getCreateDocHtml()
+androidx.compose.material3.ColorResourceHelper: long getColor-WaAFU9c(android.content.Context,int)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.Object getTargetValue$animation_core_release()
+androidx.compose.ui.platform.AndroidComposeView: void getShowLayoutBounds$annotations()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillTree getAutofillTree()
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken[] values()
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: void setLongValue(long)
+androidx.compose.ui.platform.ViewLayer: float getCameraDistancePx()
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+androidx.activity.OnBackPressedDispatcher$Api34Impl: android.window.OnBackInvokedCallback createOnBackAnimationCallback(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0)
+androidx.compose.ui.platform.AbstractComposeView: void setTransitionGroup(boolean)
+com.google.gson.internal.sql.SqlTimeTypeAdapter$1: SqlTimeTypeAdapter$1()
+androidx.activity.EdgeToEdgeApi30: void adjustLayoutInDisplayCutoutMode(android.view.Window)
+androidx.compose.ui.text.input.CursorAnchorInfoApi34Helper: android.view.inputmethod.CursorAnchorInfo$Builder addVisibleLineBounds(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.text.TextLayoutResult,androidx.compose.ui.geometry.Rect)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: void selectTool(net.omergoktas.medyaisleme.data.model.ToolType)
+androidx.compose.runtime.ParcelableSnapshotMutableState: void writeToParcel(android.os.Parcel,int)
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+kotlinx.coroutines.android.AndroidDispatcherFactory: java.lang.String hintOnError()
+androidx.compose.ui.platform.AndroidComposeView: boolean getHasPendingMeasureOrLayout()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setText(android.view.ViewStructure,java.lang.CharSequence)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority[] values()
+com.google.gson.internal.bind.TypeAdapters$12: TypeAdapters$12()
+androidx.compose.animation.core.Transition$TransitionAnimationState: java.lang.String toString()
+androidx.compose.ui.window.PopupLayout: void setParentLayoutCoordinates(androidx.compose.ui.layout.LayoutCoordinates)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getI2iFormat()
+androidx.compose.ui.graphics.layer.view.DrawChildContainer: int getChildCount()
+androidx.compose.ui.platform.MotionEventVerifierApi29: boolean isValidMotionEvent(android.view.MotionEvent,int)
+kotlin.DeprecationLevel: kotlin.DeprecationLevel[] values()
+com.google.gson.internal.bind.TypeAdapters$2: TypeAdapters$2()
+androidx.compose.ui.platform.AndroidComposeView: void setContentCaptureManager$ui_release(androidx.compose.ui.contentcapture.AndroidContentCaptureManager)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
+androidx.compose.ui.text.android.CanvasCompatQ: void drawDoubleRoundRect(android.graphics.Canvas,android.graphics.RectF,float,float,android.graphics.RectF,float,float,android.graphics.Paint)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase[] values()
+androidx.graphics.path.ConicConverter: int internalConicToQuadratics(float[],int,float[],float,float)
+androidx.compose.ui.platform.CalculateMatrixToWindowApi29: void calculateMatrixToWindow-EL8BTi8(android.view.View,float[])
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+androidx.compose.runtime.MutableIntState: int access$getValue$jd(androidx.compose.runtime.MutableIntState)
+androidx.compose.runtime.ProduceStateScope: java.lang.Object component1()
+com.google.gson.internal.bind.DefaultDateTypeAdapter$1: DefaultDateTypeAdapter$1()
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType[] values()
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+androidx.compose.ui.text.font.TypefaceResult$Async: androidx.compose.ui.text.font.AsyncFontListLoader getCurrent$ui_text_release()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performDeletion-Sb-Bc2M(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,long,boolean)
+androidx.compose.ui.text.font.AsyncFontListLoader: java.lang.Object loadWithTimeoutOrNull$ui_text_release(androidx.compose.ui.text.font.Font,kotlin.coroutines.Continuation)
+com.google.gson.internal.bind.TypeAdapters$14: TypeAdapters$14()
+androidx.compose.ui.text.platform.ImmutableBool: ImmutableBool(boolean)
+androidx.compose.foundation.text.input.internal.undo.TextEditType: androidx.compose.foundation.text.input.internal.undo.TextEditType valueOf(java.lang.String)
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object submitFeedback(okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: void startProcessing()
+androidx.compose.ui.platform.ComposeView: void setContent(kotlin.jvm.functions.Function2)
+androidx.compose.runtime.LongState: java.lang.Long getValue()
+androidx.compose.foundation.text.input.internal.CursorAnchorInfoApi34Helper: android.view.inputmethod.CursorAnchorInfo$Builder addVisibleLineBounds(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.text.TextLayoutResult,androidx.compose.ui.geometry.Rect)
+androidx.compose.ui.platform.ViewLayerVerificationHelper31: void setRenderEffect(android.view.View,androidx.compose.ui.graphics.RenderEffect)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.compose.ui.platform.AbstractComposeView: void setViewCompositionStrategy(androidx.compose.ui.platform.ViewCompositionStrategy)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: SnapshotMutableIntStateImpl(int)
+androidx.compose.ui.platform.ViewLayer: void setCameraDistancePx(float)
+androidx.compose.runtime.MutableLongState: void setValue(long)
+androidx.compose.runtime.DerivedSnapshotState: DerivedSnapshotState(kotlin.jvm.functions.Function0,androidx.compose.runtime.SnapshotMutationPolicy)
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: int describeContents()
+androidx.compose.runtime.SnapshotMutableStateImpl: androidx.compose.runtime.snapshots.StateRecord mergeRecords(androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void updateInitialValue$animation_core_release()
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: ParcelableSnapshotMutableLongState(long)
+com.google.gson.internal.bind.SerializationDelegatingTypeAdapter: SerializationDelegatingTypeAdapter()
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: void setValue(java.lang.Object)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: java.lang.Object getValue()
+androidx.compose.animation.core.AnimationState: java.lang.Object getVelocity()
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setSpotShadowColor(android.view.RenderNode,int)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: androidx.compose.ui.graphics.BlendModeColorFilter createBlendModeColorFilter(android.graphics.BlendModeColorFilter)
+androidx.compose.ui.platform.AndroidComposeView: android.view.View getView()
+androidx.compose.ui.text.font.AsyncFontListLoader: androidx.compose.ui.text.font.PlatformFontLoader access$getPlatformFontLoader$p(androidx.compose.ui.text.font.AsyncFontListLoader)
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: java.lang.Object localeSpan(androidx.compose.ui.text.intl.LocaleList)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: void setTextLocales(androidx.compose.ui.text.platform.AndroidTextPaint,androidx.compose.ui.text.intl.LocaleList)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+com.google.gson.reflect.TypeToken: TypeToken()
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption[] values()
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory$DummyTypeAdapterFactory: JsonAdapterAnnotationTypeAdapterFactory$DummyTypeAdapterFactory()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api34Impl: void notifyViewsAppeared(android.view.contentcapture.ContentCaptureSession,java.util.List)
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: void updateAnimationStates(androidx.compose.animation.core.Transition$Segment)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: androidx.compose.runtime.snapshots.StateRecord mergeRecords(androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performHandwritingGesture$foundation_release(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.HandwritingGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawDoubleRoundRect(android.graphics.Canvas,android.graphics.RectF,float[],android.graphics.RectF,float[],android.graphics.Paint)
+androidx.compose.ui.graphics.layer.ViewLayer: androidx.compose.ui.graphics.CanvasHolder getCanvasHolder()
+androidx.compose.runtime.ParcelableSnapshotMutableState: ParcelableSnapshotMutableState(java.lang.Object,androidx.compose.runtime.SnapshotMutationPolicy)
+androidx.compose.runtime.MutableIntState: void setValue(int)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax[] values()
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+kotlinx.coroutines.android.AndroidExceptionPreHandler: void handleException(kotlin.coroutines.CoroutineContext,java.lang.Throwable)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getAmbientShadowColor(android.view.RenderNode)
+net.omergoktas.medyaisleme.MedyaIslemeApp: MedyaIslemeApp()
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,int,int,int,int)
+androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+com.google.gson.internal.sql.SqlTimestampTypeAdapter$1: SqlTimestampTypeAdapter$1()
+okhttp3.internal.publicsuffix.PublicSuffixDatabase: PublicSuffixDatabase()
+androidx.compose.ui.platform.TextToolbarHelperMethods: android.view.ActionMode startActionMode(android.view.View,android.view.ActionMode$Callback,int)
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.Object getInitialValue$animation_core_release()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType[] values()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object imageToText(okhttp3.MultipartBody$Part,kotlin.coroutines.Continuation)
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent[] values()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.AnimationSpec getAnimationSpec()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performJoinOrSplitGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.JoinOrSplitGesture,androidx.compose.ui.text.AnnotatedString,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setTargetValue(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: androidx.compose.animation.core.Transition$TransitionAnimationState getAnimation()
+androidx.compose.ui.text.android.CanvasCompatQ: void enableZ(android.graphics.Canvas)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.InputModeManager getInputModeManager()
+androidx.compose.material3.internal.Listener: void onAccessibilityStateChanged(boolean)
+androidx.compose.animation.core.Transition$TransitionAnimationState: Transition$TransitionAnimationState(androidx.compose.animation.core.Transition,java.lang.Object,androidx.compose.animation.core.AnimationVector,androidx.compose.animation.core.TwoWayConverter,java.lang.String)
+androidx.compose.foundation.Api31Impl: float onPullDistance(android.widget.EdgeEffect,float,float)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.contentcapture.AndroidContentCaptureManager getContentCaptureManager$ui_release()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void updateInitialAndTargetValue$animation_core_release(java.lang.Object,java.lang.Object,androidx.compose.animation.core.FiniteAnimationSpec)
+androidx.lifecycle.ViewModel: void addCloseable(java.lang.String,java.lang.AutoCloseable)
+androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.graphics.GraphicsContext getGraphicsContext()
+androidx.compose.runtime.LongState: long getLongValue()
+androidx.lifecycle.ViewModel: void addCloseable(java.lang.AutoCloseable)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+androidx.compose.ui.graphics.layer.ViewLayer: void setCanUseCompositingLayer$ui_graphics_release(boolean)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: java.lang.Object component1()
+androidx.compose.ui.window.PopupLayout: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.runtime.MutableFloatState: void setFloatValue(float)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getV2aFormat()
+androidx.compose.ui.window.Api33Impl: android.window.OnBackInvokedCallback createBackCallback(kotlin.jvm.functions.Function0)
+androidx.compose.animation.core.AnimationState: androidx.compose.animation.core.AnimationVector getVelocityVector()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.ui.text.AnnotatedString,kotlin.jvm.functions.Function1)
+androidx.compose.runtime.MutableFloatState: kotlin.jvm.functions.Function1 component2()
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt: androidx.compose.runtime.ProvidableCompositionLocal getLocalLifecycleOwner()
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setInitialValueAnimation$animation_core_release(androidx.compose.animation.core.SeekableTransitionState$SeekingAnimationState)
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+androidx.compose.ui.text.android.CanvasCompatS: void drawPatch(android.graphics.Canvas,android.graphics.NinePatch,android.graphics.Rect,android.graphics.Paint)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performInsertionOnLegacyTextField(int,java.lang.String,kotlin.jvm.functions.Function1)
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: void setValue(float)
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorSize(long)
+androidx.compose.runtime.MutableState: java.lang.Object getValue()
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.SeekableTransitionState$SeekingAnimationState getInitialValueState$animation_core_release()
+androidx.compose.ui.platform.ViewLayer: void setInvalidated(boolean)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void setFinished$animation_core_release(boolean)
+androidx.compose.runtime.snapshots.SnapshotMutableState: java.lang.Object component1()
+androidx.compose.runtime.MutableFloatState: void setValue(java.lang.Object)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: java.lang.String toString()
+androidx.compose.ui.text.android.CanvasCompatM: void drawTextRun(android.graphics.Canvas,char[],int,int,int,int,float,float,boolean,android.graphics.Paint)
+androidx.compose.foundation.text.input.internal.Api34LegacyPerformHandwritingGestureImpl: boolean previewHandwritingGesture(androidx.compose.foundation.text.LegacyTextFieldState,androidx.compose.foundation.text.selection.TextFieldSelectionManager,android.view.inputmethod.PreviewableHandwritingGesture,android.os.CancellationSignal)
+com.google.gson.ToNumberPolicy: com.google.gson.ToNumberPolicy valueOf(java.lang.String)
+androidx.compose.runtime.ProduceStateScopeImpl: kotlin.jvm.functions.Function1 component2()
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason valueOf(java.lang.String)
+androidx.compose.runtime.DerivedState: java.lang.Object getValue()
+androidx.compose.ui.text.input.CursorAnchorInfoApi33Helper: android.view.inputmethod.CursorAnchorInfo$Builder setEditorBoundsInfo(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.geometry.Rect)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+okhttp3.logging.HttpLoggingInterceptor$Level: okhttp3.logging.HttpLoggingInterceptor$Level valueOf(java.lang.String)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: void resetForm()
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+net.omergoktas.medyaisleme.data.model.ToolCategory: net.omergoktas.medyaisleme.data.model.ToolCategory valueOf(java.lang.String)
+androidx.compose.runtime.ProduceStateScope: java.lang.Object getValue()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.compose.runtime.MutableLongState: void setLongValue(long)
+androidx.compose.runtime.ParcelableSnapshotMutableState: int describeContents()
+androidx.compose.runtime.MutableIntState: kotlin.jvm.functions.Function1 component2()
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.platform.AbstractComposeView getSubCompositionView()
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi23Helper: android.view.ViewStructure newChild(android.view.ViewStructure,int)
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutPath(android.graphics.Canvas,android.graphics.Path)
+androidx.compose.animation.core.Transition$TransitionAnimationState: java.lang.String getLabel()
+androidx.compose.material3.internal.Listener: java.lang.Object getValue()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest getRootForTest()
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: void setThemeMode(net.omergoktas.medyaisleme.data.model.ThemeMode)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void setValue$animation_core_release(java.lang.Object)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: java.lang.Integer component1()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.compose.ui.input.pointer.MotionEventHelper: long toRawOffset-dBAh8RU(android.view.MotionEvent,int)
+androidx.compose.runtime.SnapshotMutableStateImpl: void setValue(java.lang.Object)
+androidx.activity.ComponentActivity: void setContentView(android.view.View)
+androidx.activity.Api34Impl: android.window.BackEvent createOnBackEvent(float,float,float,int)
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+okhttp3.TlsVersion: okhttp3.TlsVersion valueOf(java.lang.String)
+androidx.compose.animation.core.Transition$TransitionAnimationState: java.lang.Object getTargetValue()
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillId(android.view.ViewStructure,android.view.autofill.AutofillId,int)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: void prependStateRecord(androidx.compose.runtime.snapshots.StateRecord)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isVisible(int)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: androidx.compose.runtime.snapshots.StateRecord mergeRecords(androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorPeek(long)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void updateAnimation$default(androidx.compose.animation.core.Transition$TransitionAnimationState,java.lang.Object,boolean,int,java.lang.Object)
+androidx.compose.material3.internal.Listener: void register(android.view.accessibility.AccessibilityManager)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+androidx.lifecycle.AndroidViewModel: android.app.Application getApplication()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+androidx.compose.ui.platform.AbstractComposeView: void setParentContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.text.platform.Api28Impl: android.text.style.TypefaceSpan createTypefaceSpan(android.graphics.Typeface)
+androidx.compose.ui.platform.AndroidComposeView: void setDensity(androidx.compose.ui.unit.Density)
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object splitPdf(okhttp3.MultipartBody$Part,kotlin.coroutines.Continuation)
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand[] values()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object videoToVideo(okhttp3.MultipartBody$Part,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+net.omergoktas.medyaisleme.data.model.ThemeMode: net.omergoktas.medyaisleme.data.model.ThemeMode valueOf(java.lang.String)
+androidx.compose.runtime.MutableFloatState: java.lang.Object component1()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performJoinOrSplitGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.JoinOrSplitGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.graphics.Path getManualClipPath()
+androidx.lifecycle.ViewModel: void addCloseable(java.io.Closeable)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.compose.ui.text.android.StaticLayoutFactoryDefault: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.lifecycle.AndroidViewModel: AndroidViewModel(android.app.Application)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.graphics.layer.ViewLayer: android.view.View getOwnerView()
+androidx.compose.ui.window.PopupLayout: kotlin.jvm.functions.Function2 getContent()
+com.google.gson.internal.bind.TypeAdapters$1: TypeAdapters$1()
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.compose.runtime.snapshots.StateObjectImpl: void recordReadIn-h_f27i8$runtime_release(int)
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy[] values()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow access$get_processingState$p(net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel)
+com.google.gson.ToNumberPolicy: com.google.gson.ToNumberPolicy[] values()
+androidx.compose.ui.platform.AndroidComposeView: boolean getShowLayoutBounds()
+androidx.compose.ui.platform.AbstractComposeView: void getShowLayoutBounds$annotations()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.compose.ui.text.android.CanvasCompatR: boolean quickReject(android.graphics.Canvas,float,float,float,float)
+androidx.compose.ui.window.PopupLayout: void setLayoutDirection(int)
+androidx.compose.ui.window.PopupLayout: boolean getCanCalculatePosition()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.FontFamily$Resolver getFontFamilyResolver()
+androidx.activity.Api34Impl: int swipeEdge(android.window.BackEvent)
+androidx.activity.Api34Impl: float touchX(android.window.BackEvent)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: void setValue(java.lang.Object)
+androidx.compose.foundation.text.input.internal.Api34StartStylusHandwriting: void startStylusHandwriting(android.view.inputmethod.InputMethodManager,android.view.View)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: java.lang.Float component1()
+androidx.compose.ui.platform.AbstractComposeView: boolean getShowLayoutBounds()
+androidx.compose.ui.platform.AndroidComposeView: void setLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.compose.ui.platform.AndroidComposeView: android.view.View findViewByAccessibilityIdTraversal(int)
+androidx.compose.ui.graphics.CanvasZHelper: void enableZ(android.graphics.Canvas,boolean)
+androidx.compose.ui.text.android.StaticLayoutFactory33: boolean isFallbackLineSpacingEnabled(android.text.StaticLayout)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isText(android.view.autofill.AutofillValue)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getSpotShadowColor(android.view.RenderNode)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.Autofill getAutofill()
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction[] values()
+com.google.gson.internal.sql.SqlTimeTypeAdapter: SqlTimeTypeAdapter()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isList(android.view.autofill.AutofillValue)
+androidx.compose.material3.DrawerState$offset$1: DrawerState$offset$1(androidx.compose.material3.DrawerState)
+androidx.compose.animation.core.AnimationState: long getLastFrameTimeNanos()
+androidx.compose.ui.platform.AndroidComposeView: kotlin.coroutines.CoroutineContext getCoroutineContext()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object createDocument(okhttp3.RequestBody,okhttp3.RequestBody,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+androidx.compose.runtime.ProduceStateScopeImpl: ProduceStateScopeImpl(androidx.compose.runtime.MutableState,kotlin.coroutines.CoroutineContext)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.autofill.AutofillId newAutofillId(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+androidx.compose.ui.platform.ComposeView: void getShouldCreateCompositionOnAttachedToWindow$annotations()
+androidx.compose.runtime.IntState: int access$getValue$jd(androidx.compose.runtime.IntState)
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: void setTransitionSpec(kotlin.jvm.functions.Function1)
+androidx.compose.ui.text.android.Paint29: void getTextBounds(android.graphics.Paint,java.lang.CharSequence,int,int,android.graphics.Rect)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getV2vFormat()
+androidx.compose.runtime.MutableLongState: long getLongValue()
+androidx.compose.ui.graphics.layer.ViewLayer: boolean getCanUseCompositingLayer$ui_graphics_release()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: int getAmbientShadowColor(android.view.RenderNode)
+androidx.compose.ui.window.PopupLayout: void setTestTag(java.lang.String)
+androidx.compose.animation.core.Transition$TransitionAnimationState: boolean isFinished$animation_core_release()
+androidx.core.view.WindowInsetsCompat$Impl30: boolean isVisible(int)
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode valueOf(java.lang.String)
+kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.MainCoroutineDispatcher createDispatcher(java.util.List)
+androidx.compose.ui.text.android.AndroidLayoutApi34: int[] getRangeForRect$ui_text_release(androidx.compose.ui.text.android.TextLayout,android.graphics.RectF,int,kotlin.jvm.functions.Function2)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.runtime.DerivedState: androidx.compose.runtime.DerivedState$Record getCurrentRecord()
+okhttp3.Protocol: okhttp3.Protocol valueOf(java.lang.String)
+androidx.compose.runtime.MutableState: kotlin.jvm.functions.Function1 component2()
+androidx.compose.ui.text.font.TypefaceResult$Immutable: boolean getCacheable()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void clearInitialAnimation$animation_core_release()
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.snapshots.StateRecord current(androidx.compose.runtime.snapshots.Snapshot)
+com.google.gson.internal.bind.TypeAdapters$6: TypeAdapters$6()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: SnapshotMutableLongStateImpl(long)
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.compose.ui.window.PopupLayout: android.view.View getViewRoot()
+androidx.compose.animation.core.AnimationState: AnimationState(androidx.compose.animation.core.TwoWayConverter,java.lang.Object,androidx.compose.animation.core.AnimationVector,long,long,boolean)
+com.google.gson.Strictness: com.google.gson.Strictness valueOf(java.lang.String)
+androidx.compose.ui.platform.DrawChildContainer: int getChildCount()
+androidx.activity.EdgeToEdgeApi21: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.profileinstaller.ProfileVerifier$Api33Impl: android.content.pm.PackageInfo getPackageInfo(android.content.pm.PackageManager,android.content.Context)
+androidx.compose.ui.platform.ViewLayer: long getOwnerViewId()
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,android.graphics.RectF)
+androidx.compose.runtime.DerivedSnapshotState: void getDebuggerDisplayValue$annotations()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: java.lang.Long component1()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getGifStart()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+androidx.compose.ui.text.android.CanvasCompatR: boolean quickReject(android.graphics.Canvas,android.graphics.RectF)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
+androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
+androidx.compose.ui.text.font.TypefaceResult: java.lang.Object getValue()
+com.google.gson.internal.bind.TypeAdapters$5: TypeAdapters$5()
+com.google.gson.internal.bind.TypeAdapters$15: TypeAdapters$15()
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+androidx.compose.runtime.MutableLongState: java.lang.Object getValue()
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus valueOf(java.lang.String)
+androidx.compose.runtime.MutableLongState: java.lang.Long getValue()
+androidx.startup.InitializationProvider: InitializationProvider()
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation[] values()
+androidx.compose.runtime.MutableFloatState: void access$setValue$jd(androidx.compose.runtime.MutableFloatState,float)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+net.omergoktas.medyaisleme.data.model.ThemeMode: net.omergoktas.medyaisleme.data.model.ThemeMode[] values()
+androidx.compose.runtime.FloatState: float access$getValue$jd(androidx.compose.runtime.FloatState)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+com.google.gson.ReflectionAccessFilter$FilterResult: com.google.gson.ReflectionAccessFilter$FilterResult[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidViewConfigurationApi34: float getScaledHandwritingSlop(android.view.ViewConfiguration)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteRangeGesture,androidx.compose.ui.text.AnnotatedString,kotlin.jvm.functions.Function1)
+net.omergoktas.medyaisleme.MainActivity: MainActivity()
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.material3.DrawerValue: androidx.compose.material3.DrawerValue valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.compose.runtime.MutableLongState: void access$setValue$jd(androidx.compose.runtime.MutableLongState,long)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,kotlin.jvm.functions.Function1)
+androidx.compose.runtime.SnapshotMutableStateImpl: androidx.compose.runtime.snapshots.StateRecord getFirstStateRecord()
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineAmbientShadowColor(android.view.View,int)
+com.google.gson.internal.bind.TypeAdapters$7: TypeAdapters$7()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+androidx.compose.animation.core.AnimationState: void setVelocityVector$animation_core_release(androidx.compose.animation.core.AnimationVector)
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize valueOf(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
+androidx.compose.ui.text.android.CanvasCompatQ: void disableZ(android.graphics.Canvas)
+androidx.compose.ui.platform.AndroidComposeView: void setLastMatrixRecalculationAnimationTime$ui_release(long)
+androidx.compose.runtime.FloatState: java.lang.Object getValue()
+androidx.compose.ui.text.android.BoringLayoutFactory33: boolean isFallbackLineSpacingEnabled(android.text.BoringLayout)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+com.google.gson.internal.bind.TypeAdapters$16: TypeAdapters$16()
+androidx.compose.runtime.ProduceStateScope: kotlin.jvm.functions.Function1 component2()
+androidx.compose.ui.graphics.layer.ViewLayer: void setInvalidated(boolean)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason[] values()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getImageUri()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: kotlin.jvm.functions.Function1 component2()
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void registerOnBackInvokedCallback(java.lang.Object,int,java.lang.Object)
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object mergeAudios(okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part,kotlin.coroutines.Continuation)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation valueOf(java.lang.String)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: void setValue(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AccessibilityManager getAccessibilityManager()
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setInitialValueState$animation_core_release(androidx.compose.animation.core.SeekableTransitionState$SeekingAnimationState)
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus[] values()
+androidx.compose.material3.internal.Listener: boolean access$getSwitchAccessEnabled(androidx.compose.material3.internal.Listener,android.view.accessibility.AccessibilityManager)
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+androidx.compose.runtime.MutableFloatState: java.lang.Object getValue()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: androidx.compose.runtime.snapshots.StateRecord getFirstStateRecord()
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1: FocusableKt$FocusableInNonTouchModeElement$1()
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.text.font.TypefaceHelperMethodsApi28: android.graphics.Typeface create(android.graphics.Typeface,int,boolean)
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.snapshots.StateRecord getFirstStateRecord()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: InfiniteTransition$TransitionAnimationState(androidx.compose.animation.core.InfiniteTransition,java.lang.Object,java.lang.Object,androidx.compose.animation.core.TwoWayConverter,androidx.compose.animation.core.AnimationSpec,java.lang.String)
+androidx.compose.ui.window.PopupLayout: java.lang.String getTestTag()
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State valueOf(java.lang.String)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int fallbackOnLegacyTextField(android.view.inputmethod.HandwritingGesture,kotlin.jvm.functions.Function1)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
+androidx.compose.ui.text.font.TypefaceResult$Async: TypefaceResult$Async(androidx.compose.ui.text.font.AsyncFontListLoader)
+androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems valueOf(java.lang.String)
+androidx.compose.runtime.SnapshotMutableStateImpl: java.lang.String toString()
+androidx.compose.ui.text.android.CanvasCompatO: boolean clipOutRect(android.graphics.Canvas,float,float,float,float)
+androidx.compose.ui.window.PopupLayout: android.view.WindowManager$LayoutParams getParams$ui_release()
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: ParcelableSnapshotMutableFloatState(float)
+androidx.lifecycle.ViewModel: void clear$lifecycle_viewmodel_release()
+androidx.compose.runtime.LongState: java.lang.Object getValue()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewDeleteGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+androidx.compose.runtime.ProduceStateScopeImpl: java.lang.Object component1()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: void setFloatValue(float)
+androidx.compose.ui.text.font.TypefaceResult$Immutable: TypefaceResult$Immutable(java.lang.Object,boolean,int,kotlin.jvm.internal.DefaultConstructorMarker)
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object videoToAudio(okhttp3.MultipartBody$Part,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+okhttp3.internal.http2.ErrorCode: okhttp3.internal.http2.ErrorCode[] values()
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.runtime.MutableIntState: java.lang.Object getValue()
+androidx.compose.runtime.ProduceStateScopeImpl: java.lang.Object getValue()
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
+com.google.gson.internal.bind.TypeAdapters$21: TypeAdapters$21()
+androidx.compose.ui.platform.RenderNodeVerificationHelper23: void destroyDisplayListData(android.view.RenderNode)
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: void setValue(long)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.compose.runtime.DerivedSnapshotState: void prependStateRecord(androidx.compose.runtime.snapshots.StateRecord)
+androidx.activity.ComponentActivity$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.pointer.PointerIconService getPointerIconService()
+androidx.compose.animation.core.AnimationState: void setRunning$animation_core_release(boolean)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int fallback(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.HandwritingGesture)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection[] values()
+androidx.activity.EdgeToEdgeApi26: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: void setValue(java.lang.Object)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: android.os.Bundle getExtras(android.view.ViewStructure)
+com.google.gson.internal.Excluder: Excluder()
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy valueOf(java.lang.String)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.TwoWayConverter getTypeConverter()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: kotlin.jvm.functions.Function1 component2()
+androidx.compose.ui.window.PopupLayout: void setContent(kotlin.jvm.functions.Function2)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+androidx.activity.EdgeToEdgeApi29: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.compose.ui.platform.TextToolbarHelperMethods: void invalidateContentRect(android.view.ActionMode)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api26Impl: android.view.autofill.AutofillId getAutofillId(android.view.View)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.View)
+androidx.lifecycle.SavedStateHandlesVM: java.util.Map getHandles()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.TextToolbar getTextToolbar()
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: java.lang.Object component1()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken valueOf(java.lang.String)
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: void setValue(java.lang.Object)
+androidx.compose.runtime.SnapshotMutableStateImpl: void getDebuggerDisplayValue$annotations()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void updateValues$animation_core_release(java.lang.Object,java.lang.Object,androidx.compose.animation.core.AnimationSpec)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isDate(android.view.autofill.AutofillValue)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setDurationNanos$animation_core_release(long)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void performSelectionOnLegacyTextField-8ffj60Q(long,androidx.compose.foundation.text.selection.TextFieldSelectionManager,kotlin.jvm.functions.Function1)
+androidx.core.content.FileProvider: FileProvider()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object documentConvert(okhttp3.MultipartBody$Part,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+com.google.gson.internal.bind.TypeAdapters$25: TypeAdapters$25()
+androidx.compose.ui.text.android.CanvasCompatQ: void drawColor(android.graphics.Canvas,int,android.graphics.BlendMode)
+androidx.compose.material3.internal.Listener: Listener(boolean,boolean)
+androidx.compose.material3.internal.Listener: void setAccessibilityEnabled(boolean)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNodeDrawScope getSharedDrawScope()
+androidx.compose.material3.internal.Listener$Api33Impl: void removeAccessibilityServicesStateChangeListener(android.view.accessibility.AccessibilityManager,android.view.accessibility.AccessibilityManager$AccessibilityServicesStateChangeListener)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: int getDebuggerDisplayValue()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.window.PopupLayout: void setPositionProvider(androidx.compose.ui.window.PopupPositionProvider)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectRangeGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setTextStyle(android.view.ViewStructure,float,int,int,int)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performRemoveSpaceGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.RemoveSpaceGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: SnapshotMutableFloatStateImpl(float)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setAnimationSpec(androidx.compose.animation.core.FiniteAnimationSpec)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void setTargetValue$animation_core_release(java.lang.Object)
+com.google.gson.internal.bind.ArrayTypeAdapter$1: ArrayTypeAdapter$1()
+androidx.graphics.path.PathIteratorPreApi34Impl: boolean internalPathIteratorHasNext(long)
+androidx.compose.runtime.MutableLongState: long access$getValue$jd(androidx.compose.runtime.MutableLongState)
+androidx.compose.ui.platform.AndroidComposeView: void setOnViewTreeOwnersAvailable(kotlin.jvm.functions.Function1)
+androidx.compose.ui.autofill.AutofillApi23Helper: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.compose.runtime.IntState: int getIntValue()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getGifDuration()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.Placeable$PlacementScope getPlacementScope()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.window.PopupPositionProvider getPositionProvider()
+androidx.compose.foundation.text.input.internal.LocaleListHelper: void setHintLocales(android.view.inputmethod.EditorInfo,androidx.compose.ui.text.intl.LocaleList)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setResetSnapValue$animation_core_release(float)
+androidx.compose.ui.platform.ViewLayer: long getLayerId()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidViewsHandler getAndroidViewsHandler$ui_release()
+androidx.compose.runtime.snapshots.SnapshotMutableState: void setValue(java.lang.Object)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawColor(android.graphics.Canvas,long,android.graphics.BlendMode)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: boolean previewHandwritingGesture$foundation_release(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.PreviewableHandwritingGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager,android.os.CancellationSignal)
+androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction valueOf(java.lang.String)
+kotlin.random.Random: Random()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: androidx.compose.runtime.snapshots.StateRecord getFirstStateRecord()
+androidx.compose.animation.core.AnimationState: androidx.compose.animation.core.TwoWayConverter getTypeConverter()
+androidx.compose.animation.core.AnimationState: void setFinishedTimeNanos$animation_core_release(long)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+androidx.compose.ui.platform.AndroidComposeViewAssistHelperMethodsO: void setClassName(android.view.ViewStructure,android.view.View)
+androidx.compose.ui.text.android.CanvasCompatM: void drawTextRun(android.graphics.Canvas,java.lang.CharSequence,int,int,int,int,float,float,boolean,android.graphics.Paint)
+androidx.compose.runtime.MutableLongState: void setValue(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: net.omergoktas.medyaisleme.data.repository.MediaProcessingRepository access$getRepository$p(net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel)
+androidx.compose.ui.text.font.TypefaceResult$Immutable: TypefaceResult$Immutable(java.lang.Object,boolean)
+androidx.compose.ui.autofill.AutofillCallback: void register(androidx.compose.ui.autofill.AndroidAutofill)
+androidx.compose.runtime.IntState: java.lang.Integer getValue()
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult valueOf(java.lang.String)
+com.google.gson.internal.bind.TypeAdapters$11: TypeAdapters$11()
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.AndroidComposeView getOwnerView()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority[] values()
+androidx.compose.ui.graphics.layer.OutlineVerificationHelper: void setPath(android.graphics.Outline,androidx.compose.ui.graphics.Path)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getA2aFormat()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+com.google.gson.Strictness: com.google.gson.Strictness[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
+androidx.compose.ui.text.android.StaticLayoutFactory23: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: java.lang.Integer getValue()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: java.lang.Object getValue()
+androidx.compose.runtime.MutableLongState: kotlin.jvm.functions.Function1 component2()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getCreateDocName()
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getA2vResolution()
+androidx.compose.foundation.text.input.internal.EditorInfoApi34: void setHandwritingGestures(android.view.inputmethod.EditorInfo)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setClassName(android.view.ViewStructure,java.lang.String)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void onPlayTimeChanged$animation_core_release(long,boolean)
+androidx.compose.ui.text.font.AsyncFontListLoader: void setCacheable$ui_text_release(boolean)
+androidx.compose.ui.window.PopupLayout: void setParentLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: java.lang.Object getValue()
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: void writeToParcel(android.os.Parcel,int)
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: void setValue(float)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawColor(android.graphics.Canvas,long)
+kotlinx.coroutines.android.AndroidDispatcherFactory: int getLoadPriority()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.runtime.SnapshotMutableStateImpl: java.lang.Object getValue()
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight[] values()
+androidx.compose.material3.internal.Listener: boolean getSwitchAccessEnabled(android.view.accessibility.AccessibilityManager)
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.TargetBasedAnimation getAnimation()
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: kotlin.jvm.functions.Function1 getTransitionSpec()
+kotlin.time.DurationUnit: kotlin.time.DurationUnit[] values()
+androidx.compose.foundation.text.input.internal.undo.TextEditType: androidx.compose.foundation.text.input.internal.undo.TextEditType[] values()
+androidx.compose.runtime.MutableFloatState: float getFloatValue()
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+androidx.compose.ui.graphics.Api26Bitmap: android.graphics.Bitmap createBitmap-x__-hDU$ui_graphics_release(int,int,int,boolean,androidx.compose.ui.graphics.colorspace.ColorSpace)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: long getLongValue()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: java.lang.Object component1()
+androidx.lifecycle.ProcessLifecycleOwner$Api29Impl: void registerActivityLifecycleCallbacks(android.app.Activity,android.app.Application$ActivityLifecycleCallbacks)
+com.google.gson.internal.bind.TypeAdapters$29: TypeAdapters$29()
+androidx.compose.runtime.MutableState: java.lang.Object component1()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: androidx.compose.animation.core.TargetBasedAnimation getAnimation()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void updateTargetValue$animation_core_release(java.lang.Object,androidx.compose.animation.core.FiniteAnimationSpec)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority valueOf(java.lang.String)
+com.google.gson.Gson$3: Gson$3()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: int getIntValue()
+androidx.compose.ui.platform.AndroidComposeView: long getMeasureIteration()
+androidx.profileinstaller.ProfileInstallerInitializer$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.core.app.NotificationCompat$BubbleMetadata$Api30Impl: android.app.Notification$BubbleMetadata toPlatform(androidx.core.app.NotificationCompat$BubbleMetadata)
+androidx.compose.runtime.ProduceStateScopeImpl: java.lang.Object awaitDispose(kotlin.jvm.functions.Function0,kotlin.coroutines.Continuation)
+androidx.compose.runtime.snapshots.SnapshotMutableState: java.lang.Object getValue()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: java.lang.Object getValue()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: java.lang.Object getValue()
+androidx.compose.runtime.SnapshotMutableStateImpl: java.lang.Object component1()
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performHandwritingGesture$foundation_release(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.HandwritingGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi23Helper: int addChildCount(android.view.ViewStructure,int)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.compose.ui.platform.AbstractComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+com.google.gson.internal.bind.TypeAdapters$8: TypeAdapters$8()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object mergePdfs(okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part,kotlin.coroutines.Continuation)
+androidx.compose.ui.platform.AndroidComposeView: void setAccessibilityEventBatchIntervalMillis(long)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.semantics.SemanticsOwner getSemanticsOwner()
+androidx.compose.ui.text.font.TypefaceResult$Async: java.lang.Object getValue()
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.text.font.FontWeightAdjustmentHelperApi31: int fontWeightAdjustment(android.content.Context)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int toTextGranularity-NUwxegE(int)
+androidx.compose.material3.internal.Listener$Api33Impl: void addAccessibilityServicesStateChangeListener(android.view.accessibility.AccessibilityManager,android.view.accessibility.AccessibilityManager$AccessibilityServicesStateChangeListener)
+androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior: androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboardManager getClipboardManager()
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: java.lang.Float getValue()
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getLayoutNodeToHolder()
+androidx.compose.ui.text.font.AsyncFontListLoader: AsyncFontListLoader(java.util.List,java.lang.Object,androidx.compose.ui.text.font.TypefaceRequest,androidx.compose.ui.text.font.AsyncTypefaceCache,kotlin.jvm.functions.Function1,androidx.compose.ui.text.font.PlatformFontLoader)
+androidx.compose.animation.core.AnimationState: AnimationState(androidx.compose.animation.core.TwoWayConverter,java.lang.Object,androidx.compose.animation.core.AnimationVector,long,long,boolean,int,kotlin.jvm.internal.DefaultConstructorMarker)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.compose.runtime.SnapshotMutableLongStateImpl: java.lang.Long getValue()
+com.google.gson.internal.sql.SqlDateTypeAdapter: SqlDateTypeAdapter()
+androidx.tracing.TraceApi29Impl: boolean isEnabled()
+kotlin.collections.AbstractMutableList: AbstractMutableList()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void setAnimation$animation_core_release(androidx.compose.animation.core.TargetBasedAnimation)
+androidx.compose.runtime.SnapshotMutableIntStateImpl: java.lang.String toString()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus valueOf(java.lang.String)
+androidx.profileinstaller.ProfileInstallerInitializer$Choreographer16Impl: void postFrameCallback(java.lang.Runnable)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+androidx.compose.material3.MinimumInteractiveModifier: MinimumInteractiveModifier()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void updateAnimation(java.lang.Object,boolean)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performInsertGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.InsertGesture,androidx.compose.ui.platform.ViewConfiguration,kotlin.jvm.functions.Function1)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.animation.core.Transition$TransitionAnimationState: void seekTo$animation_core_release(long)
+androidx.compose.ui.platform.AbstractComposeView: void setPreviousAttachedWindowToken(android.os.IBinder)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void skipToEnd$animation_core_release()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: float getFloatValue()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performSelectGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.SelectGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: kotlinx.coroutines.flow.StateFlow getThemeMode()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.Font$ResourceLoader getFontLoader()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.LayoutDirection getLayoutDirection()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+androidx.compose.runtime.SnapshotMutableIntStateImpl: androidx.compose.runtime.snapshots.StateRecord mergeRecords(androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord)
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode[] values()
+androidx.compose.animation.core.Transition$TransitionAnimationState: long getDurationNanos$animation_core_release()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.focus.FocusOwner getFocusOwner()
+androidx.activity.OnBackPressedDispatcher$Api33Impl: android.window.OnBackInvokedCallback createOnBackInvokedCallback(kotlin.jvm.functions.Function0)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setAmbientShadowColor(android.view.RenderNode,int)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: void setShowLayoutBounds(boolean)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillType(android.view.ViewStructure,int)
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState[] values()
+androidx.compose.runtime.SnapshotMutableStateImpl: SnapshotMutableStateImpl(java.lang.Object,androidx.compose.runtime.SnapshotMutationPolicy)
+com.google.gson.internal.bind.TypeAdapters$22: TypeAdapters$22()
+androidx.compose.material3.DrawerValue: androidx.compose.material3.DrawerValue[] values()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setAnimation(androidx.compose.animation.core.TargetBasedAnimation)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isTypeVisible(int)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void onPlayTimeChanged$animation_core_release(long)
+androidx.compose.ui.text.platform.ImmutableBool: java.lang.Boolean getValue()
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace(android.graphics.ColorSpace)
+androidx.compose.runtime.MutableIntState: java.lang.Integer getValue()
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.DerivedState$Record getCurrentRecord()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performInsertGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.InsertGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,androidx.compose.ui.platform.ViewConfiguration)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper: void setRenderEffect(android.graphics.RenderNode,androidx.compose.ui.graphics.RenderEffect)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: boolean previewHandwritingGesture$foundation_release(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.PreviewableHandwritingGesture,androidx.compose.foundation.text.input.internal.TextLayoutState,android.os.CancellationSignal)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.hapticfeedback.HapticFeedback getHapticFeedBack()
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction valueOf(java.lang.String)
+androidx.compose.ui.text.android.CanvasCompatQ: void drawTextRun(android.graphics.Canvas,android.graphics.text.MeasuredText,int,int,int,int,float,float,boolean,android.graphics.Paint)
+androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior: androidx.compose.foundation.text.input.internal.undo.TextFieldEditUndoBehavior[] values()
+androidx.compose.runtime.ProduceStateScope: void setValue(java.lang.Object)
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorRawSize(long)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: void previewSelectRangeGesture(androidx.compose.foundation.text.LegacyTextFieldState,android.view.inputmethod.SelectRangeGesture,androidx.compose.foundation.text.selection.TextFieldSelectionManager)
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent valueOf(java.lang.String)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: void prependStateRecord(androidx.compose.runtime.snapshots.StateRecord)
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
+androidx.compose.material.ripple.RippleHostView: void setRippleState$lambda$2(androidx.compose.material.ripple.RippleHostView)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getFile2Uri()
+androidx.compose.runtime.DerivedSnapshotState: androidx.compose.runtime.snapshots.StateRecord mergeRecords(androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord,androidx.compose.runtime.snapshots.StateRecord)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.scrollcapture.ScrollCapture: void onScrollCaptureSearch(android.view.View,androidx.compose.ui.semantics.SemanticsOwner,kotlin.coroutines.CoroutineContext,java.util.function.Consumer)
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: java.lang.Long getValue()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners getViewTreeOwners()
+androidx.compose.ui.text.android.CanvasCompatQ: void drawRenderNode(android.graphics.Canvas,android.graphics.RenderNode)
+androidx.compose.material3.internal.Listener: boolean getAccessibilityEnabled()
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ViewConfiguration getViewConfiguration()
+androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
+androidx.compose.runtime.ProduceStateScope: java.lang.Object awaitDispose(kotlin.jvm.functions.Function0,kotlin.coroutines.Continuation)
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.animation.core.AnimationState: void setValue$animation_core_release(java.lang.Object)
+androidx.compose.animation.core.AnimationState: java.lang.Object getValue()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.TwoWayConverter getTypeConverter()
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: void setTargetValueByState(kotlin.jvm.functions.Function1)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: android.graphics.BlendModeColorFilter BlendModeColorFilter-xETnrds(long,int)
+androidx.graphics.path.PathIteratorPreApi34Impl: void destroyInternalPathIterator(long)
+androidx.compose.ui.platform.ViewLayer$UniqueDrawingIdApi29: long getUniqueDrawingId(android.view.View)
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorNext(long,float[],int)
+androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems[] values()
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+com.google.gson.internal.bind.TypeAdapters$24: TypeAdapters$24()
+androidx.compose.ui.text.platform.ImmutableBool: java.lang.Object getValue()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidAccessibilityManager getAccessibilityManager()
+androidx.compose.runtime.SnapshotMutableFloatStateImpl: java.lang.String toString()
+com.google.gson.internal.bind.TypeAdapters$4: TypeAdapters$4()
+androidx.activity.Api34Impl: float touchY(android.window.BackEvent)
+net.omergoktas.medyaisleme.data.model.ToolCategory: net.omergoktas.medyaisleme.data.model.ToolCategory[] values()
+androidx.compose.material.ripple.RippleHostView: void setRippleState(boolean)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getDocFormat()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: void writeToParcel(android.os.Parcel,int)
+androidx.compose.runtime.LongState: long access$getValue$jd(androidx.compose.runtime.LongState)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.input.TextInputService getTextInputService()
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection valueOf(java.lang.String)
+androidx.compose.runtime.SnapshotMutableStateImpl: androidx.compose.runtime.SnapshotMutationPolicy getPolicy()
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand valueOf(java.lang.String)
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.modifier.ModifierLocalManager getModifierLocalManager()
+androidx.compose.runtime.SnapshotMutableIntStateImpl: void setValue(int)
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object audioToAudio(okhttp3.MultipartBody$Part,okhttp3.RequestBody,kotlin.coroutines.Continuation)
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState: void setInitialValue$animation_core_release(java.lang.Object)
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: java.lang.Integer getValue()
+androidx.compose.ui.autofill.AutofillCallback: void unregister(androidx.compose.ui.autofill.AndroidAutofill)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi26Helper: java.lang.CharSequence textValue(android.view.autofill.AutofillValue)
+androidx.compose.runtime.SnapshotMutableStateImpl: java.lang.Object getDebuggerDisplayValue()
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.runtime.ProduceStateScope: kotlin.coroutines.CoroutineContext getCoroutineContext()
+androidx.compose.runtime.SnapshotMutableIntStateImpl: void prependStateRecord(androidx.compose.runtime.snapshots.StateRecord)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle[] values()
+androidx.compose.animation.core.Transition$DeferredAnimation$DeferredAnimationData: java.lang.Object getValue()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.window.PopupLayout: int getDisplayWidth()
+com.google.gson.internal.bind.TypeAdapters$17: TypeAdapters$17()
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.LayoutDirection getParentLayoutDirection()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.compose.animation.core.Transition$TransitionAnimationState: java.lang.Object getValue()
+androidx.compose.ui.platform.ComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: android.graphics.ColorSpace androidColorSpace(androidx.compose.ui.graphics.colorspace.ColorSpace)
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: ParcelableSnapshotMutableIntState(int)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void resetAnimationValue$animation_core_release(float)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle valueOf(java.lang.String)
+androidx.compose.material.ripple.UnprojectedRipple$MRadiusHelper: void setRadius(android.graphics.drawable.RippleDrawable,int)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper28: void setAmbientShadowColor(android.view.RenderNode,int)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ClipboardManager getClipboardManager()
+androidx.compose.runtime.SnapshotMutableIntStateImpl: kotlin.jvm.functions.Function1 component2()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi26Helper: android.view.autofill.AutofillId getAutofillId(android.view.ViewStructure)
+androidx.compose.ui.text.font.TypefaceResult$Async: boolean getCacheable()
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent valueOf(java.lang.String)
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewsDisappeared(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long[])
+androidx.compose.foundation.text.input.internal.Api34LegacyPerformHandwritingGestureImpl: void performHandwritingGesture(androidx.compose.foundation.text.LegacyTextFieldState,androidx.compose.foundation.text.selection.TextFieldSelectionManager,android.view.inputmethod.HandwritingGesture,androidx.compose.ui.platform.ViewConfiguration,java.util.concurrent.Executor,java.util.function.IntConsumer,kotlin.jvm.functions.Function1)
+androidx.compose.ui.text.font.AsyncFontListLoader: boolean getCacheable$ui_text_release()
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: int describeContents()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+com.google.gson.internal.bind.TypeAdapters$20: TypeAdapters$20()
+net.omergoktas.medyaisleme.data.api.ApiService: java.lang.Object pdfOcr(okhttp3.MultipartBody$Part,kotlin.coroutines.Continuation)
+androidx.compose.runtime.FloatState: float getFloatValue()
+okhttp3.Protocol: okhttp3.Protocol[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.text.android.StaticLayoutFactory28: void setUseLineSpacingFromFallbacks(android.text.StaticLayout$Builder,boolean)
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+kotlin.collections.AbstractList: AbstractList()
+com.google.gson.internal.bind.TypeAdapters$19: TypeAdapters$19()
+androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType[] values()
+androidx.compose.animation.core.AnimationState: void setLastFrameTimeNanos$animation_core_release(long)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy[] values()
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void clearViewTranslationCallback(android.view.View)
+androidx.compose.ui.graphics.layer.RenderNodeVerificationHelper24: void discardDisplayList(android.view.RenderNode)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getGifWidth()
+androidx.compose.foundation.Api31Impl: float getDistance(android.widget.EdgeEffect)
+androidx.compose.foundation.text.input.internal.HandwritingGestureApi34: int performDeleteGesture(androidx.compose.foundation.text.input.internal.TransformedTextFieldState,android.view.inputmethod.DeleteGesture,androidx.compose.foundation.text.input.internal.TextLayoutState)
+androidx.compose.ui.platform.AbstractComposeView: void getDisposeViewCompositionStrategy$annotations()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+androidx.activity.Api34Impl: float progress(android.window.BackEvent)
+androidx.compose.runtime.SnapshotMutableLongStateImpl: void setValue(long)
+net.omergoktas.medyaisleme.ui.viewmodel.ProcessingViewModel: kotlinx.coroutines.flow.MutableStateFlow getFile1Uri()
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens[] values()
+androidx.compose.runtime.DerivedSnapshotState: java.lang.String displayValue()
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy[] values()
+androidx.compose.runtime.MutableFloatState: void setValue(float)
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+net.omergoktas.medyaisleme.ui.components.NavDestination: net.omergoktas.medyaisleme.ui.components.NavDestination[] values()
+androidx.compose.animation.core.Transition$TransitionAnimationState: androidx.compose.animation.core.FiniteAnimationSpec getAnimationSpec()
+net.omergoktas.medyaisleme.ui.viewmodel.ThemeViewModel: net.omergoktas.medyaisleme.data.model.ThemeMode getInitialTheme()
+androidx.compose.animation.core.Transition$TransitionAnimationState: void setFinished$animation_core_release(boolean)
+androidx.core.app.NotificationCompat$BubbleMetadata$Api29Impl: android.app.Notification$BubbleMetadata toPlatform(androidx.core.app.NotificationCompat$BubbleMetadata)
+androidx.compose.runtime.ProduceStateScopeImpl: void setValue(java.lang.Object)
+com.google.gson.internal.bind.TypeAdapters$9: TypeAdapters$9()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.animation.core.Transition$TransitionAnimationState: float getResetSnapValue$animation_core_release()
+androidx.compose.ui.window.Api33Impl: void maybeUnregisterBackCallback(android.view.View,java.lang.Object)
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState[] values()
+androidx.compose.ui.window.PopupLayout: void getParams$ui_release$annotations()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)

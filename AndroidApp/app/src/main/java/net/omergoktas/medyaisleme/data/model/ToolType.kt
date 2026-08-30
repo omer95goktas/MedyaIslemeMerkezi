@@ -111,11 +111,18 @@ enum class ToolType(
         category = ToolCategory.DOCUMENT,
         icon = Icons.Default.Description
     ),
-    DOCUMENT_CREATE(
+        DOCUMENT_CREATE(
         id = "panel-doc-create",
         title = "Sıfırdan Zengin Belge Oluşturucu",
         description = "Metninizi zengin editörde yazın; Word, PDF, Markdown veya EPUB olarak kaydedin.",
         category = ToolCategory.DOCUMENT,
         icon = Icons.Default.EditNote
+    ),
+    DOCUMENT_SCANNER(
+        id = "panel-doc-scanner",
+        title = "Belge Tarama (PDF)",
+        description = "Kameranızla kağıt belgeleri tarayıp anında PDF'e dönüştürün.",
+        category = ToolCategory.DOCUMENT,
+        icon = Icons.Default.DocumentScanner
     )
 }
