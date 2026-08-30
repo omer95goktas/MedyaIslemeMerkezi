@@ -336,7 +336,8 @@ namespace MedyaIslemeMerkezi
                 using (var handler = new HttpClientHandler { UseProxy = false, Proxy = null })
                 using (HttpClient client = new HttpClient(handler))
                 {
-                    client.Timeout = TimeSpan.FromMinutes(20); // Long timeout for big conversions
+                    client.Timeout = TimeSpan.FromMinutes(20);
+                      client.DefaultRequestHeaders.TransferEncodingChunked = true; // Long timeout for big conversions
                     using (MultipartFormDataContent content = new MultipartFormDataContent())
                     {
                         foreach (var input in tool.FileInputs)
