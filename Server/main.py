@@ -1203,7 +1203,7 @@ async def convert_document(
             success = True
 
     if not success:
-        lo_fmt = "pdf:writer_pdf_Export:{"UseTaggedPDF":{"type":"boolean","value":"true"}}" if target_ext == "pdf" else target_ext
+        lo_fmt = 'pdf:writer_pdf_Export:{"UseTaggedPDF":{"type":"boolean","value":"true"}}' if target_ext == 'pdf' else target_ext
         res = subprocess.run(["libreoffice", "--headless", "--convert-to", lo_fmt, in_path, "--outdir", TEMP_DIR], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         lo_out = os.path.join(TEMP_DIR, f"{task_id}.{target_ext}")
         if (os.path.exists(lo_out) and os.path.getsize(lo_out) > 0):
