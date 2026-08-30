@@ -119,13 +119,13 @@ namespace MedyaIslemeMerkezi
             }, "(&S)");
 
             AddToolToMenu(menuMedya, new Tool { 
-                Name = "Video Formatı Dönüştür", Endpoint = "/api/video-to-video", DefaultExtension = ".mp4", HasFormatSelect = true, Formats = new List<string>{"mp4", "mkv", "avi", "mov"},
-                FileInputs = new List<FileInput> { new FileInput { Key = "video", Label = "Video Dosyası:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov|Tümü|*.*" } }
+                Name = "Video Formatı Dönüştür", Endpoint = "/api/video-to-video", DefaultExtension = ".mp4", HasFormatSelect = true, Formats = new List<string>{"mp4", "avi", "mov", "mkv", "flv", "wmv", "webm", "m4v", "mpeg", "3gp", "ts", "vob", "ogv"},
+                FileInputs = new List<FileInput> { new FileInput { Key = "video", Label = "Video Dosyası:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov;*.flv;*.wmv;*.webm;*.m4v;*.mpeg;*.3gp;*.ts;*.vob;*.ogv|Tum Dosyalar|*.*" } }
             }, "(&V)");
 
             AddToolToMenu(menuMedya, new Tool { 
                 Name = "Videodan Ses Çıkar", Endpoint = "/api/video-to-audio", DefaultExtension = ".mp3", HasFormatSelect = true, Formats = new List<string>{"mp3", "m4a", "m4r", "wav", "flac", "alac", "aiff", "opus", "ogg", "aac", "ac3", "wma", "mp2"},
-                FileInputs = new List<FileInput> { new FileInput { Key = "video", Label = "Video Dosyası:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov|Tümü|*.*" } }
+                FileInputs = new List<FileInput> { new FileInput { Key = "video", Label = "Video Dosyası:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov;*.flv;*.wmv;*.webm;*.m4v;*.mpeg;*.3gp;*.ts;*.vob;*.ogv|Tum Dosyalar|*.*" } }
             }, "(&C)");
 
             AddToolToMenu(menuMedya, new Tool { 
@@ -139,8 +139,8 @@ namespace MedyaIslemeMerkezi
             AddToolToMenu(menuMedya, new Tool { 
                 Name = "Video Birleştir", Endpoint = "/api/merge-videos", DefaultExtension = ".mp4", HasResolutionSelect = true,
                 FileInputs = new List<FileInput> { 
-                    new FileInput { Key = "video1", Label = "1. Video:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov|Tümü|*.*" },
-                    new FileInput { Key = "video2", Label = "2. Video:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov|Tümü|*.*" }
+                    new FileInput { Key = "video1", Label = "1. Video:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov;*.flv;*.wmv;*.webm;*.m4v;*.mpeg;*.3gp;*.ts;*.vob;*.ogv|Tum Dosyalar|*.*" },
+                    new FileInput { Key = "video2", Label = "2. Video:", Filter = "Video|*.mp4;*.mkv;*.avi;*.mov;*.flv;*.wmv;*.webm;*.m4v;*.mpeg;*.3gp;*.ts;*.vob;*.ogv|Tum Dosyalar|*.*" }
                 }
             }, "(&B)");
 
