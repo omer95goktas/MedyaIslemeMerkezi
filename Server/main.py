@@ -1146,7 +1146,7 @@ async def convert_document(
                     res = subprocess.run(["pandoc", txt_temp, "-o", out_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                     if res.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 0:
                         success = True
-                    import os
+
                     if os.path.exists(txt_temp): os.remove(txt_temp)
             except Exception:
                 pass
