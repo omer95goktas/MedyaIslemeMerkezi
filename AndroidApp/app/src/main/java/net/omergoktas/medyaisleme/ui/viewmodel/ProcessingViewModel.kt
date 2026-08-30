@@ -216,9 +216,7 @@ class ProcessingViewModel(application: Application) : AndroidViewModel(applicati
                     }
                 }
 
-                ToolType.DOCUMENT_SCANNER -> {
-                    return@launch
-                }
+                
                 ToolType.DOCUMENT_CREATE -> {
                     val html = createDocHtml.value
                     if (html.isBlank()) {

@@ -15,8 +15,8 @@ android {
         applicationId = "net.omergoktas.medyaisleme"
         minSdk = 24
         targetSdk = 36
-        versionCode = 17
-        versionName = "1.0.15"
+        versionCode = 19
+        versionName = "1.0.17"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -90,7 +90,6 @@ android {
 
 dependencies {
     // Google ML Kit Document Scanner
-    implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1")
 
     // AndroidX & Core
     implementation("androidx.core:core-ktx:1.15.0")
@@ -139,3 +138,4 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
+
