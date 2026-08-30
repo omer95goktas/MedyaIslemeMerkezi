@@ -76,6 +76,7 @@ def convert_any_to_epub(in_path, out_path, title="Belge"):
         if in_path.lower().endswith(".pdf"):
             try:
                 import fitz
+import mammoth
                 doc = fitz.open(in_path)
                 for page in doc:
                     text += page.get_text() + chr(10) + chr(10)
@@ -1103,7 +1104,7 @@ async def convert_document(
     if target_ext == "csv" and src_ext != "csv":
         res = subprocess.run(["libreoffice", "--headless", "--convert-to", "csv", in_path, "--outdir", TEMP_DIR], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         lo_out = os.path.join(TEMP_DIR, f"{task_id}.csv")
-        if os.path.exists(lo_out) and os.path.getsize(lo_out) > 0:
+        if (os.path.exists(lo_out) and os.path.getsize(lo_out) > 0) and os.path.getsize(lo_out) > 0:
             if lo_out != out_path:
                 os.replace(lo_out, out_path)
             success = True
@@ -1123,7 +1124,7 @@ async def convert_document(
                             cleaned = line.strip()
                             if cleaned:
                                 writer.writerow([cleaned])
-                    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+                    if (os.path.exists(out_path) and os.path.getsize(out_path) > 0) and os.path.getsize(out_path) > 0:
                         success = True
                 except Exception:
                     pass
@@ -1133,7 +1134,7 @@ async def convert_document(
     if not success and src_ext == "pdf":
         if target_ext in ["txt", "csv"]:
             res = subprocess.run(["pdftotext", in_path, out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            if res.returncode == 0 and os.path.exists(out_path):
+            if res.returncode == 0 and (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
                 success = True
         elif target_ext == "docx":
             try:
@@ -1141,7 +1142,7 @@ async def convert_document(
                 cv = Converter(in_path)
                 cv.convert(out_path)
                 cv.close()
-                if os.path.exists(out_path):
+                if (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
                     success = True
             except Exception:
                 pass
@@ -1151,32 +1152,51 @@ async def convert_document(
             subprocess.run(["pdftotext", in_path, txt_temp], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             if os.path.exists(txt_temp):
                 res = subprocess.run(["pandoc", txt_temp, "-o", out_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                if res.returncode == 0 and os.path.exists(out_path):
+                if res.returncode == 0 and (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
                     success = True
                 cleanup_files(txt_temp)
 
         if not success:
             res = subprocess.run(["ebook-convert", in_path, out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env, timeout=600)
-            if res.returncode == 0 and os.path.exists(out_path):
+            if res.returncode == 0 and (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
                 success = True
+
+    
+    # 2.5 MAMMOTH ILE DOCX -> MD / HTML
+    if not success and src_ext == 'docx' and target_ext in ['md', 'html']:
+        try:
+            import mammoth
+            with open(in_path, 'rb') as docx_file:
+                if target_ext == 'md':
+                    res = mammoth.convert_to_markdown(docx_file)
+                else:
+                    res = mammoth.convert_to_html(docx_file)
+                
+                with open(out_path, 'w', encoding='utf-8') as f:
+                    f.write(res.value)
+            
+            if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+                success = True
+        except Exception as e:
+            pass
 
     # 3. GENEL DÖNÜŞÜM HATTI (Pandoc -> LibreOffice -> Calibre)
     if not success:
         res = subprocess.run(["pandoc", in_path, "-o", out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        if res.returncode == 0 and os.path.exists(out_path):
+        if res.returncode == 0 and (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
             success = True
 
     if not success:
         res = subprocess.run(["libreoffice", "--headless", "--convert-to", target_ext, in_path, "--outdir", TEMP_DIR], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         lo_out = os.path.join(TEMP_DIR, f"{task_id}.{target_ext}")
-        if os.path.exists(lo_out):
+        if (os.path.exists(lo_out) and os.path.getsize(lo_out) > 0):
             if lo_out != out_path:
                 os.replace(lo_out, out_path)
             success = True
 
     if not success:
         res = subprocess.run(["ebook-convert", in_path, out_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env, timeout=600)
-        if res.returncode == 0 and os.path.exists(out_path):
+        if res.returncode == 0 and (os.path.exists(out_path) and os.path.getsize(out_path) > 0):
             success = True
 
     if not success:
