@@ -470,8 +470,7 @@ fun MediaToolsScreen(
                     colors = ButtonDefaults.buttonColors(
                         containerColor = MaterialTheme.colorScheme.primary,
                         contentColor = MaterialTheme.colorScheme.onPrimary
-                    ),
-                    shape = RoundedCornerShape(8.dp)
+                    )
                 ) {
                     Text(
                         text = stringResource(R.string.btn_start_processing),
