@@ -37,7 +37,7 @@ SetupIconFile=app.ico
 DisableDirPage=yes
 DisableReadyPage=yes
 AlwaysShowDirOnReadyPage=no
-CloseApplications=no
+CloseApplications=yes
 RestartApplications=no
 ArchitecturesInstallIn64BitMode=x64compatible
 
@@ -58,18 +58,18 @@ Name: "{group}\{#MyAppName} Kaldır"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; WorkingDir: "{app}"; Tasks: desktopicon
 
 [Run]
-; Kurulum bittiğinde isteğe bağlı başlatma
-Filename: "{app}\{#MyAppExeName}"; Description: "{#MyAppName} uygulamasını başlat"; Flags: nowait postinstall
+; Kurulum bittiğinde başlatma seçeneği
+Filename: "{app}\{#MyAppExeName}"; Description: "{#MyAppName} uygulamasını başlat"; Flags: nowait postinstall skipifsilent
 
 [Code]
-// Kurulum başlamadan önce varsa eski açık uygulamayı güvenle kapat
+// Kurulum başlamadan önce sadece kurulu olan eski uygulamayı kapat (kurulum sihirbazını kapatma)
 procedure CurStepChanged(CurStep: TSetupStep);
 var
   ResultCode: Integer;
 begin
   if CurStep = ssInstall then
   begin
-    Exec('taskkill.exe', '/F /IM MedyaIslemeMerkezi.exe', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+    Exec('powershell.exe', '-NoProfile -NonInteractive -Command "try { Get-Process -Name MedyaIslemeMerkezi -ErrorAction SilentlyContinue | Where-Object { $_.Path -like ''*Omer_Goktas_Net*'' } | Stop-Process -Force } catch {} ; exit 0"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
     Sleep(500);
   end;
 end;
